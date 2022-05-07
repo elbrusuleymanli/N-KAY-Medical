@@ -1,0 +1,57 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="/assets/image/banners/service.jpg" alt="">
+            <div class="container">
+                <h3>XİDMƏTİ SAHƏLƏR</h3>
+            </div>
+
+        </div>
+    </div>
+</div> <!-- banner end -->
+<!-- service detail start -->
+<div class="service-detail">
+
+
+
+    <div class="container">
+        <div class="title">
+            <h2>@Model.Title</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <img src="/assets/image/services-detail/@Model.Image" alt="">
+            </div>
+            <div class="col-lg-6 col-md-12">
+
+                <div class="services">
+
+                    <article>
+                        <h5>GÖSTƏRİLƏN XİDMƏTLƏR</h5>
+                        @foreach (var item in Model.ServiceOptions)
+                        {
+                            <ul>
+                                <li>@item.Name</li>
+
+                            </ul>
+                        }
+
+                    </article>
+
+                </div>
+            </div>
+            <article class="about-service">
+                @Model.Text
+            </article>
+        </div>
+    </div>
+</div>
+
+
+<!-- service detail end -->

@@ -1,0 +1,44 @@
+﻿@model List<Service>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="~/assets/image/banners/service.jpg" alt="">
+            <div class="container">
+                <h3>XİDMƏTİ SAHƏLƏR</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- banner end -->
+<div class="services">
+    <div class="container">
+        <div class="row">
+            @foreach (var service in Model)
+            {
+                <div class="col-lg-3 col-md-6">
+                    <div class="service-item">
+                        <a asp-controller="Service" asp-action="Details" asp-route-id="@service.Id">
+                           @Html.Raw(service.Icon)
+                            <div class="service-image">
+                                <span>@service.Title</span>
+                            </div>
+                        </a>
+
+
+                    </div>
+
+                </div>
+            }
+
+
+
+        </div>
+    </div>
+</div>
+

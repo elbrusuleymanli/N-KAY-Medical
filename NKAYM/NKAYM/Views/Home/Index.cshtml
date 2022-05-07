@@ -1,0 +1,228 @@
+﻿@model HomeVM
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+@*@section sliderBg {
+
+        @foreach (var slider in Model)
+        {
+            <style>
+
+
+                .hero-slider.single-hs-item {
+                    background: url('/wwwroot/assets/image/@slider.Image') !important;
+                }
+            </style>
+        }
+    }*@
+
+<!--  Slider start -->
+<div id="home" class="hero-slider owl-carousel owl-theme">
+    @foreach (var slider in Model.NewsWalls.Take(4).OrderByDescending(n=>n.ReleaseDate))
+    {
+
+
+    <div class="single-hs-item" style="background-image: url(/assets/image/news/@slider.Image);">
+      
+
+        <div class="d-table">
+            <div class="d-tablecell">
+                <div class="hero-text">
+                    <h1>@slider.Title</h1>
+                    <p>@slider.Descr1</p>
+                    <div class="slider-btn">
+                        <a href="" class="custom-btn1">DAHA</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    }
+</div>
+<!-- Slider end-->
+<!-- service start-->
+<section>
+    <div class="service" data-aos="fade-up">
+        <div class="container">
+            <div class="min-logo">
+                <img src="~/assets/image/nnkk.jpg" alt="">
+            </div>
+
+            <div class="title">
+                <h2>XİDMƏTİ SAHƏLƏR</h2>
+            </div>
+            <div class="slider">
+
+                <div id="owl-service" class="owl-carousel owl-theme">
+                    @foreach (var service in Model.Services)
+                    {
+                        <a class="item" asp-controller="Service" asp-action="Details" asp-route-id="@service.Id">
+                            <div class="service-item">
+                                @Html.Raw(service.Icon)
+                                <h6>@service.Title</h6>
+                            </div>
+                        </a>
+                    }
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- service end-->
+<!-- doctors start-->
+
+<section>
+    <div class="doctor" data-aos="fade-up">
+        <div class="container">
+            <div class="min-logo">
+                <img src="~/assets/image/nnkk.jpg" alt="">
+            </div>
+            <div class="title" data-aos="fade-up">
+                <h2>HƏKİMLƏRİMİZ</h2>
+            </div>
+            <div id="owl-doctor" class="owl-carousel" data-aos="fade-up">
+                @foreach (var doctor in Model.Doctors)
+                {
+                    <div class="dr">
+                        <a asp-controller="Doctor" asp-action="Details" asp-route-id="@doctor.Id">
+                            <img src="~/assets/image/doctors/@doctor.Image" alt="">
+                            <span>@doctor.Fullname</span>
+                            <span class="prof">@doctor.Position</span>
+                        </a>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- doctors end-->
+<!-- news start-->
+<section>
+    <div class="news" data-aos="fade-up">
+
+        <div class="container">
+            <div class="min-logo">
+                <img src="~/assets/image/nnkk.jpg" alt="">
+            </div>
+            <div class="title">
+                <h2>XƏBƏRLƏR</h2>
+            </div>
+            <div class="description" data-aos="fade-up">
+                <div class="run">
+                    <span>@Model.NewsRuns.Title</span>
+                    <h3>
+                        <marquee scrollamount="15">@Model.NewsRuns.Announcement</marquee>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="news-wall" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+
+                @foreach (var news in Model.NewsWalls)
+                {
+                    <div class="col-lg-4 ">
+                        <div class="card item mb-3">
+                            <div class="row ">
+                                <div class="col-md-4">
+                                    <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id">
+                                        <img src="~/assets/image/news/@news.Image" class="img-fluid " alt="şəkil">
+                                    </a>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id">
+                                            <h5 class="card-title">@news.Title</h5>
+
+                                            <p class="card-text"><small class="text-muted">@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</small></p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<!-- news end-->
+<!-- partners start-->
+<section>
+    <div class="container" data-aos="fade-up">
+        <div class="min-logo">
+            <img src="~/assets/image/nnkk.jpg" alt="">
+        </div>
+        <div class="title">
+            <h2>TƏRƏFDAŞLAR</h2>
+        </div>
+
+        <div class="partners">
+            <div class="slider">
+
+                <div id="owl-partners" class="owl-carousel owl-theme">
+
+                    @foreach (var partner in Model.Partners)
+                    {
+                        <a href="@partner.WebAdress">
+                            <div class="service-item">
+                                <img class="icon-image" src="~/assets/image/partners/@partner.Image" alt="">
+
+                            </div>
+                        </a>
+                    }
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- partners end-->
+<!-- subscribe start-->
+<section id="subscribe" data-aos="fade-up">
+    <div class="container">
+        <div class="min-logo">
+            <img src="~/assets/image/nnkk.jpg" alt="">
+        </div>
+        <div class="title">
+            <h2>YENİLİKLƏRDƏN XƏBƏRDAR OL</h2>
+        </div>
+    </div>
+    <div class="subscribe-banner container-fluid p-0">
+        <div class="subscribe">
+            <form action="">
+                <div class="subscribe-email">
+                    <input type="email" placeholder="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın">
+                    <button type="submit">XƏBƏRİM OLSUN <i class="bell fas fa-bell"></i></button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+   
+  
+</section>
+<!-- subscribe end-->

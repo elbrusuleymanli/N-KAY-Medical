@@ -1,0 +1,53 @@
+﻿@model List<NewsWall>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="~/assets/image/banners/news-banner.jpg" alt="">
+            <div class="container">
+                <h3>XƏBƏRLƏR</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- banner end -->
+
+<div class="cards" data-aos="fade-up">
+    <div class="container">
+        <div class="row">
+
+            @foreach (var news in Model)
+            {
+            <div class="col-lg-3 col-md-6">
+                <div class="card">
+                   
+                        <img src="~/assets/image/news/@news.Image" class="img-fluid"  alt="şəkil" style="width:100%">
+                
+    <div class="card-body" >
+      
+            <span class="news-date" >@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</span>
+            <h5 class="card-title" >@news.Title</h5>
+            <p class="card-text">
+                @news.Descr1.Substring(0,30)
+            </p>
+      
+        <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id" class="button">ƏTRAFLI</a>
+    </div>
+
+                </div>
+            </div>
+            }
+
+            
+           
+        </div>
+    </div>
+</div>
+
+

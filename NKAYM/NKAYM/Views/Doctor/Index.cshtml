@@ -1,0 +1,65 @@
+﻿@model List<Doctor>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="/assets/image/banners/doctor.jpg" alt="">
+            <div class="container">
+                <h3>HƏKİMLƏR</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- banner end -->
+<!-- doctors list start -->
+<div class="container">
+    <div class="portfolio-menu">
+        <ul>
+            <li class="active" data-filter="*">HAMISI</li>
+            <li data-filter=".ginekologiya">GİNEKOLOGİYA</li>
+            <li data-filter=".lor">LOR</li>
+            <li data-filter=".stomatologiya">STOMATOLOGİYA</li>
+            <li data-filter=".laboratoriya">LABORATORİYA</li>
+            <li data-filter=".cərrahiyyə">CƏRRAHİYYƏ</li>
+            <li data-filter=".kardiologiya">KARDİOLOGİYA</li>
+            <li data-filter=".fizioterapiya">FİZİOTERAPİYA</li>
+            <li data-filter=".pediatriya">PEDİATRİYA</li>
+            <li data-filter=".usm">USM</li>
+        </ul>
+    </div>
+</div>
+<div class="container">
+    <div class="doctor-item">
+        <div class="row">
+            @foreach (var doctor in Model)
+            {
+            <div class=" col-lg-3 col-md-6 col-sm-12 item cərrahiyyə">
+                <div class="person ">
+
+                    <div class="main-image">
+                        <a asp-controller="Doctor" asp-action="Details" asp-route-id="@doctor.Id">
+                            <img src="/assets/image/doctors/@doctor.Image" alt="">
+                            <span>
+                                <div class="name">
+                                    <h5>@doctor.Fullname</h5>
+
+                                    <h6>@doctor.Position</h6>
+                                </div>
+
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            }
+            
+            
+        </div>
+    </div>
+</div>
+<!-- doctors list end -->

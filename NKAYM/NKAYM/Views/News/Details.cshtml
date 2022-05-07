@@ -1,0 +1,46 @@
+﻿@model NewsWall
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="~/assets/image/banners/news-banner.jpg" alt="">
+            <div class="container">
+                <h3>XƏBƏRLƏR</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- banner end -->
+<!-- news detail start -->
+<div class="container">
+    <div class="news-detail">
+        <img src="~/assets/image/news/@Model.Image" alt="">
+        <div class="news-text">
+            <article>
+                <h2>@Model.Title</h2>
+                <span class="news-date">@Model.ReleaseDate.ToString("dd") @Model.ReleaseDate.ToString("MMMM") @Model.ReleaseDate.ToString("yyyy")</span>
+                <p>
+                  @Model.Descr1
+                </p>
+                <p>
+                    @Model.Descr2
+                </p>
+                <p>
+                   @Model.Descr3
+                </p>
+            </article>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- news detail end -->
