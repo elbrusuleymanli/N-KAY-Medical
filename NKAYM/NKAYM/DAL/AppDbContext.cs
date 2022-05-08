@@ -20,7 +20,13 @@ namespace NKAYM.DAL
         public DbSet<NewsRun> NewsRuns { get; set; }
         public DbSet<NewsWall> NewsWalls { get; set; }
         public DbSet<Partner> Partners { get; set; }
+        public DbSet<Position> Positions { get; set; }
+        public DbSet<DoctorPosition> DoctorPositions { get; set; }
         public DbSet<ServiceOption> ServiceOptions { get; set; }
+        public DbSet<Manager> Managers { get; set; }
+        public DbSet<About> Abouts { get; set; }
+        public DbSet<Vacancy> Vacancies { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public DbSet<ContactInfo> ContactInfos { get; set; }
 
     }

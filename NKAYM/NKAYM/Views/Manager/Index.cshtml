@@ -1,0 +1,48 @@
+﻿@model List<Manager>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="/assets/image/banners/manager.jpg" alt="">
+            <div class="container">
+                <h3>RƏHBƏRLİK</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- banner end -->
+<!-- manager start -->
+
+<div class="managers">
+    <div class="container">
+        <div class="row">
+            @foreach (var manager in Model)
+            {
+            <div class="col-lg-6 col-sm-12 mb-2" data-aos="zoom-in">
+                <div class="manager">
+                    <img src="/assets/image/banners/@manager.Image" alt="">
+                    <ul class="manager-info">
+                        <li>@manager.Fullname</li>
+                        <li>@manager.Position</li>
+                        <li>@manager.Post</li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+            }
+            
+            
+        </div>
+    </div>
+</div>
+
+
+
+<!-- manager end -->

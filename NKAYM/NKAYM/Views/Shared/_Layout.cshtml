@@ -100,7 +100,7 @@
                 <div class="row">
                     <div class="col-md-1">
                         <div class="logo">
-                            <a href="index.html">
+                            <a asp-controller="Home" asp-action="Index">
                                 <img src="~/assets/image/logo (1).png" alt="">
                             </a>
 
@@ -109,18 +109,18 @@
                     <div class="col-md-9">
                         <div class="menu-bar">
                             <ul>
-                                <li class="drop-down "><a href="">ANA SƏHİFƏ</a></li>
+                                <li class="drop-down "><a asp-controller="Home" asp-action="Index">ANA SƏHİFƏ</a></li>
                                 <li class="drop-down ">
-                                    <a href="">HAQQIMIZDA <i class="fas fa-syringe"></i></a>
+                                    <a asp-controller="About" asp-action="Index">HAQQIMIZDA <i class="fas fa-syringe"></i></a>
                                     <ul class="drop-down-content">
                                         <i class="fas fa-caret-up"></i>
-                                        <li><a href="">TARİXİMİZ</a></li>
-                                        <li><a href="">RƏHBƏRLİK</a></li>
+                                        <li><a asp-controller="About" asp-action="Index">TARİXİMİZ</a></li>
+                                        <li><a asp-controller="Manager" asp-action="Index">RƏHBƏRLİK</a></li>
                                     </ul>
                                 </li>
-                                <li class="drop-down "><a href="">XİDMƏTLƏR</a></li>
-                                <li class="drop-down "><a href="">HƏKİMLƏR</a> </li>
-                                <li class="drop-down "><a href="">XƏBƏRLƏR</a></li>
+                                <li class="drop-down "><a asp-controller="Service" asp-action="Index">XİDMƏTLƏR</a></li>
+                                <li class="drop-down "><a asp-controller="Doctor" asp-action="Index">HƏKİMLƏR</a> </li>
+                                <li class="drop-down "><a asp-controller="News" asp-action="Index">XƏBƏRLƏR</a></li>
                                 <li class="drop-down ">
                                     <a href="">QALEREYA <i class="fas fa-syringe"></i></a>
                                     <ul class="drop-down-content">
@@ -129,7 +129,7 @@
                                         <li><a href="">VİDEOLAR</a></li>
                                     </ul>
                                 </li>
-                                <li class="drop-down "><a href="">ƏLAQƏ</a></li>
+                                <li class="drop-down "><a asp-controller="Contact" asp-action="Index">ƏLAQƏ</a></li>
                             </ul>
                         </div>
                     </div>
@@ -204,7 +204,7 @@
                     <div class="col-lg-3">
 
                         <div class="logo">
-                            <a href="">
+                            <a asp-controller="Home" asp-action="Index">
                                 <img src="~/assets/image/logo (1).png" alt="">
                             </a>
                         </div>
@@ -217,7 +217,7 @@
                                 1996-cı
                                 ildə qoyulmuşdur və 2005-ci il iyulun 26-da istifadəyə verilmişdir.
                             </p>
-                            <a href="">
+                            <a asp-controller="About" asp-action="Index">
                                 ərtaflı
                                 <i class="fas fa-angle-double-right"></i>
                             </a>
@@ -226,11 +226,11 @@
                     <div class="col-lg-3">
                         <h4>KATEQORİYA</h4>
                         <ul>
-                            <li><a href="">Xidmətlər</a></li>
-                            <li><a href="">Həkimlər</a></li>
-                            <li><a href="">Xəbərlər</a></li>
+                            <li><a asp-controller="Service" asp-action="Index">Xidmətlər</a></li>
+                            <li><a asp-controller="Doctor" asp-action="Index">Həkimlər</a></li>
+                            <li><a asp-controller="News" asp-action="Index">Xəbərlər</a></li>
                             <li><a href="">Qalereya</a></li>
-                            <li><a href="">Vakansiya</a></li>
+                            <li><a asp-controller="Vacancy" asp-action="Index">Vakansiya</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">

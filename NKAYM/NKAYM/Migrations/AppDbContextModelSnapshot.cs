@@ -19,6 +19,45 @@ namespace NKAYM.Migrations
                 .HasAnnotation("ProductVersion", "5.0.16")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("NKAYM.Models.About", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Abouts");
+                });
+
+            modelBuilder.Entity("NKAYM.Models.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Mobile")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Phone")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Contacts");
+                });
+
             modelBuilder.Entity("NKAYM.Models.ContactInfo", b =>
                 {
                     b.Property<int>("Id")
@@ -71,6 +110,28 @@ namespace NKAYM.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Doctors");
+                });
+
+            modelBuilder.Entity("NKAYM.Models.DoctorPosition", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("DoctorId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PositionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("DoctorId");
+
+                    b.HasIndex("PositionId");
+
+                    b.ToTable("DoctorPositions");
                 });
 
             modelBuilder.Entity("NKAYM.Models.Education", b =>
@@ -143,6 +204,33 @@ namespace NKAYM.Migrations
                     b.ToTable("Experiences");
                 });
 
+            modelBuilder.Entity("NKAYM.Models.Manager", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Fullname")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Image")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Position")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Post")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Text")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Managers");
+                });
+
             modelBuilder.Entity("NKAYM.Models.NewsRun", b =>
                 {
                     b.Property<int>("Id")
@@ -212,6 +300,21 @@ namespace NKAYM.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Partners");
+                });
+
+            modelBuilder.Entity("NKAYM.Models.Position", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Positions");
                 });
 
             modelBuilder.Entity("NKAYM.Models.Service", b =>
@@ -289,6 +392,55 @@ namespace NKAYM.Migrations
                     b.ToTable("Sliders");
                 });
 
+            modelBuilder.Entity("NKAYM.Models.Vacancy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Education")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Experience")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Gender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Position")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WorkDays")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("WorkTime")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Vacancies");
+                });
+
+            modelBuilder.Entity("NKAYM.Models.DoctorPosition", b =>
+                {
+                    b.HasOne("NKAYM.Models.Doctor", "Doctor")
+                        .WithMany("DoctorPositions")
+                        .HasForeignKey("DoctorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NKAYM.Models.Position", "Position")
+                        .WithMany("DoctorPositions")
+                        .HasForeignKey("PositionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Doctor");
+
+                    b.Navigation("Position");
+                });
+
             modelBuilder.Entity("NKAYM.Models.Education", b =>
                 {
                     b.HasOne("NKAYM.Models.Doctor", "Doctor")
@@ -320,9 +472,16 @@ namespace NKAYM.Migrations
 
             modelBuilder.Entity("NKAYM.Models.Doctor", b =>
                 {
+                    b.Navigation("DoctorPositions");
+
                     b.Navigation("Educations");
 
                     b.Navigation("Experiences");
+                });
+
+            modelBuilder.Entity("NKAYM.Models.Position", b =>
+                {
+                    b.Navigation("DoctorPositions");
                 });
 
             modelBuilder.Entity("NKAYM.Models.Service", b =>

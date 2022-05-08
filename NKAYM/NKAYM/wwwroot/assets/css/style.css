@@ -2534,11 +2534,16 @@ tr:nth-child(even) {
           transform: scale(1);
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+ 
+}
+.img-fluid{
+height:200px
 }
 
 .cards .card .card-body .card-title {
   color: #d30000;
   margin-top: 10px;
+  max-width:240px;
 }
 
 .cards .card .card-body span {

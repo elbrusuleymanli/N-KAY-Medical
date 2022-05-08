@@ -23,16 +23,16 @@
     {
 
 
-    <div class="single-hs-item" style="background-image: url(/assets/image/news/@slider.Image);">
+    <div class="single-hs-item" style="background-image: url(/assets/image/@slider.Image);">
       
 
         <div class="d-table">
             <div class="d-tablecell">
                 <div class="hero-text">
-                    <h1>@slider.Title</h1>
+                    <h1 style="font-size:35px">@slider.Title</h1>
                     <p>@slider.Descr1</p>
                     <div class="slider-btn">
-                        <a href="" class="custom-btn1">DAHA</a>
+                        <a asp-controller="News" asp-action="Details" asp-route-id="@slider.Id" class="custom-btn1">DAHA ƏTRAFLI</a>
                     </div>
                 </div>
             </div>
@@ -137,7 +137,7 @@
                             <div class="row ">
                                 <div class="col-md-4">
                                     <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id">
-                                        <img src="~/assets/image/news/@news.Image" class="img-fluid " alt="şəkil">
+                                        <img src="~/assets/image/@news.Image" class="img-fluid " alt="şəkil">
                                     </a>
                                 </div>
                                 <div class="col-md-8">
@@ -183,7 +183,7 @@
 
                     @foreach (var partner in Model.Partners)
                     {
-                        <a href="@partner.WebAdress">
+                        <a href="@partner.WebAdress" target="_blank">
                             <div class="service-item">
                                 <img class="icon-image" src="~/assets/image/partners/@partner.Image" alt="">
 
