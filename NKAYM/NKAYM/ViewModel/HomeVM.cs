@@ -14,6 +14,6 @@ namespace NKAYM.ViewModel
         public NewsRun NewsRuns { get; set; }
         public List<NewsWall> NewsWalls { get; set; }
         public List<Partner> Partners { get; set; }
-        public ContactInfo ContactInfos { get; set; }
+        public Footer ContactInfos { get; set; }
     }
 }

@@ -31,7 +31,7 @@ namespace NKAYM.Controllers
                 NewsRuns = await _context.NewsRuns.FirstOrDefaultAsync(),
                 NewsWalls = await _context.NewsWalls.Take(6).OrderByDescending(n => n.ReleaseDate).ToListAsync(),
                 Partners= await _context.Partners.OrderBy(p=>p.Order).ToListAsync(),
-                ContactInfos =await _context.ContactInfos.FirstOrDefaultAsync()
+                
                
             };
             

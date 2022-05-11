@@ -1,0 +1,63 @@
+﻿@model Footer
+
+    <footer>
+        <!-- footer start-->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+
+                        <div class="logo">
+                            <a asp-controller="Home" asp-action="Index">
+                                <img src="~/assets/image/logo (1).png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="about-us">
+                            <h4>HAQQIMIZDA</h4>
+                            <p>
+                                Klinikanın təməli təsisçiləri həkim-stomatoloqlar Natiq Mütəllimov və Kəbutər Mütəllimova tərəfindən
+                                1996-cı
+                                ildə qoyulmuşdur və 2005-ci il iyulun 26-da istifadəyə verilmişdir.
+                            </p>
+                            <a asp-controller="About" asp-action="Index">
+                                ərtaflı
+                                <i class="fas fa-angle-double-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4>KATEQORİYA</h4>
+                        <ul>
+                            <li><a asp-controller="Service" asp-action="Index">Xidmətlər</a></li>
+                            <li><a asp-controller="Doctor" asp-action="Index">Həkimlər</a></li>
+                            <li><a asp-controller="News" asp-action="Index">Xəbərlər</a></li>
+                            <li><a asp-controller="PhotoGallery" asp-action="Index">Qalereya</a></li>
+                            <li><a asp-controller="Vacancy" asp-action="Index">Vakansiya</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="contacts">
+                            <h4>ƏLAQƏ</h4>
+                            <ul class="contact">
+                                <li class="adress"> <span>Ünvan:</span> @Model.Adress </li>
+                                <li class="phone"><span>Telefon:</span>  @Model.Phone</li>
+                                <li class="email">
+                                    <span>Email:</span><a href="mailto:@Model.Email"> @Model.Email</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer end-->
+        <!-- line start-->
+        <div class="end-line">
+            <span>N-KAY MEDICAL © 2022 Bütün hüquqlar qorunur. </span>
+            <span>Designed by ENAPA</span>
+        </div>
+        <!-- line end-->
+    </footer>

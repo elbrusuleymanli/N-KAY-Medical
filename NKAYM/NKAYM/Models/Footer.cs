@@ -5,13 +5,12 @@ using System.Threading.Tasks;
 
 namespace NKAYM.Models
 {
-    public class ContactInfo
+    public class Footer
     {
         public int Id { get; set; }
         public string Adress { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public string Mobile { get; set; }
         public string Logo { get; set; }
     }
 }

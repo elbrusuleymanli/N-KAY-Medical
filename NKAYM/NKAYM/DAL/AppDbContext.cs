@@ -29,7 +29,8 @@ namespace NKAYM.DAL
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<PhotoGallery> PhotoGalleries { get; set; }
         public DbSet<VideoGallery> VideoGalleries { get; set; }
-        public DbSet<ContactInfo> ContactInfos { get; set; }
+        public DbSet<Footer> Footers { get; set; }
+        public DbSet<NavMenu> NavMenus { get; set; }
 
     }
 }

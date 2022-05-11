@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Material Dash</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="~/assets/Admin/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/assets/Admin/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="~/assets/Admin/css/demo/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="~/assets/Admin/images/favicon.png" />
+</head>
+<body>
+    <script src="~/assets/Admin/js/preloader.js"></script>
+    <div class="body-wrapper">
+        <!-- partial:../../partials/_sidebar.html -->
+        <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
+            <div class="mdc-drawer__header">
+                <a href="~/assets/Admin/index.html" class="brand-logo">
+                    <img src="~/assets/Admin/images/logo (1).png" alt="logo">
+                </a>
+            </div>
+            <div class="mdc-drawer__content">
+                
+                <div class="mdc-list-group">
+                    <nav class="mdc-list mdc-drawer-menu">
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="../../index.html">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                                Dashboard
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="../../pages/forms/basic-forms.html">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                                Forms
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="ui-sub-menu">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
+                                UI Features
+                               
+                            </a>
+                            <div class="mdc-expansion-panel" id="ui-sub-menu">
+                                <nav class="mdc-list mdc-drawer-submenu">
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/ui-features/buttons.html">
+                                            Buttons
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/ui-features/typography.html">
+                                            Typography
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="../../pages/tables/basic-tables.html">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                                Tables
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="../../pages/charts/chartjs.html">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                                Charts
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                                Sample Pages
+                               
+                            </a>
+                            <div class="mdc-expansion-panel" id="sample-page-submenu">
+                                <nav class="mdc-list mdc-drawer-submenu">
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/blank-page.html">
+                                            Blank Page
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/403.html">
+                                            403
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/404.html">
+                                            404
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/500.html">
+                                            500
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/505.html">
+                                            505
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/login.html">
+                                            Login
+                                        </a>
+                                    </div>
+                                    <div class="mdc-list-item mdc-drawer-item">
+                                        <a class="mdc-drawer-link" href="../../pages/samples/register.html">
+                                            Register
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" href="https://www.bootstrapdash.com/demo/material-admin-free/jquery/documentation/documentation.html" target="_blank">
+                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
+                                Documentation
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+               
+                
+            </div>
+        </aside>
+        <!-- partial -->
+        <div class="main-wrapper mdc-drawer-app-content">
+            <!-- partial:../../partials/_navbar.html -->
+           
+            @RenderBody()
+            
+            <!-- partial -->
+        </div>
+    </div>
+    </div>
+    <!-- plugins:js -->
+    <script src="~/assets/Admin/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page-->
+    <!-- End plugin js for this page-->
+    <!-- inject:js -->
+    <script src="~/assets/Admin/js/material.js"></script>
+    <script src="~/assets/Admin/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <!-- End custom js for this page-->
+</body>
+</html>

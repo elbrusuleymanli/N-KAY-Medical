@@ -152,3 +152,8 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Vacancy\Index
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\PhotoGallery\Index.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\VideoGallery\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Shared\Components\Footer\Default.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Shared\Components\NavMenu\Default.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Home\Index.cshtml.g.cs
