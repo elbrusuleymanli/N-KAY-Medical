@@ -16,6 +16,8 @@
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 
@@ -122,11 +124,11 @@
                                 <li class="drop-down "><a asp-controller="Doctor" asp-action="Index">HƏKİMLƏR</a> </li>
                                 <li class="drop-down "><a asp-controller="News" asp-action="Index">XƏBƏRLƏR</a></li>
                                 <li class="drop-down ">
-                                    <a href="">QALEREYA <i class="fas fa-syringe"></i></a>
+                                    <a asp-controller="PhotoGallery" asp-action="Index">QALEREYA <i class="fas fa-syringe"></i></a>
                                     <ul class="drop-down-content">
                                         <i class="fas fa-caret-up"></i>
-                                        <li><a href="">ŞƏKİLLƏR</a></li>
-                                        <li><a href="">VİDEOLAR</a></li>
+                                        <li><a asp-controller="PhotoGallery" asp-action="Index">ŞƏKİLLƏR</a></li>
+                                        <li><a asp-controller="VideoGallery" asp-action="Index">VİDEOLAR</a></li>
                                     </ul>
                                 </li>
                                 <li class="drop-down "><a asp-controller="Contact" asp-action="Index">ƏLAQƏ</a></li>
@@ -171,13 +173,13 @@
         <div id="gloval-nav">
             <nav>
                 <ul id="navigation">
-                    <li><a href="#">Ana Səhifə</a></li>
-                    <li><a href="#">Haqqımızda</a> </li>
-                    <li><a href="#">Xidmətlər</a></li>
-                    <li><a href="#">Həkimlər</a></li>
-                    <li><a href="#">Xəbərlər</a></li>
-                    <li><a href="#">Qalereya</a></li>
-                    <li><a href="#">Əlaqə</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Ana Səhifə</a></li>
+                    <li><a asp-controller="About" asp-action="Index">Haqqımızda</a> </li>
+                    <li><a asp-controller="Service" asp-action="Index">Xidmətlər</a></li>
+                    <li><a asp-controller="Doctor" asp-action="Index">Həkimlər</a></li>
+                    <li><a asp-controller="News" asp-action="Index">Xəbərlər</a></li>
+                    <li><a asp-controller="PhotoGallery" asp-action="Index">Qalereya</a></li>
+                    <li><a asp-controller="Contact" asp-action="Index">Əlaqə</a></li>
                 </ul>
             </nav>
 
@@ -229,7 +231,7 @@
                             <li><a asp-controller="Service" asp-action="Index">Xidmətlər</a></li>
                             <li><a asp-controller="Doctor" asp-action="Index">Həkimlər</a></li>
                             <li><a asp-controller="News" asp-action="Index">Xəbərlər</a></li>
-                            <li><a href="">Qalereya</a></li>
+                            <li><a asp-controller="PhotoGallery" asp-action="Index">Qalereya</a></li>
                             <li><a asp-controller="Vacancy" asp-action="Index">Vakansiya</a></li>
                         </ul>
                     </div>
@@ -329,6 +331,8 @@
     <!-- profile modal end-->
     <!-- modal open Appointment -->
     <!-- modal open end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
@@ -336,6 +340,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
     <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+    <script>
+        baguetteBox.run('.tz-gallery');
+    </script>
     <script>
         AOS.init();
     </script>

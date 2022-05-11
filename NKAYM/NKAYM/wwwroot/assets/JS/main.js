@@ -76,7 +76,7 @@ $owl.owlCarousel({
     400: {
        items: 3
      },
-     1550:{
+     900:{
        items:5
      }
  

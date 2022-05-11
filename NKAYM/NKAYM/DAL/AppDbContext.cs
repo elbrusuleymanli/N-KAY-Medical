@@ -27,6 +27,8 @@ namespace NKAYM.DAL
         public DbSet<About> Abouts { get; set; }
         public DbSet<Vacancy> Vacancies { get; set; }
         public DbSet<Contact> Contacts { get; set; }
+        public DbSet<PhotoGallery> PhotoGalleries { get; set; }
+        public DbSet<VideoGallery> VideoGalleries { get; set; }
         public DbSet<ContactInfo> ContactInfos { get; set; }
 
     }

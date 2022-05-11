@@ -150,3 +150,5 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\About\Index.c
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Manager\Index.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Vacancy\Index.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\PhotoGallery\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\VideoGallery\Index.cshtml.g.cs

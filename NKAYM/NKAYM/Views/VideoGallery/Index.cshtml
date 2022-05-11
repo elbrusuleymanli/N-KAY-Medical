@@ -1,0 +1,40 @@
+﻿@model List<VideoGallery>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- banner start -->
+<div class="container-fluid p-0">
+    <div class="banner">
+        <div class="banner-image">
+            <img src="/assets/image/banners/gallery.jpg" alt="">
+            <div class="container">
+                <h3>VİDEOLAR</h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- banner end -->
+<div class="container">
+    <div class="row">
+        @foreach (var video in Model)
+        {
+        <div class="col-lg-4">
+            <div class="title">
+                <h5>@video.Title</h5>
+            </div>
+            <div class="video">
+                <video controls>
+                    <source src="~/assets/image/gallery-video/@video.Video" type="video/mp4">
+                </video>
+            </div>
+
+
+        </div>
+        }
+        
+        
+    </div>
+</div>
+
