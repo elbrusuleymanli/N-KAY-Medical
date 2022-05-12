@@ -1,4 +1,7 @@
 /* === Import template variables === */
+
+
+
 .mdc-button {
   font-family: Roboto, sans-serif;
   -moz-osx-font-smoothing: grayscale;
@@ -395,6 +398,14 @@ svg.mdc-button__icon {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+.topic {
+    background-image: url(/assets/Admin/images/topic.jpg);
+   background-color:black;
+    background-position:center;
+   background-size:cover;
+    object-fit:none;
+   background-repeat:no-repeat
 }
 
 .mdc-card--outlined {
@@ -21797,10 +21808,9 @@ address p {
 }
 
 .table thead tr th {
-  padding: 14px 10px;
-  color: #757575;
+  padding: 14px 24px;
+  color: red;
   font-size: 14px;
-  text-align: right;
   border-bottom: 1px solid #e9eaef;
   font-weight: 500;
 }
@@ -21821,13 +21831,13 @@ address p {
 }
 
 .table tbody tr td {
-  padding: 14px 10px;
+  padding: 14px 24px;
   font-size: 14px;
   color: #212121;
-  text-align: right;
+
   border-bottom: 1px solid #e9eaef;
   font-weight: 400;
-  white-space: nowrap;
+  
 }
 
 .table tbody tr td:first-child {
@@ -23164,3 +23174,68 @@ footer .vertical-divider {
 }
 
 /*# sourceMappingURL=../maps/demo/style.css.map */
+
+
+.main-panel {
+    transition: width 0.25s ease, margin 0.25s ease;
+   
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+.content-wrapper {
+   
+    
+    width: 100%;
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+}
+
+.stretch-card {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    -webkit-justify-content: stretch;
+    justify-content: stretch;
+}
+
+    .stretch-card > .card {
+        width: 100%;
+        padding:0;
+        margin:0;
+        background-color: #ff9a9a;
+    }
+
+.card {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -ms-box-shadow: none;
+    align-items:center;
+}
+
+    .card .card-body {
+        padding: 1.5rem 1.875rem;
+    }
+
+        .card .card-body + .card-body {
+            padding-top: 1rem;
+        }
+
+    .card .card-title {
+        color: #4a4a4a;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+        font-size: .875rem;
+        font-weight: bold;
+    }
+
+    .form-group{
+        margin-bottom:15px;
+    }
+    .form-control{
+        padding:20px 15px;
+    }

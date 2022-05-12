@@ -13,5 +13,6 @@ namespace NKAYM.Areas.Admin.Controllers
         {
             return View();
         }
+       
     }
 }

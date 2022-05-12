@@ -8,7 +8,7 @@ namespace NKAYM.ViewModel
 {
     public class HomeVM
     {
-        public List<Slider> Sliders { get; set; }
+        
         public List<Service> Services { get; set; }
         public List<Doctor> Doctors { get; set; }
         public NewsRun NewsRuns { get; set; }

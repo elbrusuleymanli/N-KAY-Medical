@@ -1276,7 +1276,7 @@ h1 {
 }
 
 .subscribe-banner {
-  background-image: url(/assets/image/subscribe/sub.jpg);
+  background-image: url(/assets/images/subscribe/sub.jpg);
   background-size: auto;
 }
 
@@ -2736,3 +2736,4 @@ tr:nth-child(even) {
   font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
+

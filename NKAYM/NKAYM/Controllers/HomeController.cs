@@ -25,7 +25,7 @@ namespace NKAYM.Controllers
         {
             HomeVM model = new HomeVM
             {
-                Sliders = await _context.Sliders.OrderBy(s => s.Order).ToListAsync(),
+               
                 Services = await _context.Services.Take(12).ToListAsync(),
                 Doctors = await _context.Doctors.ToListAsync(),
                 NewsRuns = await _context.NewsRuns.FirstOrDefaultAsync(),

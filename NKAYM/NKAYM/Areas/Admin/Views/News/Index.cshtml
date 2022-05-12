@@ -1,0 +1,56 @@
+﻿@model List<NewsWall>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 ">
+    <div class="mdc-card p-0 " >
+        <div class="topic"  >
+            
+            <h6 class="card-title card-padding pb-0" style="color:white;font-size:40px;text-align:center; font-weight:600;">XƏBƏRLƏR</h6>
+            <a class="btn btn-success m-2" style="width:120px;" asp-controller="News" asp-action="Create">Yeni xəbər</a>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" style="border-color: black; text-align: center">
+                <thead>
+                        <tr style="background-color: #f7f7f7;text-align:center">
+                        <th>TARİX*</th>
+                        <th>ŞƏKİL*</th>
+                        <th>BAŞLIĞ*</th>
+                        <th>MƏTN(1-ci hissə)*</th>
+                        <th>MƏTN(2-ci hissə)</th>
+                        <th>MƏTN(3-cü hissə)</th>
+                        <th>HƏRƏKƏTLƏR</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var news in Model)
+                    {
+                        <tr>
+                            <td  style="font-weight:600">@news.ReleaseDate.ToString("dd.MM.yyyy")</td>
+                            <td > <img src="~/assets/image/@news.Image" alt="şəkil" style="width:200px;height:170px;border-radius:10px"></td>
+                            <td class="text-left">@news.Title</td>
+                            <td class="text-left">@news.Descr1</td>
+                            <td class="text-left">@news.Descr2</td>
+                            <td class="text-left">@news.Descr3</td>
+                            <td >
+                                <a class="btn btn-warning mt-2" style="width:90px" asp-controller="News" asp-action="Update" asp-route-id="@news.Id">Redaktə</a>
+
+                                <a class="btn btn-primary mt-2" style="width:90px" asp-controller="News" asp-action="Detail" asp-route-id="@news.Id">Məlumat</a>
+
+                                <a class="btn btn-danger mt-2" style="width:90px" asp-controller="News" asp-action="Delete" asp-route-id="@news.Id">Ləğv et</a>
+                            </td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+            </div>
+          </div>
+
+

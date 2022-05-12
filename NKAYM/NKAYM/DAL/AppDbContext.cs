@@ -12,7 +12,7 @@ namespace NKAYM.DAL
        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
 
-        public DbSet<Slider> Sliders { get; set; }
+       
         public DbSet<Service> Services { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
         public DbSet<Education> Educations { get; set; }

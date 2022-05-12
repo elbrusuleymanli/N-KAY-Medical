@@ -1,7 +1,9 @@
 (function($) {
     'use strict'; 
     $(function() {
+        //navbar fixed
 
+   
     //Revenue Chart
     if ($("#revenue-chart").length) {
         var revenueChartCanvas = $("#revenue-chart").get(0).getContext("2d");
@@ -331,6 +333,8 @@
 
     });
 })(jQuery);
+
+
 
 
 
