@@ -20,7 +20,7 @@ namespace NKAYM.Controllers
         public async Task<IActionResult> Index()
         {
 
-            var service = await _context.Services.ToListAsync();
+            var service = await _context.Services.OrderByDescending(s=>s.Id).ToListAsync();
            
             return View(service);
         }

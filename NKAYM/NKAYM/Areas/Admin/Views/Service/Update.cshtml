@@ -1,0 +1,46 @@
+﻿@model Service
+@{
+    ViewData["Title"] = "Update";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <form class="forms-sample" method="post" asp-controller="Service" asp-action="Update" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">Xidmətin adı*</label>
+                                <input asp-for="Title" class="form-control " placeholder="Xidmətin adı">
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">Şəkil*</label>
+                                <input accept="image/*" asp-for="ServiceImageFile" class="form-control" placeholder="Şəkil">
+                                <span asp-validation-for="ServiceImageFile" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">İşarə*</label>
+                                <input asp-for="Icon" class="form-control" placeholder="İşarə">
+                                <span asp-validation-for="Icon" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">MƏTN*</label>
+                                <textarea asp-for="Text" class="form-control" placeholder="MƏTN"></textarea>
+                                <span asp-validation-for="Text" class="text-danger"></span>
+                            </div>
+
+
+
+                            <button type="submit" class="btn btn-success me-2">Təsdiqlə</button>
+                            <button class="btn btn-danger" asp-action="Index">Bağla</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

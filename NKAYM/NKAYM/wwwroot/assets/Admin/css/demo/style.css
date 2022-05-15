@@ -23204,9 +23204,9 @@ footer .vertical-divider {
 
     .stretch-card > .card {
         width: 100%;
-        padding:0;
-        margin:0;
-        background-color: #ff9a9a;
+        padding: 0;
+        margin: 0;
+        background-color: #e7e7e7;
     }
 
 .card {
@@ -23219,6 +23219,7 @@ footer .vertical-divider {
 
     .card .card-body {
         padding: 1.5rem 1.875rem;
+      
     }
 
         .card .card-body + .card-body {
@@ -23235,6 +23236,10 @@ footer .vertical-divider {
 
     .form-group{
         margin-bottom:15px;
+    }
+    .form-group label{
+       font-weight:600;
+       
     }
     .form-control{
         padding:20px 15px;

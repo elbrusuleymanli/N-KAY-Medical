@@ -5,27 +5,28 @@
 }
 
 
+
 <!--  Slider start -->
 <div id="home" class="hero-slider owl-carousel owl-theme">
-    @foreach (var slider in Model.NewsWalls.Take(4).OrderByDescending(n=>n.ReleaseDate))
+    @foreach (var slider in Model.NewsWalls.Take(4).OrderByDescending(n => n.ReleaseDate))
     {
 
 
-    <div class="single-hs-item" style="background-image: url(/assets/images/@slider.Image);">
-      
+        <div class="single-hs-item" style="background: url(/assets/images/@slider.Image);">
 
-        <div class="d-table">
-            <div class="d-tablecell">
-                <div class="hero-text">
-                    <h1 class="slider-title">@slider.Title</h1>
-                    <p>@slider.Descr1</p>
-                    <div class="slider-btn">
-                        <a asp-controller="News" asp-action="Details" asp-route-id="@slider.Id" class="custom-btn1">DAHA ƏTRAFLI</a>
+
+            <div class="d-table">
+                <div class="d-tablecell">
+                    <div class="hero-text">
+                        <h1 class="slider-title">@slider.Title</h1>
+                        <p>@slider.Descr1</p>
+                        <div class="slider-btn">
+                            <a asp-controller="News" asp-action="Details" asp-route-id="@slider.Id" class="custom-btn1">DAHA ƏTRAFLI</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
     }
 </div>
@@ -210,7 +211,7 @@
         </div>
 
     </div>
-   
-  
+
+
 </section>
 <!-- subscribe end-->
