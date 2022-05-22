@@ -168,3 +168,15 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\S
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Service\Delete.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Service\Update.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Service\Detail.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Doctor\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Doctor\Create.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Doctor\Delete.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Doctor\Update.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Doctor\Detail.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Partner\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Partner\Create.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Partner\Delete.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Partner\Update.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Partner\Detail.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Photo\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Photo\Create.cshtml.g.cs

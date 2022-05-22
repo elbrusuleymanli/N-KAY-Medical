@@ -1,4 +1,4 @@
-﻿@model ServiceVM
+﻿@model List<Service>
 @{
     ViewData["Title"] = "Index";
 }
@@ -24,7 +24,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach (var service in Model.Services)
+                    @foreach (var service in Model)
                     {
                     <tr>
                         <td style="font-weight:600">@service.Title</td>
@@ -32,17 +32,16 @@
                         <td> <img src="~/assets/images/services-detail/@service.Image" alt="şəkil" style="width:200px;height:170px;border-radius:10px"></td>
                         <td class="text-left">@service.Text</td>
                         <td class="text-left">
+                            <ul>
+                                @foreach (var item in service.ServiceOptions)
+                                {
+                                    <li>
+                                        @item.Name
+                                    </li>
+                                }
 
-
-                            @*@foreach (var item in Model.ServiceOptions)
-                            {  <ul>
-                                   <li>
-                                       @item.Name
-                                   </li>
-                            
                             </ul>
-                                
-                            }*@
+
                         </td>
 
                         <td>

@@ -35,7 +35,7 @@
                 <div class="mdc-list-group">
                     <nav class="mdc-list mdc-drawer-menu">
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-drawer-link" asp-controller="Home" asp-action="İndex">
+                            <a class="mdc-drawer-link" asp-controller="Home" >
                                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
                                 Admin
                             </a>
@@ -55,62 +55,24 @@
                            
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-drawer-link" href="../../pages/tables/basic-tables.html">
+                            <a class="mdc-drawer-link" asp-controller="Doctor" asp-action="Index">
                                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
-                                Tables
+                                Həkimlər
                             </a>
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-drawer-link" href="../../pages/charts/chartjs.html">
+                            <a class="mdc-drawer-link" asp-controller="Partner" asp-action="Index">
                                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
-                                Charts
+                                Tərəfdaşlar
                             </a>
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-expansion-panel-link" href="#" data-toggle="expansionPanel" data-target="sample-page-submenu">
+                            <a class="mdc-expansion-panel-link" asp-controller="Photo" asp-action="Index" >
                                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
-                                Sample Pages
+                                Şəkillər
 
                             </a>
-                            <div class="mdc-expansion-panel" id="sample-page-submenu">
-                                <nav class="mdc-list mdc-drawer-submenu">
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/blank-page.html">
-                                            Blank Page
-                                        </a>
-                                    </div>
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/403.html">
-                                            403
-                                        </a>
-                                    </div>
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/404.html">
-                                            404
-                                        </a>
-                                    </div>
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/500.html">
-                                            500
-                                        </a>
-                                    </div>
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/505.html">
-                                            505
-                                        </a>
-                                    </div>
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/login.html">
-                                            Login
-                                        </a>
-                                    </div>
-                                    <div class="mdc-list-item mdc-drawer-item">
-                                        <a class="mdc-drawer-link" href="../../pages/samples/register.html">
-                                            Register
-                                        </a>
-                                    </div>
-                                </nav>
-                            </div>
+                            
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
                             <a class="mdc-drawer-link" href="https://www.bootstrapdash.com/demo/material-admin-free/jquery/documentation/documentation.html" target="_blank">

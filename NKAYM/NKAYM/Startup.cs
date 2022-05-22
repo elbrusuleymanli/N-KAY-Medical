@@ -37,6 +37,9 @@ namespace NKAYM
 
             FileConstants.ImagePath = Path.Combine(_env.WebRootPath, "assets", "images");
             FileConstants.ServiceImagePath = Path.Combine(_env.WebRootPath, "assets", "images","services-detail");
+            FileConstants.DoctorImagePath = Path.Combine(_env.WebRootPath, "assets", "images", "doctors");
+            FileConstants.PartnerImagePath = Path.Combine(_env.WebRootPath, "assets", "images", "partners");
+            FileConstants.PhotoImagePath = Path.Combine(_env.WebRootPath, "assets", "images");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

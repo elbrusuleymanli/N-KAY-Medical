@@ -1,5 +1,8 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -17,6 +20,9 @@ namespace NKAYM.Models
         public List<Experience> Experiences { get; set; }
         public List<Education> Educations { get; set; }
 
+        [NotMapped]
+        [Required]
+        public IFormFile DoctorImageFile { get; set; }
 
 
     }

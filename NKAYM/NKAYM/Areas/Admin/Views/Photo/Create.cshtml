@@ -1,0 +1,31 @@
+﻿@model PhotoGallery
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <form class="forms-sample" method="post" asp-controller="Photo" asp-action="Create" enctype="multipart/form-data">
+
+                            <div class="form-group">
+                                <label for="exampleInputUsername1">Şəkil*</label>
+                                <input accept="image/*" asp-for="PhotoImageFile" class="form-control" placeholder="ImageFile">
+                                <span asp-validation-for="PhotoImageFile" class="text-danger"></span>
+                            </div>
+                            
+
+                            <button type="submit" class="btn btn-success me-2">Təsdiqlə</button>
+                            <button class="btn btn-danger" asp-action="Index">Bağla</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

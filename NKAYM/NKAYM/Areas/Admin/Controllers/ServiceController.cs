@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NKAYM.Areas.Admin.ViewModel;
+
 using NKAYM.Constants;
 using NKAYM.DAL;
 using NKAYM.Models;
@@ -27,13 +27,13 @@ namespace NKAYM.Areas.Admin.Controllers
         }
         public async Task<IActionResult > Index()
         {
-            ServiceVM service = new ServiceVM
-            {
-                Services = await _context.Services.OrderByDescending(s=>s.Id).Include(s => s.ServiceOptions).ToListAsync()
-            };
+
+
+            var services = await _context.Services.Include(s => s.ServiceOptions).ToListAsync();
+            
              
            
-                return View(service);
+                return View(services);
         }
 
         //create service
@@ -60,7 +60,7 @@ namespace NKAYM.Areas.Admin.Controllers
                 return View();
             }
 
-            service.Image = FileUtils.Create(FileConstants.ImagePath, service.ServiceImageFile);
+            service.Image = FileUtils.Create(FileConstants.ServiceImagePath, service.ServiceImageFile);
 
             await _context.Services.AddAsync(service);
             await _context.SaveChangesAsync();
@@ -89,7 +89,7 @@ namespace NKAYM.Areas.Admin.Controllers
             if (serviceDelete == null) return NotFound();
 
 
-            FileUtils.Delete(Path.Combine(FileConstants.ImagePath, serviceDelete.Image));
+            FileUtils.Delete(Path.Combine(FileConstants.ServiceImagePath, serviceDelete.Image));
 
             _context.Services.Remove(serviceDelete);
             await _context.SaveChangesAsync();
@@ -125,6 +125,11 @@ namespace NKAYM.Areas.Admin.Controllers
             upService.Title = service.Title;
             upService.Text = service.Text;
             upService.Icon = service.Icon;
+            foreach (var item in upService.ServiceOptions)
+            {
+               
+            }
+            
           
 
 
