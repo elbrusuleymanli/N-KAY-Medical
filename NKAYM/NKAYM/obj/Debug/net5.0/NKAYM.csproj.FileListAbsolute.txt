@@ -180,3 +180,14 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\P
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Partner\Detail.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Photo\Index.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Photo\Create.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Photo\Delete.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Video\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Video\Create.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Video\Delete.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Vacancy\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Vacancy\Create.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Vacancy\Delete.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Vacancy\Update.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Vacancy\Detail.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Ticker\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Ticker\Update.cshtml.g.cs

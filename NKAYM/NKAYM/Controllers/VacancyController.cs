@@ -18,7 +18,7 @@ namespace NKAYM.Controllers
             }
             public IActionResult Index()
         {
-            var vacancy = _context.Vacancies.ToList();
+            var vacancy = _context.Vacancies.OrderByDescending(v=>v.Id).ToList();
             return View(vacancy);
         }
     }

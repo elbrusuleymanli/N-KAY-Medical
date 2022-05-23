@@ -12,5 +12,6 @@ namespace NKAYM.Constants
         public static string DoctorImagePath { get; set; }
         public static string PartnerImagePath { get; set; }
         public static string PhotoImagePath { get; set; }
+        public static string VideoPath { get; set; }
     }
 }

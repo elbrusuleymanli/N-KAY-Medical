@@ -1276,7 +1276,7 @@ h1 {
 }
 
 .subscribe-banner {
-  background-image: url(/assets/images/subscribe/sub.jpg);
+  background-color: tomato;
   background-size: auto;
 }
 

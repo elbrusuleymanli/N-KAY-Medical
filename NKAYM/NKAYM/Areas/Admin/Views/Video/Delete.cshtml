@@ -1,0 +1,37 @@
+﻿@model VideoGallery
+@{
+    ViewData["Title"] = "Delete";
+}
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="row">
+            <div class="col-md-12 grid-margin grid-margin-md-0 stretch-card">
+                <div class="card">
+                    <div class="card-body">
+
+                        <ul class="list-star" style="list-style:none;line-height:2;">
+
+                            <li><span style="color: red;font-weight:600">Başlığ: </span>  @Model.Title</li>
+                           
+                        </ul>
+                        <video controls>
+                            <source src="~/assets/images/gallery-video/@Model.Video" alt="video" style="width:200px;height:170px;border-radius:10px" type="video/mp4">
+                        </video>
+
+
+
+                        <form method="post" style="text-align:center">
+                            <div class="buttons" style="display:inline;">
+                                <button class="btn btn-danger " onclick="return confirm('Əminsiniz?');">Ləğv et</button>
+
+                                <button class="btn btn-light ms-3" asp-action="Index">Bağla</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

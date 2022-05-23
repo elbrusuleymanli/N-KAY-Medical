@@ -23,12 +23,12 @@ namespace NKAYM.Controllers
 
             return View(photo);
         }
-        public async Task <IActionResult> GetPage (int page,int size)
-        {
-            List<PhotoGallery> photoes =await _context.PhotoGalleries.ToListAsync();
-            Pagination pagination = new Pagination(photoes, page, size);
+        //public async Task <IActionResult> GetPage (int page,int size)
+        //{
+        //    List<PhotoGallery> photoes =await _context.PhotoGalleries.ToListAsync();
+        //    Pagination pagination = new Pagination(photoes, page, size);
 
-            return View (pagination);
-        }
+        //    return View (pagination);
+        //}
     }
 }

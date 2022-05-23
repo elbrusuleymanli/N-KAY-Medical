@@ -54,6 +54,44 @@ $(function() {
 
 //service slider end
 
+
+//subscribe email start
+
+$('#subsc').on('click', function (e) {
+    e.preventDefault();
+    console.log("ok")
+    let email = $(".email").val();
+
+
+
+
+    $.ajax({
+        url: "/contact/addSubscribe/",
+        type: "post",
+        dataType: "Json",
+
+        data: { email: email },
+        success: function (response) {
+
+            if (response == 200) {
+                $(".email").val("")
+                alert("Təşəkkür edirik")
+
+            }
+            else if (response == 500) {
+                alert("Düzgün e-poçt daxil edin")
+            }
+            else {
+                alert("E-poçt elave olunmadi")
+            }
+
+        }
+    })
+})
+
+//subscribe email end
+
+
 //doctor slider start
 var $owl = $('#owl-doctor');
 

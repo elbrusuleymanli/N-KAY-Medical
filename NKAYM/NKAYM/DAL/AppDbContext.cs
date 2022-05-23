@@ -31,6 +31,8 @@ namespace NKAYM.DAL
         public DbSet<VideoGallery> VideoGalleries { get; set; }
         public DbSet<Footer> Footers { get; set; }
         public DbSet<NavMenu> NavMenus { get; set; }
+        public DbSet<Emails> Emails { get; set; }
+
 
     }
 }

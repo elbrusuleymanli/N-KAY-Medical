@@ -142,6 +142,21 @@ namespace NKAYM.Migrations
                     b.ToTable("Educations");
                 });
 
+            modelBuilder.Entity("NKAYM.Models.Emails", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Emails");
+                });
+
             modelBuilder.Entity("NKAYM.Models.Experience", b =>
                 {
                     b.Property<int>("Id")
@@ -410,37 +425,6 @@ namespace NKAYM.Migrations
                     b.HasIndex("ServicesId");
 
                     b.ToTable("ServiceOptions");
-                });
-
-            modelBuilder.Entity("NKAYM.Models.Slider", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasMaxLength(120)
-                        .HasColumnType("nvarchar(120)");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("More")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Order")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .IsRequired()
-                        .HasMaxLength(35)
-                        .HasColumnType("nvarchar(35)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Sliders");
                 });
 
             modelBuilder.Entity("NKAYM.Models.Vacancy", b =>

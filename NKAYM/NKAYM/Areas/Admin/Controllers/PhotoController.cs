@@ -6,6 +6,7 @@ using NKAYM.Models;
 using NKAYM.Utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -58,6 +59,34 @@ namespace NKAYM.Areas.Admin.Controllers
             await _context.PhotoGalleries.AddAsync(photo);
             await _context.SaveChangesAsync();
 
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        // delete partner
+        public async Task<IActionResult> Delete(int id)
+        {
+            var delete = await _context.PhotoGalleries.FindAsync(id);
+            if (delete == null) return NotFound();
+
+            return View(delete);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        [ActionName("Delete")]
+
+        public async Task<IActionResult> DeletePhoto(int id)
+        {
+            var photoDelete = await _context.PhotoGalleries.FindAsync(id);
+            if (photoDelete == null) return NotFound();
+
+
+            FileUtils.Delete(Path.Combine(FileConstants.PhotoImagePath, photoDelete.Image));
+
+            _context.PhotoGalleries.Remove(photoDelete);
+            await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));
         }

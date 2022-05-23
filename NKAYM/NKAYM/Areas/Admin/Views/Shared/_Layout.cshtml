@@ -26,7 +26,7 @@
         <!-- partial:../../partials/_sidebar.html -->
         <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
             <div class="mdc-drawer__header">
-                <a asp-controller="Admin" asp-action="Index" class="brand-logo">
+                <a asp-controller="Admin"  class="brand-logo">
                     <img src="~/assets/Admin/images/logo (1).png" alt="logo">
                 </a>
             </div>
@@ -35,49 +35,69 @@
                 <div class="mdc-list-group">
                     <nav class="mdc-list mdc-drawer-menu">
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-drawer-link" asp-controller="Home" >
-                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">home</i>
+                            <a class="mdc-drawer-link" asp-controller="Home">
+                                <i class="far fa-hospital material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
                                 Admin
                             </a>
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
                             <a class="mdc-drawer-link" asp-controller="News" asp-action="Index">
-                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">track_changes</i>
+                                <i class="fas fa-newspaper material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
                                 Xəbərlər
                             </a>
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-expansion-panel-link" asp-controller="Service" asp-action="Index"  data-target="ui-sub-menu">
+                            <a class="mdc-expansion-panel-link" asp-controller="Service" asp-action="Index" data-target="ui-sub-menu">
                                 <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">dashboard</i>
                                 Xidmətlər
 
                             </a>
-                           
+
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
                             <a class="mdc-drawer-link" asp-controller="Doctor" asp-action="Index">
-                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">grid_on</i>
+                                <i class="fas fa-user-md material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
                                 Həkimlər
                             </a>
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
                             <a class="mdc-drawer-link" asp-controller="Partner" asp-action="Index">
-                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pie_chart_outlined</i>
+                                <i class="far fa-handshake material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
                                 Tərəfdaşlar
                             </a>
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-expansion-panel-link" asp-controller="Photo" asp-action="Index" >
-                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">pages</i>
+                            <a class="mdc-expansion-panel-link" asp-controller="Photo" asp-action="Index">
+                                <i class="far fa-images material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
                                 Şəkillər
 
                             </a>
-                            
+
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
-                            <a class="mdc-drawer-link" href="https://www.bootstrapdash.com/demo/material-admin-free/jquery/documentation/documentation.html" target="_blank">
-                                <i class="material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true">description</i>
-                                Documentation
+                            <a class="mdc-drawer-link" asp-controller="Video" asp-action="Index">
+                                <i class="fas fa-film material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
+                                Videolar
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" asp-controller="Vacancy" asp-action="Index">
+                                <i class="far fa-address-book material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
+                                Vakansiyalar
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" asp-controller="Ticker" asp-action="Index">
+                                <i class="fas fa-bullhorn material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true" 
+                                   style="margin-right:10px;font-size:20px"></i>
+                                Məlumat
                             </a>
                         </div>
                     </nav>
