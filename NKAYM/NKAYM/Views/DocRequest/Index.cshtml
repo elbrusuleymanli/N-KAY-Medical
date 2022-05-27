@@ -1,0 +1,45 @@
+﻿
+
+@model List<DocRequest>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="docRequest">
+
+    <div class="topic">
+        <h1>HƏKİM QƏBULU</h1>
+
+        <p>ONLİNE QEYDİYYAT</p>
+    </div>
+    <div class="request-form">
+        <form method="post">
+            <label for="fname">Ad Soyad,Ata adı: </label>
+            <input type="text" id="fname" name="fname" value="" class="fullname" required>
+            <label for="gender">Cins: </label>
+            <select name="gender" id="gender" value="none" class="gender">
+                <option value="">KİŞİ</option>
+                <option value="">QADIN</option>
+            </select>
+            <label for="bday">Doğum günü: </label>
+            <input type="date" id="bday" name="bday" value="" class="birhtday">
+            <label for="addr">Ünvan: </label>
+            <input type="text" id="addr" name="addr" value="" class="address"><br />
+            <label for="contact">Əlaqə nömrəsi: </label>
+            <input type="text" id="contact" name="contact" value="" class="phone" placeholder="(+994--) --- -- --"><br />
+            <label for="reques">Şikayət(qısa izah): </label>
+            <textarea style="width:450px;margin-top:40px;padding-left:5px" type="text" id="reques" name="reques" value="" class="aboutSick"></textarea> <br />
+            <label for="unit">Bölmə: </label>
+            <input type="text" id="unit" name="unit" value="" class="unit" placeholder="Məs: USM">
+            <label for="doc">Həkim: </label>
+            <input type="text" id="doc" name="doc" value="" class="doctorsFullname" placeholder="Məs: Dr.Mütəllimov">
+            <label for="day">Müayinə günü: </label>
+            <input type="date" id="day" name="day" class="requestDay" value=""><br /><br />
+            <label for="time">Müayinə saatı: </label>
+            <input type="time" id="time" name="time" class="requestTime" value=""><br /><br />
+
+
+
+            <button class="btn btn-primary mt-4" type="submit" data-text="send" id="reply">Müraciət et </button>
+        </form>
+    </div>
+</div>

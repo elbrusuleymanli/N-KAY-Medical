@@ -26,7 +26,7 @@
         <!-- partial:../../partials/_sidebar.html -->
         <aside class="mdc-drawer mdc-drawer--dismissible mdc-drawer--open">
             <div class="mdc-drawer__header">
-                <a asp-controller="Admin"  class="brand-logo">
+                <a href="https://localhost:44344/" target="_blank"  class="brand-logo">
                     <img src="~/assets/Admin/images/logo (1).png" alt="logo">
                 </a>
             </div>
@@ -95,9 +95,30 @@
                         </div>
                         <div class="mdc-list-item mdc-drawer-item">
                             <a class="mdc-drawer-link" asp-controller="Ticker" asp-action="Index">
-                                <i class="fas fa-bullhorn material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true" 
+                                <i class="fas fa-bullhorn material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
                                    style="margin-right:10px;font-size:20px"></i>
                                 Məlumat
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" asp-controller="Subscribe" asp-action="Index">
+                                <i class="fas fa-envelope-open-text material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
+                                Xəbərdar etmək
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" asp-controller="Request" asp-action="Index">
+                                <i class="fas fa-laptop-medical material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
+                                Həkim qəbulu
+                            </a>
+                        </div>
+                        <div class="mdc-list-item mdc-drawer-item">
+                            <a class="mdc-drawer-link" asp-controller="User" asp-action="Index">
+                                <i class="fas fa-users material-icons mdc-list-item__start-detail mdc-drawer-item-icon" aria-hidden="true"
+                                   style="margin-right:10px;font-size:20px"></i>
+                                İstifadəçilər
                             </a>
                         </div>
                     </nav>

@@ -26,8 +26,15 @@ using NKAYM.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\Areas\Admin\Views\_ViewImports.cshtml"
+using NKAYM.Areas.Admin.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dab49e008f5531fb50f473e02bb7a2146d40b44e", @"/Areas/Admin/Views/Partner/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15516a8fafb0311d7471bfbc8c1db231e61c6974", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd1a49fe0093ef54a81c8d1bed316d5ac88083bb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_Partner_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Partner>>
     #nullable disable
@@ -86,7 +93,7 @@ using NKAYM.Models;
 
             <h6 class=""card-title card-padding pb-0"" style=""color:white;font-size:40px;text-align:center; font-weight:600;"">TƏRƏFDAŞLAR</h6>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e8208", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e8400", async() => {
                 WriteLiteral("Yeni tərəfdaş");
             }
             );
@@ -131,7 +138,7 @@ using NKAYM.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                    <tr>\r\n\r\n                        <td> ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dab49e008f5531fb50f473e02bb7a2146d40b44e10598", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "dab49e008f5531fb50f473e02bb7a2146d40b44e10790", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -172,7 +179,7 @@ AddHtmlAttributeValue("", 1174, partner.Image, 1174, 14, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                        <td>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e12880", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e13072", async() => {
                 WriteLiteral("Redaktə");
             }
             );
@@ -207,7 +214,7 @@ AddHtmlAttributeValue("", 1174, partner.Image, 1174, 14, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e15522", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e15714", async() => {
                 WriteLiteral("Məlumat");
             }
             );
@@ -242,7 +249,7 @@ AddHtmlAttributeValue("", 1174, partner.Image, 1174, 14, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e18166", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dab49e008f5531fb50f473e02bb7a2146d40b44e18358", async() => {
                 WriteLiteral("Ləğv et");
             }
             );

@@ -26,8 +26,15 @@ using NKAYM.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\Areas\Admin\Views\_ViewImports.cshtml"
+using NKAYM.Areas.Admin.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"11ba6bccec7ea787e535c85e07e58e8f225cf364", @"/Areas/Admin/Views/Doctor/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15516a8fafb0311d7471bfbc8c1db231e61c6974", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd1a49fe0093ef54a81c8d1bed316d5ac88083bb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_Doctor_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Doctor>>
     #nullable disable
@@ -85,7 +92,7 @@ using NKAYM.Models;
 
             <h6 class=""card-title card-padding pb-0"" style=""color:white;font-size:40px;text-align:center; font-weight:600;"">HƏKİMLƏR</h6>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf3648196", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf3648388", async() => {
                 WriteLiteral("Yeni həkim");
             }
             );
@@ -132,7 +139,7 @@ using NKAYM.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                    <tr>\r\n\r\n                        <td> ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "11ba6bccec7ea787e535c85e07e58e8f225cf36410755", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "11ba6bccec7ea787e535c85e07e58e8f225cf36410947", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -314,7 +321,7 @@ AddHtmlAttributeValue("", 1336, doctor.Image, 1336, 13, false);
 #line hidden
 #nullable disable
             WriteLiteral("                                </ul>\r\n                          \r\n                               \r\n\r\n\r\n                         \r\n\r\n                        </td>\r\n                        <td>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf36419055", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf36419247", async() => {
                 WriteLiteral("Redaktə");
             }
             );
@@ -349,7 +356,7 @@ AddHtmlAttributeValue("", 1336, doctor.Image, 1336, 13, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf36421694", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf36421886", async() => {
                 WriteLiteral("Məlumat");
             }
             );
@@ -384,7 +391,7 @@ AddHtmlAttributeValue("", 1336, doctor.Image, 1336, 13, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf36424335", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "11ba6bccec7ea787e535c85e07e58e8f225cf36424527", async() => {
                 WriteLiteral("Ləğv et");
             }
             );

@@ -26,8 +26,15 @@ using NKAYM.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\Areas\Admin\Views\_ViewImports.cshtml"
+using NKAYM.Areas.Admin.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0774382a7689211e474264df1ebaf3eaa536f221", @"/Areas/Admin/Views/Service/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15516a8fafb0311d7471bfbc8c1db231e61c6974", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd1a49fe0093ef54a81c8d1bed316d5ac88083bb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_Service_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Service>
     #nullable disable
@@ -83,7 +90,7 @@ using NKAYM.Models;
 
 
                         <h4 class=""card-title"">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0774382a7689211e474264df1ebaf3eaa536f2215799", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "0774382a7689211e474264df1ebaf3eaa536f2215991", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -131,9 +138,9 @@ AddHtmlAttributeValue("", 403, Model.Image, 403, 12, false);
 #line hidden
 #nullable disable
             WriteLiteral("</li>\r\n                            <li><span style=\"color: red;font-weight:600\">Xidmətlər:</span>\r\n                                \r\n\r\n                            </li>\r\n\r\n\r\n\r\n                        </ul>\r\n\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0774382a7689211e474264df1ebaf3eaa536f2218925", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0774382a7689211e474264df1ebaf3eaa536f2219117", async() => {
                 WriteLiteral("\r\n                            <div class=\"buttons\" style=\"display:inline;\">\r\n                                <button class=\"btn btn-danger \" onclick=\"return confirm(\'Əminsiniz?\');\">Ləğv et</button>\r\n\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0774382a7689211e474264df1ebaf3eaa536f2219430", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0774382a7689211e474264df1ebaf3eaa536f2219622", async() => {
                     WriteLiteral("Bağla");
                 }
                 );

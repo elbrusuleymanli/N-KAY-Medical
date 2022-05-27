@@ -1,0 +1,56 @@
+﻿@model List<UserVM> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 ">
+    <div class="mdc-card p-0 ">
+        <div class="topic">
+
+            <h6 class="card-title card-padding pb-0" style="color:white;font-size:40px;text-align:center; font-weight:600;">İSTİFADƏÇİLƏR</h6>
+           
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" style="border-color: black; text-align: center">
+                <thead>
+                    <tr style="background-color: #f7f7f7;text-align:center">
+                        <th>Ad Soyad</th>
+                        <th>İstifadəçi adı</th>
+                        <th>E-Poçt ünvanı</th>
+                        <th>Vəzifəsi</th>
+                       
+                        <th>HƏRƏKƏTLƏR</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                    <tr>
+                        <td style="font-weight:600">@user.Fullname</td>
+                        <td style="font-size:20px">@user.Username</td>
+                        <td style="font-weight:600">@user.Email</td>
+                        <td style="font-weight:600">@user.Roles</td>
+                        <td style="font-weight:600">@user.Fullname</td>
+
+
+
+                        <td>
+                            <a class="btn btn-success mt-2" style="width:90px" asp-controller="User" asp-action="Update" asp-route-id="@user.Id">Vəzifə seç</a>
+
+                            <a class="btn btn-primary mt-2" style="width:90px" asp-controller="User" asp-action="Detail" asp-route-id="@user.Id">Şifrəni dəyiş</a>
+
+                            <a class="btn btn-danger mt-2" style="width:90px" asp-controller="User" asp-action="Delete" asp-route-id="@user.Id">Blokla</a>
+                        </td>
+
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

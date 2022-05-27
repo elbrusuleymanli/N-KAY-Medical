@@ -36,10 +36,10 @@
                         <div class="randevu">
 
                             <div class="main-side">
-                                <a href="">HƏKİM QƏBULU</a>
+                                <a asp-controller="DocRequest">HƏKİM QƏBULU</a>
                             </div>
                             <div class="letter">
-                                <a href=""> <i class="far fa-envelope"></i></a>
+                                <a asp-controller="DocRequest"> <i class="far fa-envelope"></i></a>
 
                             </div>
                         </div>
@@ -107,10 +107,22 @@
                 </div>
                 <div class="col-md-1">
                     <div class="profile">
-                        <button id="myBtn" type="submit">
-                            <i class="fas fa-user-md"></i>
-                        </button>
-                        <span class="sign-in">Daxil ol</span>
+                        @if (!User.Identity.IsAuthenticated)
+                        {
+                            <a asp-controller="Account" asp-action="Login" id="myBtn" type="submit">
+
+                                <i class="fas fa-user-md"></i>
+                            </a>
+                            <span class="sign-in">Daxil ol</span>
+                        }
+                        else
+                        {
+                            <a asp-controller="Account" asp-action="Logout" id="myBtn" type="submit" style="color:green">
+
+                                <i class="fas fa-user-md"></i>
+                            </a>
+                            <span class="sign-in">Çıxış et</span>
+                        }
                     </div>
                 </div>
 

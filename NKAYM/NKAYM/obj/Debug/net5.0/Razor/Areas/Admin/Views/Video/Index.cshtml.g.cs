@@ -26,8 +26,15 @@ using NKAYM.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\Areas\Admin\Views\_ViewImports.cshtml"
+using NKAYM.Areas.Admin.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"84c293b3e86eb04ec438b598188a6ccef1940ef5", @"/Areas/Admin/Views/Video/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15516a8fafb0311d7471bfbc8c1db231e61c6974", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd1a49fe0093ef54a81c8d1bed316d5ac88083bb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_Video_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<VideoGallery>>
     #nullable disable
@@ -82,7 +89,7 @@ using NKAYM.Models;
 
             <h6 class=""card-title card-padding pb-0"" style=""color:white;font-size:40px;text-align:center; font-weight:600;"">VİDEOLAR</h6>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84c293b3e86eb04ec438b598188a6ccef1940ef57218", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84c293b3e86eb04ec438b598188a6ccef1940ef57410", async() => {
                 WriteLiteral("Yeni video");
             }
             );
@@ -135,7 +142,7 @@ using NKAYM.Models;
 #line hidden
 #nullable disable
             WriteLiteral(" </td>\r\n                            <td>\r\n                                <video controls>\r\n                                    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "84c293b3e86eb04ec438b598188a6ccef1940ef59958", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "84c293b3e86eb04ec438b598188a6ccef1940ef510150", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -170,7 +177,7 @@ AddHtmlAttributeValue("", 1304, video.Video, 1304, 12, false);
                             <td>
                                
                                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84c293b3e86eb04ec438b598188a6ccef1940ef511977", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "84c293b3e86eb04ec438b598188a6ccef1940ef512170", async() => {
                 WriteLiteral("Ləğv et");
             }
             );

@@ -26,8 +26,15 @@ using NKAYM.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\Areas\Admin\Views\_ViewImports.cshtml"
+using NKAYM.Areas.Admin.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ab28f7c40a2defc5bdee39aa322560c8c18f4679", @"/Areas/Admin/Views/Video/Delete.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15516a8fafb0311d7471bfbc8c1db231e61c6974", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd1a49fe0093ef54a81c8d1bed316d5ac88083bb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_Video_Delete : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<VideoGallery>
     #nullable disable
@@ -92,7 +99,7 @@ using NKAYM.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</li>\r\n                           \r\n                        </ul>\r\n                        <video controls>\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ab28f7c40a2defc5bdee39aa322560c8c18f46797070", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("source", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "ab28f7c40a2defc5bdee39aa322560c8c18f46797262", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -118,9 +125,9 @@ AddHtmlAttributeValue("", 684, Model.Video, 684, 12, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                        </video>\r\n\r\n\r\n\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab28f7c40a2defc5bdee39aa322560c8c18f46798889", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab28f7c40a2defc5bdee39aa322560c8c18f46799081", async() => {
                 WriteLiteral("\r\n                            <div class=\"buttons\" style=\"display:inline;\">\r\n                                <button class=\"btn btn-danger \" onclick=\"return confirm(\'Əminsiniz?\');\">Ləğv et</button>\r\n\r\n                                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab28f7c40a2defc5bdee39aa322560c8c18f46799394", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("button", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ab28f7c40a2defc5bdee39aa322560c8c18f46799586", async() => {
                     WriteLiteral("Bağla");
                 }
                 );

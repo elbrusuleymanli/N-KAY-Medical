@@ -26,8 +26,15 @@ using NKAYM.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\Areas\Admin\Views\_ViewImports.cshtml"
+using NKAYM.Areas.Admin.ViewModel;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"820fdddd5d208ee25e1ffd65a5b2774897e69c8c", @"/Areas/Admin/Views/News/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"15516a8fafb0311d7471bfbc8c1db231e61c6974", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fd1a49fe0093ef54a81c8d1bed316d5ac88083bb", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Admin_Views_News_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<NewsWall>>
     #nullable disable
@@ -84,7 +91,7 @@ using NKAYM.Models;
             
             <h6 class=""card-title card-padding pb-0"" style=""color:white;font-size:40px;text-align:center; font-weight:600;"">XƏBƏRLƏR</h6>
             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c8197", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c8389", async() => {
                 WriteLiteral("Yeni xəbər");
             }
             );
@@ -138,7 +145,7 @@ using NKAYM.Models;
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                            <td > ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c11093", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c11285", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -195,7 +202,7 @@ AddHtmlAttributeValue("", 1431, news.Image, 1431, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("</td>\r\n                            <td >\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c14067", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c14259", async() => {
                 WriteLiteral("Redaktə");
             }
             );
@@ -230,7 +237,7 @@ AddHtmlAttributeValue("", 1431, news.Image, 1431, 11, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c16708", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c16900", async() => {
                 WriteLiteral("Məlumat");
             }
             );
@@ -265,7 +272,7 @@ AddHtmlAttributeValue("", 1431, news.Image, 1431, 11, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\r\n                                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c19351", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "820fdddd5d208ee25e1ffd65a5b2774897e69c8c19543", async() => {
                 WriteLiteral("Ləğv et");
             }
             );

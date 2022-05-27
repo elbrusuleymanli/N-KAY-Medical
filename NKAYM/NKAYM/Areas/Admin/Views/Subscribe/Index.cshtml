@@ -1,0 +1,47 @@
+﻿@model List<Emails>
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 ">
+    <div class="mdc-card p-0 ">
+        <div class="topic">
+
+            <h6 class="card-title card-padding pb-0" style="color:white;font-size:40px;text-align:center; font-weight:600;">XƏBƏRDAR OLMAQ İSTƏYƏNLƏR</h6>
+           
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" style="border-color: black; text-align: center">
+                <thead>
+                    <tr style="background-color: #f7f7f7;text-align:center">
+
+                        <th>E-POÇT ÜNVANI</th>
+
+                        <th>HƏRƏKƏTLƏR</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var email in Model)
+                    {
+                        <tr>
+
+                            <td> @email.Email</td>
+
+                            <td>
+
+                                <a class="btn btn-primary" href="mailto:@email.Email">Xəbərdar et</a>
+                                <a class="btn btn-danger" onclick="return confirm('Əminsiniz?')"; style="width:90px" asp-controller="Subscribe" asp-action="Delete" asp-route-id="@email.Id">Ləğv et</a>
+                            </td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+

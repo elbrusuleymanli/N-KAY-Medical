@@ -43,7 +43,7 @@ namespace NKAYM.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create(Service service)
+        public async Task<IActionResult> Create(Models.Service service)
         {
             if (!ModelState.IsValid) return View();
 
@@ -110,7 +110,7 @@ namespace NKAYM.Areas.Admin.Controllers
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, Service service)
+        public async Task<IActionResult> Update(int id, Models.Service service)
         {
             var upService = await _context.Services.FindAsync(id);
 
@@ -130,11 +130,6 @@ namespace NKAYM.Areas.Admin.Controllers
                
             }
             
-          
-
-
-
-
             await _context.SaveChangesAsync();
 
             return RedirectToAction(nameof(Index));

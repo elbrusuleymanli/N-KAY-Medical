@@ -1,12 +1,17 @@
+
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using NKAYM.Constants;
 using NKAYM.DAL;
+using NKAYM.Models;
+using NKAYM.Services;
+
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,7 +33,23 @@ namespace NKAYM
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {
+        { 
+            services.AddSession(options => {
+                    options.IdleTimeout = TimeSpan.FromDays(30);
+                    });
+            services.AddIdentity<User, IdentityRole>(options =>
+            {
+               
+
+                options.Password.RequiredLength = 5;
+                options.User.RequireUniqueEmail = true;
+                options.SignIn.RequireConfirmedEmail = true;
+
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+            services.Configure<MailSettings>(Configuration.GetSection("MailSettings"));
+            services.AddScoped<IMailService, MailService>();
+
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(option =>
             {
@@ -58,11 +79,11 @@ namespace NKAYM
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseSession();
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
+           
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

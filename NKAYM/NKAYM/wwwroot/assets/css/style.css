@@ -825,8 +825,8 @@ h1 {
   position: relative;
 }
 
-.profile button {
-  color: #d30000;
+.profile a {
+  color:rgba(211, 23, 23, 0.692);
   border: none;
 }
 
@@ -1280,10 +1280,11 @@ h1 {
   background-size: auto;
 }
 
-.subscribe-banner .subscribe {
-  position: relative;
-  padding: 80px;
-}
+    .subscribe-banner .subscribe {
+        position: relative;
+        padding: 80px;
+        margin-bottom: 30px;
+    }
 
 .subscribe-banner .subscribe .subscribe-email:hover .bell {
   -webkit-animation: bellshake 0.9s infinite cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
@@ -1579,7 +1580,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   background-color: #ebebeb;
-  margin-top: 30px;
+  
 }
 
 .footer .logo {
@@ -1720,236 +1721,11 @@ h4 {
   }
 }
 
-#myModal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* Modal Content */
-}
 
-#myModal *, #myModal :after, #myModal :before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-#myModal .clearfix:after, #myModal .clearfix:before {
-  content: '';
-  display: table;
-}
-
-#myModal .clearfix:after {
-  clear: both;
-  display: block;
-}
-
-#myModal a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#myModal .login-wrap {
-  width: 100%;
-  margin: auto;
-  max-width: 525px;
-  min-height: 670px;
-  position: relative;
-  -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-
-#myModal .login-html {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  padding: 90px 70px 50px 70px;
-  background: rgba(131, 129, 129, 0.9);
-}
-
-#myModal .login-html .sign-in-htm,
-#myModal .login-html .sign-up-htm {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: all .4s linear;
-  transition: all .4s linear;
-}
-
-#myModal .login-html .sign-in,
-#myModal .login-html .sign-up,
-#myModal .login-form .group .check {
-  display: none;
-}
-
-#myModal .login-html .tab,
-#myModal .login-form .group .label,
-#myModal .login-form .group .button {
-  text-transform: uppercase;
-}
-
-#myModal .login-html .tab {
-  font-size: 22px;
-  margin-right: 15px;
-  padding-bottom: 5px;
-  margin: 0 15px 10px 0;
-  display: inline-block;
-  border-bottom: 2px solid transparent;
-}
-
-#myModal .login-html .sign-in:checked + .tab,
-#myModal .login-html .sign-up:checked + .tab {
-  color: #fff;
-  border-color: #d30000;
-}
-
-#myModal .login-form {
-  min-height: 345px;
-  position: relative;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-#myModal .login-form .group {
-  margin-bottom: 15px;
-}
-
-#myModal .login-form .group .label,
-#myModal .login-form .group .input,
-#myModal .login-form .group .button {
-  width: 100%;
-  color: #fff;
-  display: block;
-  outline: none;
-}
-
-#myModal .login-form .group .label:focus,
-#myModal .login-form .group .input:focus,
-#myModal .login-form .group .button:focus {
-  background-color: #a5a4a4;
-}
-
-#myModal .login-form .group .input,
-#myModal .login-form .group .button {
-  border: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-#myModal .login-form .group input[data-type="password"] {
-  -webkit-text-security: circle;
-}
-
-#myModal .login-form .group .label {
-  color: #aaa;
-  font-size: 12px;
-}
-
-#myModal .login-form .group .button {
-  background: #d30000;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-#myModal .login-form .group .button:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-#myModal .login-form .group label .icon {
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  position: relative;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-}
-
-#myModal .login-form .group label .icon:before,
-#myModal .login-form .group label .icon:after {
-  content: '';
-  width: 10px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  -webkit-transition: all .2s ease-in-out 0s;
-  transition: all .2s ease-in-out 0s;
-}
-
-#myModal .login-form .group label .icon:before {
-  left: 3px;
-  width: 5px;
-  bottom: 6px;
-  -webkit-transform: scale(0) rotate(0);
-          transform: scale(0) rotate(0);
-}
-
-#myModal .login-form .group label .icon:after {
-  top: 6px;
-  right: 0;
-  -webkit-transform: scale(0) rotate(0);
-          transform: scale(0) rotate(0);
-}
-
-#myModal .login-form .group .check:checked + label {
-  color: #fff;
-}
-
-#myModal .login-form .group .check:checked + label .icon {
-  background: #d30000;
-}
-
-#myModal .login-form .group .check:checked + label .icon:before {
-  -webkit-transform: scale(1) rotate(45deg);
-          transform: scale(1) rotate(45deg);
-}
-
-#myModal .login-form .group .check:checked + label .icon:after {
-  -webkit-transform: scale(1) rotate(-45deg);
-          transform: scale(1) rotate(-45deg);
-}
-
-#myModal .login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
-#myModal .login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
-#myModal .hr {
-  height: 2px;
-  margin: 60px 0 50px 0;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-#myModal .foot-lnk {
-  text-align: center;
-}
 
 .person {
-  margin-top: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .person .main-image {
@@ -2131,9 +1907,10 @@ h4 {
   width: 100%;
 }
 
-.information .doctor-info .doctor-image .info {
-  background-color: #f3eeee;
-}
+    .information .doctor-info .doctor-image .info {
+        background-color: #f3eeee;
+        margin-bottom: 30px;
+    }
 
 .information .doctor-info .doctor-image .info strong {
   display: block;
@@ -2287,10 +2064,11 @@ h4 {
   margin-top: 30px;
 }
 
-.about-text img {
-  width: 100%;
-  height: auto;
-}
+    .about-text img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
 
 .about-text p {
   font-size: 13px;
@@ -2421,7 +2199,8 @@ h4 {
 }
 
 .service-detail .about-service {
-  margin-top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 278px) {
@@ -2503,10 +2282,11 @@ h2 {
 }
 
 video {
-  width: 320px;
-  height: 250px;
-  cursor: pointer;
-  padding: 5px;
+    width: 320px;
+    height: 250px;
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 30px;
 }
 
 .title {
@@ -2588,7 +2368,9 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-
+.vac-req {
+    margin-bottom: 30px;
+}
 .request {
   background-color: #019b01;
   padding: 15px;
@@ -2737,3 +2519,134 @@ tr:nth-child(even) {
 }
 /*# sourceMappingURL=style.css.map */
 
+.docRequest {
+    background-color: #e79f92; 
+text-align:center;
+padding:40px 0;
+
+}
+    .docRequest label{
+        font-weight:600;
+    }
+    .docRequest h1 {
+        color: white;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .docRequest p {
+        color: red;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .docRequest select {
+        margin: 40px 0;
+        outline: none;
+        border: none;
+        margin-right: 20px
+    }
+.docRequest input{
+    padding-left:5px;
+    outline:none;
+    border:none;
+     margin-right:20px;
+     margin-top:20px;
+     height:30px;
+     width:320px;
+}
+    .docRequest textarea {
+        outline: none;
+        border: none;
+    }
+.login-wrap {
+    position: relative;
+    margin: 0 auto;
+    background: #ecf0f1;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+    .login-wrap h2 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 2em;
+        margin-top: 10px;
+        color: #f73131;
+    }
+
+    .login-wrap .form {
+        padding-top: 20px;
+    }
+
+        .login-wrap .form input[type="text"], .login-wrap .form input[type="password"], .login-wrap .form button {
+            width: 80%;
+            margin-left: 10%;
+            margin-bottom: 5px;
+            height: 40px;
+            border-radius: 5px;
+            outline: 0;
+            -moz-outline-style: none;
+        }
+
+        .login-wrap .form input[type="text"], .login-wrap .form input[type="password"] {
+            border: 1px solid #bbb;
+            padding: 0 0 0 10px;
+            font-size: 14px;
+        }
+
+            .login-wrap .form input[type="text"]:focus, .login-wrap .form input[type="password"]:focus {
+                border: 1px solid #3498db;
+            }
+
+        .login-wrap .form a {
+            text-align: center;
+            font-size: 13px;
+            color: tomato;
+        }
+
+            .login-wrap .form a p {
+                padding-bottom: 10px;
+                
+            }
+
+        .login-wrap .form button {
+            background: #e74c3c;
+            border: none;
+            color: white;
+            font-size: 18px;
+            font-weight: 200;
+            cursor: pointer;
+            transition: box-shadow 0.4s ease;
+        }
+
+            .login-wrap .form button:hover {
+                box-shadow: 1px 1px 5px #555;
+            }
+
+            .login-wrap .form button:active {
+                box-shadow: 1px 1px 7px #222;
+            }
+
+    .login-wrap:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: -webkit-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+        background: -moz-linear-gradient(left, #27ae60 0%, #27ae60 20%, #8e44ad 20%, #8e44ad 40%, #3498db 40%, #3498db 60%, #e74c3c 60%, #e74c3c 80%, #f1c40f 80%, #f1c40f 100%);
+        height: 5px;
+        border-radius: 5px 5px 0 0;
+    }
+form span {
+    font-size: 10px;
+    display: block;
+    margin-left: 10%;
+    color:red;
+    font-weight:500;
+}
+   

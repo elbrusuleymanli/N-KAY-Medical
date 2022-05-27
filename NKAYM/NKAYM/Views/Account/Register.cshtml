@@ -1,0 +1,30 @@
+﻿@model RegisterVM
+
+@{
+    ViewData["Title"] = "Register";
+}
+<div class="content">
+    <div class="login-wrap">
+        <h2>Qeydiyyat</h2>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <form method="post" asp-action="Register">
+            <div class="form">
+                <input asp-for="Fullname" type="text" placeholder="Ad Soyad" />
+                <span asp-validation-for="Fullname" ></span>
+                <input asp-for="Username" type="text" placeholder="İstifadəçi adı" />
+                <span asp-validation-for="Username" ></span>
+                <input asp-for="Email" type="text" placeholder="E-poçt" />
+                <span asp-validation-for="Email" ></span>
+                <input asp-for="Password" type="password" placeholder="Şifrə" />
+                <span asp-validation-for="Password" ></span>
+                <input asp-for="ConfirmPassword" type="password" placeholder="Şifrə təkrar" />
+                <span asp-validation-for="ConfirmPassword" ></span>
+                <button type="submit"> TƏSDİQLƏ </button>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

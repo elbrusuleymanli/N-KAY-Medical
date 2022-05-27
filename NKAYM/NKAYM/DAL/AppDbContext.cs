@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using NKAYM.Models;
 using System;
 using System.Collections.Generic;
@@ -7,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NKAYM.DAL
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<User>
     {
        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
@@ -32,6 +34,7 @@ namespace NKAYM.DAL
         public DbSet<Footer> Footers { get; set; }
         public DbSet<NavMenu> NavMenus { get; set; }
         public DbSet<Emails> Emails { get; set; }
+        public DbSet<DocRequest> DocRequests { get; set; }
 
 
     }

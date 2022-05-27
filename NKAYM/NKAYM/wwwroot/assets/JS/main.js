@@ -91,6 +91,76 @@ $('#subsc').on('click', function (e) {
 
 //subscribe email end
 
+//appointment start
+
+$('#reply').on('click', function (e) {
+    e.preventDefault();
+    console.log("click")
+   
+    let fullname = $(".fullname").val();
+    if (fullname == null) {
+alert("Xanaları doldurun")
+    }
+        
+    let gender = { "select": $(".gender").val() };
+    let birhtday = $(".birhtday").val();
+    let address = $(".address").val();
+    let phone = $(".phone").val();
+    let aboutSick = $(".aboutSick").val();
+    let unit = $(".unit").val();
+    let doctorsFullname = $(".doctorsFullname").val();
+    let requestTime = $(".requestTime").val();
+    let requestDay = $(".requestDay").val();
+
+
+    $.ajax({
+        url: "/DocRequest/SendMessage/",
+        type: "post",
+        dataType: "Json",
+
+        data: {
+            fullname: fullname, gender: gender, birhtday: birhtday, address: address,
+            phone: phone, aboutSick: aboutSick, unit: unit, doctorsFullname: doctorsFullname, requestTime: requestTime, requestDay: requestDay
+        },
+
+        success: function (response) {
+ 
+            if (response == 200) {
+              
+                $(".fullname").val(""),
+                    $(".gender").val(""),
+                    $(".birhtday").val(""),
+                    $(".address").val(""),
+                    $(".phone").val(""),
+                    $(".aboutSick").val(""),
+                    $(".unit").val(""),
+                    $(".doctorsFullname").val(""),
+                    $(".requestTime").val(""),
+                    $(".requestDay").val("")
+                alert("Müraciət qəbul olundu,sizinlə əlaqə saxlanılacaq! Təşəkkür edirik!")
+                                     
+
+            }
+            else if (response == 400) {
+                alert("Xanaları doldurun")
+            }
+            else if (response == 500) {
+                alert("Səhv məlumat")
+            }
+           
+            else {
+                alert("Müraciət olunmadi")
+            }
+
+        }
+    })
+
+
+
+
+})
+
+//appointment end
 
 //doctor slider start
 var $owl = $('#owl-doctor');
@@ -157,7 +227,7 @@ $(function() {
    }
       
      }
- });
+  });
  
   });
 
@@ -165,10 +235,10 @@ $(function() {
 
 //subscribe start
 
-if ($(window).width() < 618 ) {
-  $("input[type='email']").attr("placeholder","Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın");
-}
-else { $("input[type='email']").attr("placeholder","E-poçt");}
+//if ($(window).width() < 618 ) {
+//  $("input[type='email']").attr("placeholder","Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın");
+//}
+//else { $("input[type='email']").attr("placeholder","E-poçt");}
 
 
 
@@ -214,26 +284,7 @@ time();
 
 //clock end
 
-// login modal login
 
-var modal = document.getElementById("myModal");
-
-
-var btn = document.getElementById("myBtn");
-
-
-
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-
-
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
  //navbar fixed
 
  $(window).scroll(function (e) {
