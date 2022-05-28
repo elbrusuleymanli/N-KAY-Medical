@@ -27,20 +27,45 @@
                     @foreach (var user in Model)
                     {
                     <tr>
-                        <td style="font-weight:600">@user.Fullname</td>
-                        <td style="font-size:20px">@user.Username</td>
-                        <td style="font-weight:600">@user.Email</td>
-                        <td style="font-weight:600">@user.Roles</td>
-                        <td style="font-weight:600">@user.Fullname</td>
+                        <td >@user.Fullname</td>
+                        <td >@user.Username</td>
+                        <td >@user.Email</td>
+                        <td >@user.Roles</td>
+                     
 
 
 
                         <td>
-                            <a class="btn btn-success mt-2" style="width:90px" asp-controller="User" asp-action="Update" asp-route-id="@user.Id">Vəzifə seç</a>
+                            <a class="btn btn-success" style="width:110px" asp-controller="User" asp-action="GetRoles" asp-route-id="@user.Id">Vəzifə seç</a>
 
-                            <a class="btn btn-primary mt-2" style="width:90px" asp-controller="User" asp-action="Detail" asp-route-id="@user.Id">Şifrəni dəyiş</a>
+                            <a class="btn btn-primary" style="width:115px" asp-controller="User" asp-action="ChangePassword" asp-route-id="@user.Id">Şifrəni dəyiş</a>
 
-                            <a class="btn btn-danger mt-2" style="width:90px" asp-controller="User" asp-action="Delete" asp-route-id="@user.Id">Blokla</a>
+                            <a class="btn btn-danger" style="width:90px" asp-controller="User" asp-action="Block" asp-route-id="@user.Id">
+
+                                @if (user.IsActive)
+                                {
+                                    <p>Blokla</p>
+                                }
+
+                                else
+                                {
+                                    <p style="width:70px">Blokdan aç</p>
+                                }
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                
+                       
+                        
+                        
+                        
+                        
+                        
                         </td>
 
                     </tr>

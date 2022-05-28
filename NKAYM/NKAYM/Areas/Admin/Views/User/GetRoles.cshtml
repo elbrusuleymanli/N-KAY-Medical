@@ -1,0 +1,47 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "GetRoles";
+}
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 ">
+    <div class="mdc-card p-0 ">
+        <div class="topic">
+
+            <h6 class="card-title card-padding pb-0" style="color:white;font-size:40px;text-align:center; font-weight:600;">İSTİFADƏÇİLƏR</h6>
+
+        </div>
+        <div style="color:green;font-size:17px;text-align:center;font-weight:600">@ViewBag.Fullname <span style="color:blue">vəzifəsi üzərində əməliyyat</span></div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" style="border-color: black; text-align: center">
+                <thead>
+                    <tr style="background-color: #f7f7f7;text-align:center">
+                        <th>VƏZİFƏ</th>
+                       
+                        <th>HƏRƏKƏTLƏR</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var roleName in Model)
+                    {
+                        <tr>
+                            <td>@roleName</td>
+                           
+                            <td>
+                                <a class="btn btn-success " asp-controller="User" asp-action="AddRoles" asp-route-id="@ViewBag.UserId">Vəzifə əlavə et</a>
+                                <a class="btn btn-danger " onclick="return confirm('Əminsiniz?');" asp-controller="User" asp-action="RemoveRole" asp-route-id="@ViewBag.UserId" asp-route-roleName="@roleName">Vəzifəni ləğv et</a>
+
+
+                            </td>
+
+                        </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+

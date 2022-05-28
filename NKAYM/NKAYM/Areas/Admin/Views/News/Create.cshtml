@@ -9,7 +9,7 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                     
+
                         <form class="forms-sample" method="post" asp-controller="News" asp-action="Create" enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="exampleInputUsername1">Tarix*</label>
@@ -52,3 +52,25 @@
     </div>
 </div>
 
+@section script{
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Descr1'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#Descr2'))
+            .catch(error => {
+                console.error(error);
+            });
+        ClassicEditor
+            .create(document.querySelector('#Descr3'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+
+
+}

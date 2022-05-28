@@ -205,3 +205,6 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\MailKit.dll
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\MimeKit.dll
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\BouncyCastle.Crypto.dll
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\GetRoles.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\AddRoles.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\ChangePassword.cshtml.g.cs

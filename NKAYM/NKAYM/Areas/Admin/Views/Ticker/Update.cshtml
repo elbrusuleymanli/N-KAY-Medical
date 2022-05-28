@@ -16,7 +16,7 @@
                                 <textarea asp-for="Announcement" class="form-control " placeholder="MƏTN"></textarea>
                                 <span asp-validation-for="Announcement" class="text-danger"></span>
                             </div>
-                       
+
 
                             <button type="submit" class="btn btn-success me-2">Təsdiqlə</button>
                             <button class="btn btn-danger" asp-action="Index">Bağla</button>
@@ -28,3 +28,13 @@
     </div>
 </div>
 
+@section script{
+    <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#Announcement'))
+            .catch(error => {
+                console.error(error);
+            });
+        </script>
+    }

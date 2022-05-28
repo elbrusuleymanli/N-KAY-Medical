@@ -44,11 +44,11 @@ namespace NKAYM.Controllers
                 return View();
             }
             //for block user
-            //if (!user.IsActive)
-            //{
-            //    ModelState.AddModelError("", model.Username + " " +"siz admin tərəfindən bloklanmısınız");
-            //    return View();
-            //}
+            if (!user.IsActive)
+            {
+                ModelState.AddModelError("", model.Username + " " + "siz admin tərəfindən bloklanmısınız");
+                return View();
+            }
 
 
             var signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, true, false);

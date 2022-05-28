@@ -1,4 +1,4 @@
-﻿@model Service
+﻿@model List<Service>
 @{
     ViewData["Title"] = "Detail";
 }
@@ -10,25 +10,31 @@
                 <div class="card">
                     <div class="card-body">
 
+                        @foreach (var item in Model)
+                        {
 
-                        <h4 class="card-title"><img src="~/assets/images/services-detail/@Model.Image" style="width:300px; height:220px" /></h4>
+                      
+                        <h4 class="card-title"><img src="~/assets/images/services-detail/@item.Image" style="width:300px; height:220px" /></h4>
 
                         <ul class="list-star" style="list-style:none;line-height:2;">
-                            <li><span style="color: red;font-weight:600">Xidmətin adı:</span>  @Model.Title</li>
-                            <li><span style="color: red;font-weight:600">İşarə: </span>@Html.Raw(Model.Icon)</li>
-                            <li><span style="color: red;font-weight:600">Mətn:</span>  @Model.Text</li>
+                            <li><span style="color: red;font-weight:600">Xidmətin adı:</span>  @item.Title</li>
+                            <li><span style="color: red;font-weight:600">İşarə: </span>@Html.Raw(item.Icon)</li>
+                            <li><span style="color: red;font-weight:600">Mətn:</span>  @item.Text</li>
                             <li><span style="color: red;font-weight:600">Xidmətlər:</span> 
                             
-                            @foreach (var item in Model.ServiceOptions)
+                            @foreach (var service in item.ServiceOptions)
                             {
-                                @item.Name
+                                @foreach (var serv in service.Services.ServiceOptions)
+                                {
+                                    @serv.Name
+                                }
                             }
 
                             </li>
 
 
                         </ul>
-
+                        }
                         
                     </div>
                 </div>
