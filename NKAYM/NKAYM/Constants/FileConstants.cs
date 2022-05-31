@@ -13,5 +13,6 @@ namespace NKAYM.Constants
         public static string PartnerImagePath { get; set; }
         public static string PhotoImagePath { get; set; }
         public static string VideoPath { get; set; }
+        public static string PdfPath { get; set; }
     }
 }

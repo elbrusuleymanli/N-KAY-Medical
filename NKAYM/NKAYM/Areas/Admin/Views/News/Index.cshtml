@@ -30,9 +30,9 @@
                             <td  style="font-weight:600">@news.ReleaseDate.ToString("dd.MM.yyyy")</td>
                             <td > <img src="~/assets/images/@news.Image" alt="şəkil" style="border-radius:10px"></td>
                             <td class="text-left">@news.Title</td>
-                            <td class="text-left">@news.Descr1</td>
-                            <td class="text-left">@news.Descr2</td>
-                            <td class="text-left">@news.Descr3</td>
+                            <td class="text-left">@Html.Raw(news.Descr1)</td>
+                            <td class="text-left">@Html.Raw(news.Descr2)</td>
+                            <td class="text-left">@Html.Raw(news.Descr3)</td>
                             <td >
                                 <a class="btn btn-warning mt-2" style="width:90px" asp-controller="News" asp-action="Update" asp-route-id="@news.Id">Redaktə</a>
 

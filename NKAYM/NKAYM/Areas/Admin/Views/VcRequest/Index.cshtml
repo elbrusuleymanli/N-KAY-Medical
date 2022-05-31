@@ -1,0 +1,55 @@
+﻿@model List<VacancyRequest>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-12 ">
+    <div class="mdc-card p-0 ">
+        <div class="topic">
+
+            <h6 class="card-title card-padding pb-0" style="color:white;font-size:40px;text-align:center; font-weight:600;">MÜRACİƏTLƏR</h6>
+           
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered" style="border-color: black; text-align: center">
+                <thead>
+                    <tr style="background-color: #f7f7f7;text-align:center">
+                        <th>Tarix</th>
+                        <th>Ad Soyad</th>
+                        <th>Təhsil</th>
+                        <th>Əlaqə telefonu</th>
+                        <th>CV</th>
+                      
+                        <th>HƏRƏKƏTLƏR</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var vacancy in Model)
+                    {
+                    <tr>
+                        <td>@vacancy.Date.ToString("dd.MM.yyyy")</td>
+                        <td>@vacancy.Fullname</td>
+                        <td>@vacancy.Education</td>
+                        <td>@vacancy.Phone</td>
+                        <td>
+                            <a href="~/assets/pdf/@vacancy.CV" download>@vacancy.CV </a>
+                                
+                          
+                        </td>
+                        <td>
+
+
+                            <a class="btn btn-danger" style="width:90px" onclick="return confirm('Əminsiniz?');" asp-controller="VcRequest" asp-action="Delete" asp-route-id="@vacancy.Id">Ləğv et</a>
+                        </td>
+
+                    </tr>
+                    }
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

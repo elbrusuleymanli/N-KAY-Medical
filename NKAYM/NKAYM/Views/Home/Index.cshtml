@@ -19,7 +19,7 @@
                 <div class="d-tablecell">
                     <div class="hero-text">
                         <h1 class="slider-title">@slider.Title</h1>
-                        <p>@slider.Descr1</p>
+                        <p>@Html.Raw(slider.Descr1)</p>
                         <div class="slider-btn">
                             <a asp-controller="News" asp-action="Details" asp-route-id="@slider.Id" class="custom-btn1">DAHA ƏTRAFLI</a>
                         </div>
@@ -121,7 +121,7 @@
 
                 @foreach (var news in Model.NewsWalls)
                 {
-                    <div class="col-lg-4 ">
+                    <div class="col-lg-4 " data-aos="fade-up">
                         <div class="card item mb-3">
                             <div class="row ">
                                 <div class="col-md-4">
@@ -181,9 +181,6 @@
                     }
 
 
-
-
-
                 </div>
             </div>
         </div>
@@ -204,7 +201,7 @@
         <div class="subscribe">
             <form method="post">
                 <div class="subscribe-email">
-                    <input type="email" value="" name="EMAIL" class="email" placeholder="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın" required>
+                    <input type="email" value="" name="EMAIL" class="email" placeholder="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın">
                     <button id="subsc" type="submit" name="subscribe">XƏBƏRİM OLSUN <i class="bell fas fa-bell"></i></button>
                 </div>
             </form>

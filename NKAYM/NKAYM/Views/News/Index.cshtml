@@ -34,7 +34,7 @@
             <span class="news-date" >@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</span>
             <h5 class="card-title" style="width:240px" >@news.Title</h5>
             <p class="card-text">
-                @news.Descr1.Substring(0,30)
+                @Html.Raw(news.Descr1.Substring(0,30))
             </p>
       
         <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id" class="button">ƏTRAFLI</a>

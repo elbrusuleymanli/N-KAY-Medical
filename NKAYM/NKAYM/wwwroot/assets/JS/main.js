@@ -53,7 +53,12 @@ $(function() {
   });
 
 //service slider end
+$('.acc').on('click', function (e) {
+    $(".vacan").val("")
 
+
+
+});
 
 //subscribe email start
 
@@ -235,10 +240,10 @@ $(function() {
 
 //subscribe start
 
-//if ($(window).width() < 618 ) {
-//  $("input[type='email']").attr("placeholder","Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın");
-//}
-//else { $("input[type='email']").attr("placeholder","E-poçt");}
+if ($(window).width() > 618 ) {
+  $("input[type='email']").attr("placeholder","Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın");
+}
+else { $("input[type='email']").attr("placeholder","E-poçt");}
 
 
 

@@ -35,6 +35,7 @@ namespace NKAYM.DAL
         public DbSet<NavMenu> NavMenus { get; set; }
         public DbSet<Emails> Emails { get; set; }
         public DbSet<DocRequest> DocRequests { get; set; }
+        public DbSet<VacancyRequest> VacancyRequests { get; set; }
 
 
     }

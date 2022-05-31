@@ -27,13 +27,13 @@
                 <h2>@Model.Title</h2>
                 <span class="news-date">@Model.ReleaseDate.ToString("dd") @Model.ReleaseDate.ToString("MMMM") @Model.ReleaseDate.ToString("yyyy")</span>
                 <p>
-                  @Model.Descr1
+                  @Html.Raw(Model.Descr1)
                 </p>
                 <p>
-                    @Model.Descr2
+                    @Html.Raw(Model.Descr2)
                 </p>
                 <p>
-                   @Model.Descr3
+                   @Html.Raw(Model.Descr3)
                 </p>
             </article>
         </div>

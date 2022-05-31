@@ -1275,6 +1275,14 @@ h1 {
   transition: ease .3s;
 }
 
+@media only screen and (max-width: 316px) {
+    .partners {
+        margin-bottom: 20px;
+    }
+}
+
+
+
 .subscribe-banner {
   background-color: tomato;
   background-size: auto;
