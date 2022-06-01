@@ -1,5 +1,5 @@
 ﻿@model HomeVM
-
+@inject LanguageService language
 @{
     ViewData["Title"] = "Home Page";
 }
@@ -18,10 +18,10 @@
             <div class="d-table">
                 <div class="d-tablecell">
                     <div class="hero-text">
-                        <h1 class="slider-title">@slider.Title</h1>
-                        <p>@Html.Raw(slider.Descr1)</p>
+                        <h1 class="slider-title">@language.Getkey(slider.Title)</h1>
+                        <p>@Html.Raw(language.Getkey(slider.Descr1))</p>
                         <div class="slider-btn">
-                            <a asp-controller="News" asp-action="Details" asp-route-id="@slider.Id" class="custom-btn1">DAHA ƏTRAFLI</a>
+                            <a asp-controller="News" asp-action="Details" asp-route-id="@slider.Id" class="custom-btn1">@language.Getkey("DAHA ƏTRAFLI")</a>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@
             </div>
 
             <div class="title">
-                <h2>XİDMƏTİ SAHƏLƏR</h2>
+                <h2>@language.Getkey("XİDMƏTİ SAHƏLƏR")</h2>
             </div>
             <div class="slider">
 
@@ -50,7 +50,7 @@
                         <a class="item" asp-controller="Service" asp-action="Details" asp-route-id="@service.Id">
                             <div class="service-item">
                                 @Html.Raw(service.Icon)
-                                <h6>@service.Title</h6>
+                                <h6>@language.Getkey(service.Title)</h6>
                             </div>
                         </a>
                     }
@@ -71,7 +71,7 @@
                 <img src="~/assets/images/nnkk.jpg" alt="">
             </div>
             <div class="title" data-aos="fade-up">
-                <h2>HƏKİMLƏRİMİZ</h2>
+                <h2>@language.Getkey("HƏKİMLƏRİMİZ")</h2>
             </div>
             <div id="owl-doctor" class="owl-carousel" data-aos="fade-up">
                 @foreach (var doctor in Model.Doctors)
@@ -79,8 +79,8 @@
                     <div class="dr">
                         <a asp-controller="Doctor" asp-action="Details" asp-route-id="@doctor.Id">
                             <img src="~/assets/images/doctors/@doctor.Image" alt="">
-                            <span>@doctor.Fullname</span>
-                            <span class="prof">@doctor.Position</span>
+                            <span>@language.Getkey(doctor.Fullname)</span>
+                            <span class="prof">@language.Getkey(doctor.Position)</span>
                         </a>
                     </div>
                 }
@@ -100,13 +100,13 @@
                 <img src="~/assets/images/nnkk.jpg" alt="">
             </div>
             <div class="title">
-                <h2>XƏBƏRLƏR</h2>
+                <h2>@language.Getkey("XƏBƏRLƏR")</h2>
             </div>
             <div class="description" data-aos="fade-up">
                 <div class="run">
-                    <span>@Model.NewsRuns.Title</span>
+                    <span>@language.Getkey(Model.NewsRuns.Title)</span>
                     <h3>
-                        <marquee scrollamount="15">@Model.NewsRuns.Announcement</marquee>
+                        <marquee scrollamount="15">@language.Getkey(Model.NewsRuns.Announcement)</marquee>
                     </h3>
                 </div>
             </div>
@@ -132,7 +132,7 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id">
-                                            <h5 class="card-title">@news.Title</h5>
+                                            <h5 class="card-title">@language.Getkey(news.Title)</h5>
 
                                             <p class="card-text"><small class="text-muted">@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</small></p>
                                         </a>
@@ -162,7 +162,7 @@
             <img src="~/assets/images/nnkk.jpg" alt="">
         </div>
         <div class="title">
-            <h2>TƏRƏFDAŞLAR</h2>
+            <h2>@language.Getkey("TƏRƏFDAŞLAR")</h2>
         </div>
 
         <div class="partners">
@@ -194,15 +194,15 @@
             <img src="~/assets/images/nnkk.jpg" alt="">
         </div>
         <div class="title">
-            <h2>YENİLİKLƏRDƏN XƏBƏRDAR OL</h2>
+            <h2>@language.Getkey("YENİLİKLƏRDƏN XƏBƏRDAR OL")</h2>
         </div>
     </div>
     <div class="subscribe-banner container-fluid p-0">
         <div class="subscribe">
             <form method="post">
                 <div class="subscribe-email">
-                    <input type="email" value="" name="EMAIL" class="email" placeholder="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın">
-                    <button id="subsc" type="submit" name="subscribe">XƏBƏRİM OLSUN <i class="bell fas fa-bell"></i></button>
+                    <input type="email" value="" name="EMAIL" class="email" placeholder= @language.Getkey("Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın")>
+                    <button id="subsc" type="submit" name="subscribe">@language.Getkey("XƏBƏRİM OLSUN") <i class="bell fas fa-bell"></i></button>
                 </div>
             </form>
         </div>

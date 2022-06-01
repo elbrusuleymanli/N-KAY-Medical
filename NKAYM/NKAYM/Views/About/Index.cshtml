@@ -1,4 +1,5 @@
 ﻿@model About
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="/assets/images/banners/about.jpg" alt="">
             <div class="container">
-                <h3>HAQQIMIZDA</h3>
+                <h3>@language.Getkey("HAQQIMIZDA")</h3>
             </div>
 
         </div>
@@ -26,7 +27,7 @@
             <div class="col-lg-8" data-aos="zoom-in">
                 <div class="text">
                     <p>
-                       @Model.Text
+                        @language.Getkey(Model.Text)
                     </p>
                 </div>
             </div>

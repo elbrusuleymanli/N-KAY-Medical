@@ -1,144 +1,151 @@
-﻿@model NavMenu
-    <section id="navigation-bar">
-        <div class="navigation">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-1 ">
-                        <div class="medical-heart">
-                            @Html.Raw(Model.Heart)
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="sosial-media">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/NKAYMclinics/" target="_blank">
-                                        @Html.Raw(Model.Facebook)
-                                    </a>
-                                </li>
-                                <li><a href="https://www.instagram.com/nkaymedical/" target="_blank"><img src="~/assets/images/Icons/@Model.Instagram" style="width:35px" alt=""></a></li>
-                                <li><a href="">@Html.Raw(Model.Whatsup)</a></li>
-                                <li>
-                                    <a href="https://www.youtube.com/watch?v=LyV7Vl7PUPU" target="_blank">
-                                        @Html.Raw(Model.Youtube)
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="topic">
-                            <p>@Model.Text</p>
-                            <p class="author">Məhəmməd Peyğəmbər (s.a.s)</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="randevu">
+﻿
+@model NavMenu
+@inject LanguageService language
 
-                            <div class="main-side">
-                                <a asp-controller="DocRequest">HƏKİM QƏBULU</a>
-                            </div>
-                            <div class="letter">
-                                <a asp-controller="DocRequest"> <i class="far fa-envelope"></i></a>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="language">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <img src="~/assets/images/@Model.LangAze" alt="">
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="">
-                                        <img src="~/assets/images/@Model.LangRus" alt="">
-                                    </a>
-                                </li>
-
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="navigation-menu" class="header-main">
+<section id="navigation-bar">
+    <div class="navigation">
         <div class="container">
             <div class="row">
-                <div class="col-md-1">
-                    <div class="logo">
-                        <a asp-controller="Home" asp-action="Index">
-                            <img src="~/assets/images/@Model.Logo" alt="">
-                        </a>
-
+                <div class="col-md-1 ">
+                    <div class="medical-heart">
+                        @Html.Raw(Model.Heart)
                     </div>
                 </div>
-                <div class="col-md-9">
-                    <div class="menu-bar">
+                <div class="col-md-2">
+                    <div class="sosial-media">
                         <ul>
-                            <li class="drop-down "><a asp-controller="Home" asp-action="Index">ANA SƏHİFƏ</a></li>
-                            <li class="drop-down ">
-                                <a asp-controller="About" asp-action="Index">HAQQIMIZDA <i class="fas fa-syringe"></i></a>
-                                <ul class="drop-down-content">
-                                    <i class="fas fa-caret-up"></i>
-                                    <li><a asp-controller="About" asp-action="Index">TARİXİMİZ</a></li>
-                                    <li><a asp-controller="Manager" asp-action="Index">RƏHBƏRLİK</a></li>
-                                </ul>
+                            <li>
+                                <a href="https://www.facebook.com/NKAYMclinics/" target="_blank">
+                                    @Html.Raw(Model.Facebook)
+                                </a>
                             </li>
-                            <li class="drop-down "><a asp-controller="Service" asp-action="Index">XİDMƏTLƏR</a></li>
-                            <li class="drop-down "><a asp-controller="Doctor" asp-action="Index">HƏKİMLƏR</a> </li>
-                            <li class="drop-down "><a asp-controller="News" asp-action="Index">XƏBƏRLƏR</a></li>
-                            <li class="drop-down ">
-                                <a asp-controller="PhotoGallery" asp-action="Index">QALEREYA <i class="fas fa-syringe"></i></a>
-                                <ul class="drop-down-content">
-                                    <i class="fas fa-caret-up"></i>
-                                    <li><a asp-controller="PhotoGallery" asp-action="Index">ŞƏKİLLƏR</a></li>
-                                    <li><a asp-controller="VideoGallery" asp-action="Index">VİDEOLAR</a></li>
-                                </ul>
+                            <li><a href="https://www.instagram.com/nkaymedical/" target="_blank"><img src="~/assets/images/Icons/@Model.Instagram" style="width:35px" alt=""></a></li>
+                            <li><a href="">@Html.Raw(Model.Whatsup)</a></li>
+                            <li>
+                                <a href="https://www.youtube.com/watch?v=LyV7Vl7PUPU" target="_blank">
+                                    @Html.Raw(Model.Youtube)
+                                </a>
                             </li>
-                            <li class="drop-down "><a asp-controller="Contact" asp-action="Index">ƏLAQƏ</a></li>
                         </ul>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="topic">
+                        <p>@language.Getkey(Model.Text)</p>
+                        <p class="author">@language.Getkey("Məhəmməd Peyğəmbər (s.a.s)")</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="randevu">
+
+                        <div class="main-side">
+                            <a asp-controller="DocRequest">@language.Getkey("HƏKİM QƏBULU")</a>
+                        </div>
+                        <div class="letter">
+                            <a asp-controller="DocRequest"> <i class="far fa-envelope"></i></a>
+
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-1">
-                    <div class="profile">
-                        @if (!User.Identity.IsAuthenticated)
-                        {
-                            <a asp-controller="Account" asp-action="Login" id="myBtn" type="submit">
+                    <div class="language">
+                        <ul>
+                            <li>
+                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="az-Latn">
+                                    <img src="~/assets/images/@Model.LangAze" alt="">
+                                </a>
+                            </li>
 
-                                <i class="fas fa-user-md"></i>
-                            </a>
-                            <span class="sign-in">Daxil ol</span>
-                        }
-                        else
-                        {
-                            <a  asp-controller="Account" asp-action="Logout" id="myBtn" type="submit" style="color:green" onclick="return confirm('Çıxış etməyə əminsiniz?');">
-
-                                <i class="fas fa-user-md"></i>
-                            </a>
-                            <span class="sign-in">Çıxış et</span>
-                        }
+                            <li>
+                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ru-RU">
+                                    <img src="~/assets/images/@Model.LangRus" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US">
+                                    <img src="~/assets/images/@Model.LangUsa" alt="">
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="col-md-1">
-                    <div class="box">
-                        <div class="clock">
-                            <span class="hours"></span>
-                            <span class="minutes"></span>
-                            <p class="brand">N-KAY M</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="navigation-menu" class="header-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1">
+                <div class="logo">
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="~/assets/images/@Model.Logo" alt="">
+                    </a>
 
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="menu-bar">
+                    <ul>
+                        <li class="drop-down "><a asp-controller="Home" asp-action="Index">@language.Getkey("ANA SƏHİFƏ")</a></li>
+                        <li class="drop-down ">
+                            <a asp-controller="About" asp-action="Index">@language.Getkey("HAQQIMIZDA") <i class="fas fa-syringe"></i></a>
+                            <ul class="drop-down-content">
+                                <i class="fas fa-caret-up"></i>
+                                <li><a asp-controller="About" asp-action="Index">@language.Getkey("TARİXİMİZ")</a></li>
+                                <li><a asp-controller="Manager" asp-action="Index">@language.Getkey("RƏHBƏRLİK")</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-down "><a asp-controller="Service" asp-action="Index">@language.Getkey("XİDMƏTLƏR")</a></li>
+                        <li class="drop-down "><a asp-controller="Doctor" asp-action="Index">@language.Getkey("HƏKİMLƏR")</a> </li>
+                        <li class="drop-down "><a asp-controller="News" asp-action="Index">@language.Getkey("XƏBƏRLƏR")</a></li>
+                        <li class="drop-down ">
+                            <a asp-controller="PhotoGallery" asp-action="Index">@language.Getkey("QALEREYA")<i class="fas fa-syringe"></i></a>
+                            <ul class="drop-down-content">
+                                <i class="fas fa-caret-up"></i>
+                                <li><a asp-controller="PhotoGallery" asp-action="Index">@language.Getkey("ŞƏKİLLƏR")</a></li>
+                                <li><a asp-controller="VideoGallery" asp-action="Index">@language.Getkey("VİDEOLAR")</a></li>
+                            </ul>
+                        </li>
+                        <li class="drop-down "><a asp-controller="Contact" asp-action="Index">@language.Getkey("ƏLAQƏ")</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="profile">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a asp-controller="Account" asp-action="Login" id="myBtn" type="submit">
+
+                            <i class="fas fa-user-md"></i>
+                        </a>
+                        <span class="sign-in">@language.Getkey("Daxil ol")</span>
+                    }
+                    else
+                    {
+                        <a asp-controller="Account" asp-action="Logout" id="myBtn" type="submit" style="color:green" onclick="return confirm('Çıxış etməyə əminsiniz?')  ;">
+
+                            <i class="fas fa-user-md"></i>
+                        </a>
+                        <span class="sign-in">@language.Getkey("Çıxış et")</span>
+                    }
+                </div>
+            </div>
+
+            <div class="col-md-1">
+                <div class="box">
+                    <div class="clock">
+                        <span class="hours"></span>
+                        <span class="minutes"></span>
+                        <p class="brand">N-KAY M</p>
 
                     </div>
 
                 </div>
 
             </div>
+
         </div>
-    </section>
+    </div>
+</section>

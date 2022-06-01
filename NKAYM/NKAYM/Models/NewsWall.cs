@@ -17,8 +17,8 @@ namespace NKAYM.Models
         public DateTime ReleaseDate{ get; set; } 
         [Required]
         public string Descr1 { get; set; }
-        public string Descr2 { get; set; }
-        public string Descr3 { get; set; }
+        public string   Descr2 { get; set; }
+        public string  Descr3 { get; set; }
         [NotMapped]
         [Required]
         public IFormFile ImageFile { get; set; }

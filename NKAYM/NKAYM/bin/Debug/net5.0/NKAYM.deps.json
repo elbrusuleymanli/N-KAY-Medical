@@ -322,6 +322,11 @@
         "runtime": {
           "NKAYM.dll": {}
         },
+        "resources": {
+          "az-Latn/NKAYM.resources.dll": {
+            "locale": "az-Latn"
+          }
+        },
         "compile": {
           "NKAYM.dll": {}
         }

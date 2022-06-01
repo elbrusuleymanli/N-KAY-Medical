@@ -210,3 +210,13 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\U
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\ChangePassword.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\VcRequest\Index.cshtml.g.cs
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Views\VacancyRequest\Create.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\az-Latn\NKAYM.resources.dll
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\NKAYM.Resources.SharedResource.az-Latn.resources
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\NKAYM.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\az-Latn\NKAYM.resources.dll
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\en-US\NKAYM.resources.dll
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\NKAYM.Resources.SharedResource.en-US.resources
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\en-US\NKAYM.resources.dll
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\ru-RU\NKAYM.resources.dll
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\NKAYM.Resources.SharedResource.ru-RU.resources
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\ru-RU\NKAYM.resources.dll

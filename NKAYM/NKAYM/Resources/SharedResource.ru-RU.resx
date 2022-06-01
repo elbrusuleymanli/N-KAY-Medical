@@ -1,0 +1,668 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&quot;İnsanların çoxunun təqdir etmədiyi iki şey var: sağlamlıq və boş vaxt.&quot;" xml:space="preserve">
+    <value>"Есть две вещи, которые большинство людей не ценят: здоровье и время".</value>
+  </data>
+  <data name="49A,N.Nərimanov,Xaçmaz,2700" xml:space="preserve">
+    <value>Хачмаз ул.Н.Нариманова 49А 2700</value>
+  </data>
+  <data name="AD" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="AMBULANCE" xml:space="preserve">
+    <value>СКОРАЯ МАШИНА</value>
+  </data>
+  <data name="ANA SƏHİFƏ" xml:space="preserve">
+    <value>ГЛАВНАЯ</value>
+  </data>
+  <data name="ATU" xml:space="preserve">
+    <value>Аз.Мед.Институт</value>
+  </data>
+  <data name="Azərbaycan" xml:space="preserve">
+    <value>Азербайджан</value>
+  </data>
+  <data name="Azərbaycan Tibb İnstitutu" xml:space="preserve">
+    <value>Аз.Мед.Институт</value>
+  </data>
+  <data name="Baş həkim" xml:space="preserve">
+    <value>Главврач</value>
+  </data>
+  <data name="Baş həkimin müavini" xml:space="preserve">
+    <value>Заместитель главврача</value>
+  </data>
+  <data name="Biokimya" xml:space="preserve">
+    <value>Биохимия</value>
+  </data>
+  <data name="Bitki tərkibli müalicə" xml:space="preserve">
+    <value>Лечение травами</value>
+  </data>
+  <data name="Boğaz boşluğunun müayinəsi" xml:space="preserve">
+    <value>Осмотр горловой полости</value>
+  </data>
+  <data name="BÖLÜM" xml:space="preserve">
+    <value>Отдел</value>
+  </data>
+  <data name="Bütün növ yoxlanışlar" xml:space="preserve">
+    <value>Все виды обследований</value>
+  </data>
+  <data name="Bədənin rahatlanması" xml:space="preserve">
+    <value>Расслабление тела</value>
+  </data>
+  <data name="Cərrah" xml:space="preserve">
+    <value>Хирург</value>
+  </data>
+  <data name="Cərrahiyyə" xml:space="preserve">
+    <value>Хирургия</value>
+  </data>
+  <data name="CƏRRAHİYƏ" xml:space="preserve">
+    <value>ОПЕРАЦИОННАЯ</value>
+  </data>
+  <data name="DAHA ƏTRAFLI" xml:space="preserve">
+    <value>ПОДРОБНЕЕ</value>
+  </data>
+  <data name="Daxil ol" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="Diaqnozun təyin olunması" xml:space="preserve">
+    <value>Диагноз</value>
+  </data>
+  <data name="Diş əkim" xml:space="preserve">
+    <value>Выращивание зуба</value>
+  </data>
+  <data name="Dişin müalicəsi" xml:space="preserve">
+    <value>
+Стоматологическое лечение</value>
+  </data>
+  <data name="Dişin çıxarılması" xml:space="preserve">
+    <value>Удаление зуба</value>
+  </data>
+  <data name="Dr. Coşqun Məmmədov" xml:space="preserve">
+    <value>Др.Джошгун Маммадов</value>
+  </data>
+  <data name="Dr. Eldar Əzizov" xml:space="preserve">
+    <value>Др.Эльдар Азизов</value>
+  </data>
+  <data name="Dr. Elmir Cəlilov" xml:space="preserve">
+    <value>Др.Эльмир Джалилов</value>
+  </data>
+  <data name="Dr. Elnur Babayev" xml:space="preserve">
+    <value>Др.Эльнур Бабаев</value>
+  </data>
+  <data name="Dr. Hikmət Orucov" xml:space="preserve">
+    <value>Др.Хикмет Оруджов</value>
+  </data>
+  <data name="Dr. Natiq Mütəllimov" xml:space="preserve">
+    <value>Др.Натиг Муталлимов</value>
+  </data>
+  <data name="Dr. Rafiq Məlikov" xml:space="preserve">
+    <value>Др.Рафик Меликов</value>
+  </data>
+  <data name="Dr. Renat Xankişiyev" xml:space="preserve">
+    <value>Др.Ренат Ханкишиев</value>
+  </data>
+  <data name="Dr. İlham Mirzəyev" xml:space="preserve">
+    <value>Др.Ильхам Мирзаев</value>
+  </data>
+  <data name="Dr. Əli Həsənov" xml:space="preserve">
+    <value>Др.Али Гасанов</value>
+  </data>
+  <data name="Dəri və yumşaq toxumaların cərrahi xəstəlikləri" xml:space="preserve">
+    <value>Хирургические заболевания кожи и мягких тканей</value>
+  </data>
+  <data name="E-poçt:" xml:space="preserve">
+    <value>Эл.почта:</value>
+  </data>
+  <data name="EKG" xml:space="preserve">
+    <value>ЭКГ</value>
+  </data>
+  <data name="EKQ, holter monitorinqi, stress test, exokardioqrafiya, transezofagial exoqrafiya, stress exokardioqrafiya, koronar angioqrafiya, müvəqqəti süni ritm aparıcısının (pacemaker) tətbiqi, intaortik balon pompasının tətbiqi, koronar angioqrafiya, PTKA (perkutan trans luminal angioplastika), stent tətbiqi, ürək boşluqlarının kateterizasiyası, döş qəfəsi və qarın aortaqrafiyası, periferik angioqrafiya, renal angioqrafiya, aortaqrafiya kimi müasir müayinə və müalicə üsulları şöbəmizdə icra olunur." xml:space="preserve">
+    <value>ЭКГ, холтеровское мониторирование, стресс-тест, эхокардиография, чреспищеводная экзография, стресс-эхокардиография, коронароангиография, наложение временного искусственного водителя ритма, наложение внутриаортального баллонного насоса, коронароангиография, наложение ЧТКА, стентирование, чрескожное просветление, современные методы обследования и лечения, такие как В нашем отделении выполняется грудная и брюшная аортография, периферическая ангиография, почечная ангиография, аортография.</value>
+  </data>
+  <data name="ENDOKRİNOLOGİYA" xml:space="preserve">
+    <value>ЭНДОКРИНОЛОГИЯ</value>
+  </data>
+  <data name="EXO" xml:space="preserve">
+    <value>ЭХО</value>
+  </data>
+  <data name="FAKULTƏ" xml:space="preserve">
+    <value>Факультет</value>
+  </data>
+  <data name="Fasiləsiz nəzarət" xml:space="preserve">
+    <value>Непрерывный контроль</value>
+  </data>
+  <data name="Fizioterapeft" xml:space="preserve">
+    <value>Физиотерапевт</value>
+  </data>
+  <data name="Fizioterapiya" xml:space="preserve">
+    <value>Физиотерапия</value>
+  </data>
+  <data name="FİZİOTERAPİYA" xml:space="preserve">
+    <value>ФИЗИОТЕРАПИЯ</value>
+  </data>
+  <data name="Genetika" xml:space="preserve">
+    <value>Генетика</value>
+  </data>
+  <data name="Ginekoloq" xml:space="preserve">
+    <value>Гинеколог</value>
+  </data>
+  <data name="GÖSTƏRİLƏN XİDMƏTLƏR" xml:space="preserve">
+    <value>ПРЕДОСТАВЛЯЕМЫЕ УСЛУГИ</value>
+  </data>
+  <data name="Gözün cərrahiyyəsi" xml:space="preserve">
+    <value>Хирургия глаза</value>
+  </data>
+  <data name="Gülərüz, qayğıkeş personalımız tərəfindən Hospitalda sığortalı pasiyentlərə davamlı olaraq 24 saat ərzində yüksək səviyyəli ixtisaslaşmış, müasir tələblərə cavab verən tibbi xidmət göstərilir. Bundan əlavə Hospitalda sığorta xətti ilə müxtəlif idarə, təşkilat və şirkət işçilərinin dövri tibbi müayinələrdən keçmələri təşkil edilir və müxtəlif endirimli check-up paketləri təklif olunur. 10 il ərzində Hospitala 27 mindən artıq sığortalı xəstə müraciət etmiş və onlara 416 mindən artıq tibbi xidmət göstərilmişdir." xml:space="preserve">
+    <value>Наш дружелюбный, заботливый персонал круглосуточно предоставляет застрахованным пациентам больницы высокоспециализированные современные медицинские услуги. Кроме того, больница организует периодические медицинские осмотры сотрудников различных ведомств, организаций и компаний по страховой линии и предлагает различные льготные пакеты медосмотров. За 10 лет в больницу обратилось более 27 000 застрахованных пациентов и им было оказано более 416 000 медицинских услуг.</value>
+  </data>
+  <data name="GİNEKOLOGİYA" xml:space="preserve">
+    <value>ГИНЕКОЛОГИЯ</value>
+  </data>
+  <data name="HAMISI" xml:space="preserve">
+    <value>ВСЕ</value>
+  </data>
+  <data name="HAQQIMIZDA" xml:space="preserve">
+    <value>О НАС</value>
+  </data>
+  <data name="Hospitalda ambulator və stasionar şəraitdə balaca pasiyentlərimizə göstərilən tibbi xidmətlə yanaşı, analara uşağın sağlamlığı və inkişafı haqqında vacib məlumatlar verilir ki, bu da kompleks şəkildə tez biz zamanda uşağın sağalması və gələcək inkişafında mühüm rol oynayır" xml:space="preserve">
+    <value>Помимо амбулаторной и стационарной помощи, оказываемой нашим маленьким пациентам в стационаре, мамам предоставляется важная информация о здоровье и развитии ребенка, что в комплексной форме играет важную роль в выздоровлении и дальнейшем развитии ребенка.</value>
+  </data>
+  <data name="Hospitalımızda beyin, onurğa və periferik sinir sisteminin müxtəlif xəstəliklərinin diaqnostikası və müalicəsi peşəkar mütəxəssislər tərəfindən həyata keçirilir. Xəstəxananın ambulator və stasionar şəraitində mərkəzi və periferik sinir sisteminin kəskin və xroniki xəstəliklərinin müayinəsi, müalicəsi və reabilitasiyası, sinir sisteminin iltihablı xəstəliklərinin müalicəsi, osteoxondroz və onun ağırlaşmaları, kəskin və xroniki ağrı sindromu halları daxil olmaqla degenerativ-distrofik xəstəliklərinin müalicəsi, həmçinin beyin və onurğa beyininin zədələnmələri, əməliyyat sonrası bərpaedici müalicə icra olunur." xml:space="preserve">
+    <value>Диагностику и лечение различных заболеваний головного, спинного мозга и периферической нервной системы проводят в нашей больнице специалисты. Обследование, лечение и реабилитация острых и хронических заболеваний центральной и периферической нервной системы в амбулаторных и стационарных условиях, лечение воспалительных заболеваний нервной системы, лечение дегенеративно-дистрофических заболеваний, в том числе остеохондроза и его осложнений, острых и хронических болей синдроме, а также травмах головного и спинного мозга, проводится послеоперационное восстановительное лечение.</value>
+  </data>
+  <data name="Hospitalımızda qulaq, burun, boğaz xəstəliklərinin müayinə və müalicəsi beynəlxalq standartlara uyğun olaraq uğurla həyata keçirilir. Xaricdə tibbi təhsil almış mütəxəssislərimiz burun çəpəri əyriliyi, burun balıqqulaqlarında aparılan əməliyyatlar, tonzillektomiya, adenoidektomiya, xoruldama cərrahiyyəsi, endoskopik sinus cərrahiyyəsi, qulaq pərdəsi təmiri, eşitmə azlığı, qulaq iltihablarının mualicəsinə dair əməliyyatlar, qırtlaq xəstəliklərində cərrahi müdaxilə (endoskopik mikrolarinqoloji əməliyyatlar), səsin korreksiyası, funksional və estetik burun əməliyyatları, tənəffüs yollarının və qida borusunun yad cisimlərinin çıxarılması, anadangəlmə üz və damaq qüsurlarının aradan qaldırılması, xoana atreziyalarının aradan qaldırılması kimi əməliyyatları icra edirlər." xml:space="preserve">
+    <value>Обследование и лечение заболеваний уха, горла и носа успешно проводятся в нашей больнице в соответствии с международными стандартами. Наши специалисты, прошедшие обучение за рубежом, проводят искривление стенки носа, операции на носовых раковинах, тонзиллэктомию, аденоидэктомию, хирургию храпа, эндоскопическую хирургию носовых пазух, восстановление барабанной перепонки, тугоухость, операции по лечению среднего отита, микрохирургию гортани, ларингоскопическую хирургию. (хирургия), выполняют такие операции, как функциональные и эстетические операции на носу, удаление инородных тел из дыхательных путей и пищевода, удаление врожденных дефектов лица и неба, устранение атеросклероза.</value>
+  </data>
+  <data name="Hospitalımızda ultrasəs, kombinə elektroterapiyası, endopress, elektrostimulyasiya, qısa dalğa, lazer, traksiya, hot pack, cold pack, maqnitoterapiya, balneoterapiya, tibbi masaj, manual terapiya, detoksikasiya, biopunktura, biorezonans, zərbə dalğa terapiyası kimi müalicə üsulları təqdim olunur." xml:space="preserve">
+    <value>Наша клиника предлагает такие методы лечения, как ультразвук, комбинированная электротерапия, эндопресс, электростимуляция, коротковолновая, лазерная, вытяжение, горячее обертывание, холодовое обертывание, магнитотерапия, бальнеотерапия, лечебный массаж, мануальная терапия, дезинтоксикация, биопунктура, биорезонанс, ударно-волновая терапия.</value>
+  </data>
+  <data name="Hospitalımızda ən müasir diaqnostik avadanlıqlardan istifadə edilməklə, ultrasəs müayinələri, periferik limfa düyünlərinin ultrasəs müayinəsi, bazu oynağının ultrasəs müayinəsi, rəngli doppler kimi müayinələr peşəkar həkimlərimiz tərəfindən həyata keçirilir." xml:space="preserve">
+    <value>Ультразвуковые исследования, ультразвуковое исследование периферических лимфатических узлов, ультразвуковое исследование основания сустава, цветная допплерография проводятся профессиональными врачами в нашей больнице с использованием самого современного диагностического оборудования.</value>
+  </data>
+  <data name="Hospitalımızın Urolonefrolojı şöbəsində böyrək və sidik-cinsiyyət orqanları xəstəliklərinin diaqnostikası və müalicəsi həyata keçirilir. Müasir tibbi avadanlıqlarla təmin olunmuş şöbədə yüksəkixtisaslı həkimlərimiz tərəfindən bütün növ uroloji müayinə və müalicə metodları, prosedurları, açıq və qapalı cərrahi əməliyyatları həyat keçirilir. Şöbədə tətbiq olunan innovativ müalicə metodları böyrək xəstəliklərinin müalicəsində öz yüksək effektivliyini göstərir.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Hospitalımızda zərbə-dalğa litotripsiyası, sidik yolları və böyrək daşlarının müalicəsi, lazer və pnevmatik&#xD;&#xA;ureterolitotripsiyası, böyrək daşlarının qapalı ureterolitotripsiyası, litoekstraksiyası, böyrək daşlarının ultrasəs litolapaksiyası, açıq sidik axarı və böyrək daşları əməliyyatları, laparoskopik böyrək daşları əməliyyatları, fibroureterorenoskopiya, perkutan nefrolitotomiya kimi əməliyyatlar həyata keçirilir." xml:space="preserve">
+    <value>Диагностика и лечение заболеваний почек и мочеполовой сферы проводится в отделении уролонефрологии нашей больницы. Оснащенное современным медицинским оборудованием отделение проводит все виды урологических обследований и методов лечения, процедуры, открытые и закрытые операции нашими высококвалифицированными врачами. Инновационные методы лечения, применяемые в отделении, высокоэффективны при лечении заболеваний почек. В нашей больнице ударно-волновая литотрипсия, лечение камней мочевыводящих путей и почек, лазерная и пневматическая уретеролитотрипсия, закрытая уретеролитотрипсия камней в почках, литоэкстракция, ультразвуковая литолапекция камней в почках, открытый поток мочи и хирургия камней в почках, фиброзно-кистозный неврит, лапароскопическая хирургия, проводятся лапароскопические операции.</value>
+  </data>
+  <data name="Həkim-Laborant" xml:space="preserve">
+    <value>Врач-лаборант</value>
+  </data>
+  <data name="Həkim-stomatoloq" xml:space="preserve">
+    <value>Стоматолог</value>
+  </data>
+  <data name="HƏKİM MUAYİNƏSİNDƏ ENDİRİM ELAN EDİRİK!" xml:space="preserve">
+    <value>ПРЕДОСТАВЛЯЕМ СКИДКУ НА ОБСЛЕДОВАНИЯ</value>
+  </data>
+  <data name="HƏKİM QƏBULU" xml:space="preserve">
+    <value>ПРИЕМ ВРАЧА</value>
+  </data>
+  <data name="HƏKİMLƏR" xml:space="preserve">
+    <value>ВРАЧИ</value>
+  </data>
+  <data name="HƏKİMLƏRİMİZ" xml:space="preserve">
+    <value>НАШИ ДОКТОРА</value>
+  </data>
+  <data name="Hər növ tibbi sığorta" xml:space="preserve">
+    <value>Все виды медицинского страхования</value>
+  </data>
+  <data name="Kardiologiya" xml:space="preserve">
+    <value>Кардиология</value>
+  </data>
+  <data name="Kardioloq" xml:space="preserve">
+    <value>Кардиолог</value>
+  </data>
+  <data name="Kardioqramma" xml:space="preserve">
+    <value>Кардиограмма</value>
+  </data>
+  <data name="KARDİOLOGİYA" xml:space="preserve">
+    <value>КАРДИОЛОГИЯ</value>
+  </data>
+  <data name="Karlıq" xml:space="preserve">
+    <value>Глухота</value>
+  </data>
+  <data name="Katarakta" xml:space="preserve">
+    <value>Катаракта</value>
+  </data>
+  <data name="KATEQORİYA" xml:space="preserve">
+    <value>КАТЕГОРИИ</value>
+  </data>
+  <data name="Keyfiyyətli çarpayı" xml:space="preserve">
+    <value>Качественные кровати</value>
+  </data>
+  <data name="Keysəriyyə əməliyyatı" xml:space="preserve">
+    <value>Кесарево сечение</value>
+  </data>
+  <data name="Klinikanın təməli təsisçiləri həkim - stomatoloqlar Natiq Mütəllimov və Kəbutər Mütəllimova tərəfindən 1996-cı &#xD;&#xA;             ildə qoyulmuşdur və 2005-ci il iyulun 26-da istifadəyə verilmişdir.Klinikamız ən müasir tələblərə cavab verən səviyyədə inşa olunmuş, avropa öləkələrindən gətirilmiş ən müasir avadanlıq və ləvazimatlarla təchiz edilmişdir. Klinikamızda professional şəkildə işini bilən, xaricdə və ölkəmizdə təkminləşmə kursları keçmiş, 30-a yaxın həkim çalışır. Orta və kiçik tibb persinalın sayı isə 45 nəfərdir. Klinikamızda demək olar ki, hər növ tibbi xidmət xalqımızın xidmətindədir. Dövlətimizin bizə göstərdiyi etimad və qayğının nəticəsidir ki, klinikamız, axırıncı 5 il ərzində ruhlanaraq daha da inkişaf etmiş və müasir tibbin tələblərinə cavab verən 3 yeni korpus inşa etmişdir. Bunlardan biri beşmərtəbəli müalicə və cərrahiyyə korpusu, digər korpuslar isə tibbin ayrı-ayrı sahələri üçün nəzərdə tutulmuşdur.&#xD;&#xA;             &quot;N-KAY M Klinik&quot;-ası şimal bölgəsində müasir və ən iri öz xarakteri ilə seçilən ilk özəl tibb müəssisəsidir. &quot;N-KAY M Klinik&quot;-ası ən müasir texnologiya və peşəkar həkimləri ilə şimal bölgəsində əhaliyə yüksək keyfiyyətli tibbi diaqnostika, &#xD;&#xA;             müalicə, profilaktika xidmətləri göstərir." xml:space="preserve">
+    <value>Фундамент клиники был заложен врачами-стоматологами Натигом Муталлимовым и Кабутар Муталлимовой в 1996 году и сдан в эксплуатацию 26 июля 2005 года. Наша клиника построена с учетом самых современных требований и оснащена новейшим оборудованием и расходными материалами, импортируемыми из стран Европы. В нашей клинике работает около 30 врачей, знающих свое дело профессионально, прошедших курсы повышения квалификации за рубежом и в нашей стране. Численность среднего и младшего медицинского персонала составляет 45 человек. В нашей клинике к услугам наших людей практически все виды медицинских услуг. В результате доверия и заботы, проявленных к нам со стороны нашего государства, наша клиника, вдохновленная последними 5 годами, получила дальнейшее развитие и построила 3 ​​новых корпуса, отвечающих требованиям современной медицины. Один из них представляет собой пятиэтажный лечебно-операционный корпус, а остальные корпуса предназначены для разных направлений медицины.
+             Клиника N-KAY M – первое современное и крупнейшее частное медицинское учреждение в северном регионе. «Клиника N-KAY M» с самой современной техникой и профессиональными врачами обеспечивает качественную медицинскую диагностику населению северного региона,
+             оказывает лечебно-профилактические услуги.</value>
+  </data>
+  <data name="Klinikanın təməli təsisçiləri həkim-stomatoloqlar Natiq Mütəllimov və Kəbutər Mütəllimova tərəfindən 1996 - cı ildə qoyulmuşdur və 2005 - ci il iyulun 26 - da istifadəyə verilmişdir." xml:space="preserve">
+    <value>Основание клиники было заложено врачами-стоматологами Натигом Муталлимовым и Кабутар Муталлимовой в 1996 году и сдано в эксплуатацию 26 июля 2005 года.</value>
+  </data>
+  <data name="KLİNİKAMIZA YENİ AVADANLİQLAR GƏLDİ!" xml:space="preserve">
+    <value>ПРИБЫЛИ НОВЫЕ ОБОРУДОВАНИЯ</value>
+  </data>
+  <data name="KLİNİKAMIZIN ÜNVANI" xml:space="preserve">
+    <value>АДРЕС КЛИНИКИ</value>
+  </data>
+  <data name="KİLİNİKAMIZIN İŞ VAXTI : I-VI GÜNLƏR, SAAT 08 : 30 - 18 : 00" xml:space="preserve">
+    <value>ВРЕМЯ РАБОТЫ НАШЕЙ КЛИНИКИ :  ПОНЕДЕЛЬНИК-СУББОТА, С 08 : 30 ДО 18 : 00</value>
+  </data>
+  <data name="KƏBUTƏR MÜTƏLLİMOVA" xml:space="preserve">
+    <value>КАБУТАР МУТАЛЛИМОВА</value>
+  </data>
+  <data name="Laboratoriya" xml:space="preserve">
+    <value>Лаборатория</value>
+  </data>
+  <data name="Laboratoriyanın ISO 15189:2012 üzrə akkreditasiyası tibb sahəsində yüksək səviyyəli xidmətə, analiz nəticələrinin dəqiqliyinə, sənədləşmə prosedurlarına nəzarətə, risklərin minimuma endirilməsinə və hər şeydən əvvəl, pasiyentlərin məmnunluğuna zəmanət verir." xml:space="preserve">
+    <value>Аккредитация лаборатории по стандарту ISO 15189:2012 гарантирует высокий уровень обслуживания в области медицины, точность результатов анализов, контроль процедур документирования, минимизацию рисков и, прежде всего, удовлетворенность пациентов.</value>
+  </data>
+  <data name="LABORATORİYA" xml:space="preserve">
+    <value>ЛАБОРАТОРИЯ</value>
+  </data>
+  <data name="Laparoskopik cərrahiyyə" xml:space="preserve">
+    <value>Лапароскопическая хирургия</value>
+  </data>
+  <data name="LOR" xml:space="preserve">
+    <value>ЛОР</value>
+  </data>
+  <data name="Mama-ginekologiya şöbəsində peşəkar mütəxəssislərimiz tərəfindən ginekoloji xəstəliklərin müalicəsi ilə yanaşı, hamiləlik önü və hamiləlik vaxtı müayinə və müşahidələr, doğuşun həyata keçirilməsi və doğuş sonrası təqiblər həyata keçirilməkdədir. Xaricdə təhsil almış təcrübəli həkimlərimiz yüksək texnoloji tibbi avadanlıqlarla təchiz olunmuş şöbədə açıq və endoskopik cərrahiyyə, miomaların cərrahi və konservativ müalicə metodları, yumurtalıq şişlərinin endoskopik cərrahiyyəsi, polikistoz yumurtalıq sindromlarında müalicə, uşaqlıq və sidik kisəsi sallanmalarının müalicəsi, sidik qaçırma problemlərinin konservativ və cərrahi müalicəsi, uşaqlıq boyunu xərçəngi və neoplazmaların profilaktikasında xüsusi tədbirlər və peyvənd tətbiqi və s. kimi tibbi xidmətləri uğurla həyata keçirir." xml:space="preserve">
+    <value>Помимо лечения гинекологических заболеваний, наши специалисты отделения акушерства и гинекологии проводят осмотры и наблюдения до и во время беременности, родов и послеродовое наблюдение. Наши опытные врачи, прошедшие обучение за границей, в отделении, оснащенном высокотехнологичным медицинским оборудованием, успешно реализуют специальные мероприятия по профилактике рака шейки матки и новообразований, а также такие медицинские услуги, как вакцинация и так далее.</value>
+  </data>
+  <data name="Mikrobiologiya" xml:space="preserve">
+    <value>Микробиология</value>
+  </data>
+  <data name="Müalicə işi" xml:space="preserve">
+    <value>Лечебное дело</value>
+  </data>
+  <data name="MÜDDƏT" xml:space="preserve">
+    <value>Срок</value>
+  </data>
+  <data name="Məhəmməd Peyğəmbər (s.a.s)" xml:space="preserve">
+    <value>Пророк Мухаммад (с.а.с)</value>
+  </data>
+  <data name="MƏLUMAT" xml:space="preserve">
+    <value>ИНФОРМАЦИЯ</value>
+  </data>
+  <data name="N-KAY Medical" xml:space="preserve">
+    <value>N-KAY Medical</value>
+  </data>
+  <data name="N-KAY MEDICAL © 2022 Bütün hüquqlar qorunur." xml:space="preserve">
+    <value>N-KAY MEDICAL © 2022 Все права защищены</value>
+  </data>
+  <data name="NATİQ MÜTƏLLİMOV" xml:space="preserve">
+    <value>НАТИГ МУТАЛЛИМОВ</value>
+  </data>
+  <data name="NEVROLOGİYA" xml:space="preserve">
+    <value>НЕВРОЛОГИЯ</value>
+  </data>
+  <data name="OFTALMOLOGİYA" xml:space="preserve">
+    <value>ОФТАЛЬМОЛОГИЯ</value>
+  </data>
+  <data name="Ottolarinqologiya" xml:space="preserve">
+    <value>Оттологингология</value>
+  </data>
+  <data name="Patohistologiya" xml:space="preserve">
+    <value>Патогистология</value>
+  </data>
+  <data name="Patomorfoloji diaqnostik müayinələr həm şiş/neoplastik proseslərdə, həm də qeyri şiş patologiyaları zamanı aparılır. Müayinələr incə iynə biopsiya üsulu ilə ğötürülən toxumalarda işlənilir. İncə iynə tikələri Leica Frozen cihazı ilə kəsilib hazırlanır. İmmunofluoresent və immunohistokimiya müayinələri Leica DM 2500 mikroskop vasitəsi ilə aparılaraq yüksək dəqiqliyə malik olan nəticələri əldə etməyə imkan verir." xml:space="preserve">
+    <value>Патоморфологические диагностические исследования проводятся как при опухолевых/неопластических процессах, так и при неопухолевых патологиях. Исследование проводят на тканях, удаленных с помощью тонкоигольной биопсии. Тонкие игольчатые кусочки вырезаются с помощью устройства Leica Frozen. Иммунофлуоресцентные и иммуногистохимические исследования проводятся под микроскопом Leica DM 2500 для получения высокоточных результатов.</value>
+  </data>
+  <data name="Pediatr" xml:space="preserve">
+    <value>Педиатр</value>
+  </data>
+  <data name="Pediatriya" xml:space="preserve">
+    <value>Педиатрия</value>
+  </data>
+  <data name="PEDİATRİYA" xml:space="preserve">
+    <value>ПЕДИАТРИЯ</value>
+  </data>
+  <data name="Plomb" xml:space="preserve">
+    <value>Пломба</value>
+  </data>
+  <data name="Qadın xəstəlikləri müalicəsi" xml:space="preserve">
+    <value>
+Лечение гинекологических заболеваний</value>
+  </data>
+  <data name="QALEREYA" xml:space="preserve">
+    <value>ГАЛЕРЕЯ</value>
+  </data>
+  <data name="Qastrointestinal sistem cərrahiyyə" xml:space="preserve">
+    <value>Хирургия желудочно-кишечной системы</value>
+  </data>
+  <data name="Qulağın yuyulması" xml:space="preserve">
+    <value>Промывание ушей</value>
+  </data>
+  <data name="Qusar r-n Mərkəzi Xəstəxanası" xml:space="preserve">
+    <value>Кусары, Центр.клиника</value>
+  </data>
+  <data name="Qutqaşen rayonu Nic kəndi" xml:space="preserve">
+    <value>Куткашен р-н,село Ниж</value>
+  </data>
+  <data name="Qəbələ r-nu Mərkəzi Xəstəxanası" xml:space="preserve">
+    <value>Габала, Центр.клиника</value>
+  </data>
+  <data name="Rusiya" xml:space="preserve">
+    <value>Россия</value>
+  </data>
+  <data name="Rusiya Tibb Universiteti" xml:space="preserve">
+    <value>Российский Медицинский Университет</value>
+  </data>
+  <data name="RƏHBƏRLİK" xml:space="preserve">
+    <value>РУКОВОДСТВО</value>
+  </data>
+  <data name="STASİONAR XİDMƏT" xml:space="preserve">
+    <value>МЕД-ПАЛАТА</value>
+  </data>
+  <data name="Stomatologiya" xml:space="preserve">
+    <value>Стоматология</value>
+  </data>
+  <data name="STOMATOLOGİYA" xml:space="preserve">
+    <value>СТОМАТОЛОГИЯ</value>
+  </data>
+  <data name="Stomatoloq" xml:space="preserve">
+    <value>Стоматолог</value>
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TARİXİMİZ" xml:space="preserve">
+    <value>НАША ИСТОРИЯ</value>
+  </data>
+  <data name="Telefon" xml:space="preserve">
+    <value>Телефон</value>
+  </data>
+  <data name="Telefon:" xml:space="preserve">
+    <value>Телефон:</value>
+  </data>
+  <data name="TERAPİYA" xml:space="preserve">
+    <value>ТЕРАПИЯ</value>
+  </data>
+  <data name="TİBBİ SIĞORTA" xml:space="preserve">
+    <value>МЕД-СТРАХОВКА</value>
+  </data>
+  <data name="TİP" xml:space="preserve">
+    <value>Учреждение</value>
+  </data>
+  <data name="Təbii doğuş" xml:space="preserve">
+    <value>Естественные роды</value>
+  </data>
+  <data name="Təcili yardım xidməti" xml:space="preserve">
+    <value>Служба скорой помощи</value>
+  </data>
+  <data name="Təcili yardım şöbəsi Almaniyanın “Drager” şirkətinin tibbi avdanlıqları ilə təchiz olunmuş “Mercedes-Benz” markalı 3 ambulans və 2 reanimobil ilə xidmət göstərir. Avtomobillərin tibbi təchizatı göstəriləcək ilkin yardımın dünya standartlarına uyğundur. Təcili tibbi yardım xidməti istədiyiniz təqdirdə ev və ya ofisinizdə portativ aparatlarla instrumental (Rentqen, USM, EKQ) və laborator müayinələri həyata keçirə bilər. Peşəkar tibbi personalımız ağırlıq dərəcəsindən asılı olmayaraq xəstələri Respublikamızın istənilən yerindən xəstəxanamıza və ehtiyac olarsa ölkə xaricinə daşınmasını təmin edir." xml:space="preserve">
+    <value>Отделение скорой помощи обслуживают 3 машины скорой помощи Mercedes-Benz и 2 машины скорой помощи, оснащенные медицинским оборудованием немецкой фирмы Drager. Медицинское оснащение вагонов соответствует мировым стандартам оказания первой помощи. При желании служба скорой медицинской помощи может провести инструментальные (рентген, УЗИ, ЭКГ) и лабораторные исследования на портативных устройствах у вас дома или в офисе. Наш профессиональный медицинский персонал, независимо от степени тяжести, обеспечивает транспортировку пациентов из любой точки страны в нашу больницу и, при необходимости, за границу.</value>
+  </data>
+  <data name="Təhsil" xml:space="preserve">
+    <value>Образование</value>
+  </data>
+  <data name="TƏRƏFDAŞLAR" xml:space="preserve">
+    <value>ПАРТНЕРЫ</value>
+  </data>
+  <data name="Ultra Səs Müayinəsi" xml:space="preserve">
+    <value>УЗИ</value>
+  </data>
+  <data name="Umümi müalicə" xml:space="preserve">
+    <value>Общее лечение</value>
+  </data>
+  <data name="Universitet" xml:space="preserve">
+    <value>Университет</value>
+  </data>
+  <data name="UROLOGİYA" xml:space="preserve">
+    <value>УРОЛОГИЯ</value>
+  </data>
+  <data name="USM" xml:space="preserve">
+    <value>УЗМ</value>
+  </data>
+  <data name="Uşaq muayinəsi" xml:space="preserve">
+    <value>Педиатрическое обследование</value>
+  </data>
+  <data name="VAKANSİYA" xml:space="preserve">
+    <value>ВАКАНСИИ</value>
+  </data>
+  <data name="VİDEOLAR" xml:space="preserve">
+    <value>ВИДЕО</value>
+  </data>
+  <data name="XİDMƏTLƏR" xml:space="preserve">
+    <value>УСЛУГИ</value>
+  </data>
+  <data name="XİDMƏTİ SAHƏLƏR" xml:space="preserve">
+    <value>СФЕРЫ ОБСЛУЖИВАНИЯ</value>
+  </data>
+  <data name="XƏBƏRLƏR" xml:space="preserve">
+    <value>НОВОСТИ</value>
+  </data>
+  <data name="XƏBƏRİM OLSUN" xml:space="preserve">
+    <value>ХОЧУ БЫТЬ В КУРСЕ</value>
+  </data>
+  <data name="Xəstəlik sonrası bədən möhkəmlənməsi" xml:space="preserve">
+    <value>
+Укрепление организма после болезни</value>
+  </data>
+  <data name="XƏSTƏLƏRİMİZİ BAYRAM GÜNLƏRİDƏ QƏBUL EDİRİK" xml:space="preserve">
+    <value>МЫ ОБСЛУЖИВАЕМ И В ПРАЗДНИЧНЫЕ ДНИ</value>
+  </data>
+  <data name="Xəstəxanamızda həkim-terapevtlərimiz ümumi diaqnostik müayinələrin təyini, diferensial diaqnostikanın aparılması, erkən mərhələdə xəstəliyin diaqnostikası və xəstələrin müvafiq mütəxəssislərə yönləndirilməsi, xroniki patologiyalarda xəstələrə dinamik-dispanser nəzarəti, vaksinasiyaları, cərrahi əməliyyata hazırlanan xəstələrdə “operativ risk” və onun dərəcəsinin təyin edilməsini gündəlik olaraq uğurla həyata keçirir." xml:space="preserve">
+    <value>В нашем стационаре наши терапевты проводят общедиагностические обследования, дифференциальную диагностику, раннюю диагностику и направление больных к соответствующим специалистам, динамический диспансерный контроль за больными с хроническими патологиями, прививками, «операционным риском» и степенью его «операционного риска» у больных, готовящихся для хирургии.</value>
+  </data>
+  <data name="Xəstəxanamızda iridosiklit və uveitlər, qlaukoma, katarakta, retinapatiyalar, refraksiya pozğunluğu, göz dibi xəstəlikləri, konyuktivanın infeksion xəstəlikləri, buynuz qışa xoraları, konyuktiva və buynuz qışanın yad cismi, quru göz sindromu və s. kimi xəstəliklərin müayinə və müalicəsi həyata keçirilir." xml:space="preserve">
+    <value>В нашей больнице исследуют и лечат такие заболевания, как иридоциклит и увеит, глаукома, катаракта, ретинапатия, нарушения рефракции, заболевания конъюнктивы, язвы конъюнктивы, язвы роговицы, инородные тела конъюнктивы и роговицы, синдром сухого глаза и другие.</value>
+  </data>
+  <data name="Xəstəxanamızda təcrübəli həkim-endokrinoloqlarımız tərəfindən endokrin sistemi xəstəliklərinin diaqnostikası, ambulator və stasionar müalicəsi həyata keçirilir." xml:space="preserve">
+    <value>Диагностику, амбулаторное и стационарное лечение заболеваний эндокринной системы проводят в нашей больнице наши опытные врачи-эндокринологи.</value>
+  </data>
+  <data name="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın" xml:space="preserve">
+    <value>Введите свой адрес электронной почты , чтобы получать уведомления о новостях</value>
+  </data>
+  <data name="YENİLİKLƏRDƏN XƏBƏRDAR OL" xml:space="preserve">
+    <value>БУДЬТЕ В КУРСЕ НОВОСТЕЙ</value>
+  </data>
+  <data name="Yırtıq cərrahiyyəsi" xml:space="preserve">
+    <value>Хирургия грыжи</value>
+  </data>
+  <data name="Zobun mualicəsi" xml:space="preserve">
+    <value>Лечение щитовидной железы</value>
+  </data>
+  <data name="Çıxış et" xml:space="preserve">
+    <value>Выйти</value>
+  </data>
+  <data name="Çəpgözlük" xml:space="preserve">
+    <value>Косоглазие</value>
+  </data>
+  <data name="Çəpər əyriliklərin mualicəsi" xml:space="preserve">
+    <value>Лечение кривизны носа</value>
+  </data>
+  <data name="ÖLKƏ" xml:space="preserve">
+    <value>Страна</value>
+  </data>
+  <data name="Ümumi Cərrahiyyə Mərkəzi xərçəng və xərçəng olmayan bütün xəstəliklərin diaqnoz və müalicəsini təmin edəcək bilik və təcrübəyə malik tibb heyəti, klassik müalicə metodlarını müasir texnologiya ilə birləşdirən avadanlıq və infrastrukturu, hər xəstəyə fərdi şəkildə yanaşaraq innovativ üsulların tətbiq edildiyi cərrahi müalicə metodları ilə dünya standartlarında xidmət imkanlarına malikdir." xml:space="preserve">
+    <value>Центр общей хирургии имеет знающий и опытный медицинский персонал, который будет диагностировать и лечить все виды рака и нераковых заболеваний, оборудование и инфраструктуру, которые сочетают классические методы лечения с современными технологиями, а также методы хирургического лечения мирового класса, которые применяют инновационные методы к каждому пациенту индивидуально. . . .</value>
+  </data>
+  <data name="Ümumi müayinə" xml:space="preserve">
+    <value>Общий осмотр</value>
+  </data>
+  <data name="Ümümu müayinə" xml:space="preserve">
+    <value>Общее обследование</value>
+  </data>
+  <data name="Ünvan:" xml:space="preserve">
+    <value>Адрес:</value>
+  </data>
+  <data name="Ürək-damar daralması" xml:space="preserve">
+    <value>Сердечно-сосудистое сужение</value>
+  </data>
+  <data name="İmmuno-serologiya" xml:space="preserve">
+    <value>Иммуно-серология</value>
+  </data>
+  <data name="İmplant" xml:space="preserve">
+    <value>Имплантат</value>
+  </data>
+  <data name="İmplantasiya nədir İmplantlar, əskik olan dişlərin funksiyasını və estetikasını bərpa etmək məqsədi ilə çənə sümüyünə yerləşdirilən süni diş köküdür. İmplantlardan bir və ya daha çox dişləri əvəz etmək üçün istifadə olunur. Hərhansı səbəbdən itirilmiş dişlərin yerinə implantasiya etmək olar. Əsas məhdudiyyət mövcud sümük miqdarıdır ki, bu zaman əlavə sümük köçürülmə əməliyyatı edilir. Bunu həkim-implantoloq özü müəyyən edir. İmplantların üstünlükləri çoxdur. Çəkilmiş dişlərin yerinə də implantasiya edilərək qonşu dişlər yonulmaqdan qurtulur. Artıq bir dişə görə iki diş qurban verilmir. Digər bir problem çıxan protezlərin ağızda kip durmamağıdır. Bu problem də implant vasitəsilə aradan götürülür. Sadaladığımız bu və başqa ağız boşluğu problemlərinin həllində implantların böyük rolu var. Bütün implantasiya əməliyyatları tam ağrısız şəraitdə həyata keçirilir." xml:space="preserve">
+    <value>Что такое имплантация Имплантаты представляют собой искусственные корни зубов, которые вживляются в челюстную кость для восстановления функции и эстетики отсутствующих зубов. Имплантаты используются для замены одного или нескольких зубов. Потерянные зубы могут быть имплантированы по любой причине. Основным ограничением является количество доступной кости, и в этом случае выполняется дополнительная костная пластика. Это определяет сам имплантолог. Преимуществ у имплантатов много. Замещая удаленные зубы, соседние зубы спасаются от бритья. За один зуб больше не жертвуют двумя зубами. Еще одна проблема в том, что протезы не помещаются во рту. Эта проблема также устраняется с помощью имплантатов. Имплантаты играют важную роль в решении этих и других стоматологических проблем. Все операции по имплантации проводятся совершенно безболезненно.</value>
+  </data>
+  <data name="İnstitut" xml:space="preserve">
+    <value>Институт</value>
+  </data>
+  <data name="İXTİSAS" xml:space="preserve">
+    <value>Специальность</value>
+  </data>
+  <data name="İş günləri" xml:space="preserve">
+    <value>Рабочие дни</value>
+  </data>
+  <data name="İş təcrübəsi" xml:space="preserve">
+    <value>Опыт работы</value>
+  </data>
+  <data name="İŞ YERİ" xml:space="preserve">
+    <value>Место работы</value>
+  </data>
+  <data name="ŞƏKİLLƏR" xml:space="preserve">
+    <value>ФОТО</value>
+  </data>
+  <data name="ƏLAQƏ" xml:space="preserve">
+    <value>КОНТАКТ</value>
+  </data>
+  <data name="ƏLAQƏ VASİTƏLƏRİ" xml:space="preserve">
+    <value>КОНТАКТЫ</value>
+  </data>
+  <data name="ərtaflı" xml:space="preserve">
+    <value>подробнее</value>
+  </data>
+  <data name="ƏTRAFLI" xml:space="preserve">
+    <value>ПОДРОБНО</value>
+  </data>
+</root>

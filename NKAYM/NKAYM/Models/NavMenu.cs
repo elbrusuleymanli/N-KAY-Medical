@@ -17,5 +17,6 @@ namespace NKAYM.Models
         public string Text { get; set; }
         public string LangAze { get; set; }
         public string LangRus { get; set; }
+        public string LangUsa { get; set; }
     }
 }

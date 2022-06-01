@@ -1,4 +1,5 @@
 ﻿@model List<Manager>
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="/assets/images/banners/manager.jpg" alt="">
             <div class="container">
-                <h3>RƏHBƏRLİK</h3>
+                <h3>@language.Getkey("RƏHBƏRLİK")</h3>
             </div>
 
         </div>
@@ -23,22 +24,22 @@
         <div class="row">
             @foreach (var manager in Model)
             {
-            <div class="col-lg-6 col-sm-12 mb-2" data-aos="zoom-in">
-                <div class="manager">
-                    <img src="/assets/images/banners/@manager.Image" alt="">
-                    <ul class="manager-info">
-                        <li>@manager.Fullname</li>
-                        <li>@manager.Position</li>
-                        <li>@manager.Post</li>
+                <div class="col-lg-6 col-sm-12 mb-2" data-aos="zoom-in">
+                    <div class="manager">
+                        <img src="/assets/images/banners/@manager.Image" alt="">
+                        <ul class="manager-info">
+                            <li>@language.Getkey(manager.Fullname)</li>
+                            <li>@language.Getkey(manager.Position)</li>
+                            <li>@language.Getkey(manager.Post)</li>
 
-                    </ul>
+                        </ul>
 
 
+                    </div>
                 </div>
-            </div>
             }
-            
-            
+
+
         </div>
     </div>
 </div>

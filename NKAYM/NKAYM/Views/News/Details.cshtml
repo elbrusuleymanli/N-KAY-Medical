@@ -1,4 +1,5 @@
 ﻿@model NewsWall
+@inject LanguageService language
 @{
     ViewData["Title"] = "Details";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="~/assets/images/banners/news-banner.jpg" alt="">
             <div class="container">
-                <h3>XƏBƏRLƏR</h3>
+                <h3>@language.Getkey("XƏBƏRLƏR")</h3>
             </div>
 
         </div>
@@ -24,16 +25,32 @@
         <img src="~/assets/images/@Model.Image" alt="">
         <div class="news-text">
             <article>
-                <h2>@Model.Title</h2>
+                <h2>@language.Getkey(Model.Title)</h2>
                 <span class="news-date">@Model.ReleaseDate.ToString("dd") @Model.ReleaseDate.ToString("MMMM") @Model.ReleaseDate.ToString("yyyy")</span>
                 <p>
-                  @Html.Raw(Model.Descr1)
+                    @Html.Raw(language.Getkey(Model.Descr1))
                 </p>
                 <p>
-                    @Html.Raw(Model.Descr2)
+                    @if (Model.Descr2 == null)
+                    {
+                        @Html.Raw(Model.Descr2)
+                    }
+                    else
+                    {
+                        @Html.Raw(language.Getkey(Model.Descr2))
+                    }
+
                 </p>
                 <p>
-                   @Html.Raw(Model.Descr3)
+                    @if (Model.Descr3 == null)
+                    {
+                        @Html.Raw(Model.Descr3)
+                    }
+                    else
+                    {
+                        @Html.Raw(language.Getkey(Model.Descr3))
+                    }
+                   
                 </p>
             </article>
         </div>

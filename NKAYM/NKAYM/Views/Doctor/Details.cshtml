@@ -1,4 +1,5 @@
 ﻿@model Doctor
+@inject LanguageService language
 @{
     ViewData["Title"] = "Details";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="/assets/images/banners/doctor.jpg" alt="">
             <div class="container">
-                <h3>HƏKİMLƏR</h3>
+                <h3>@language.Getkey("HƏKİMLƏR")</h3>
             </div>
 
         </div>
@@ -29,63 +30,63 @@
 
                         <div class="info">
 
-                            <strong>İş günləri</strong>
+                            <strong>@language.Getkey("İş günləri")</strong>
                             <span>@Model.WorkDay</span>
-                            <strong>Telefon</strong>
+                            <strong>@language.Getkey("Telefon")</strong>
                             <span>@Model.Phone</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-8">
                     <div class="experience">
-                        <span class="name">@Model.Fullname</span>
-                        <span>@Model.Position</span>
+                        <span class="name">@language.Getkey(Model.Fullname)</span>
+                        <span>@language.Getkey(Model.Position)</span>
                         <span class="line"></span>
                         <h6 class="title">Təhsil</h6>
                         <table>
                             <tr>
-                                <th>TİP</th>
-                                <th>AD</th>
-                                <th>FAKULTƏ</th>
-                                <th>MÜDDƏT</th>
-                                <th>ÖLKƏ</th>
+                                <th>@language.Getkey("TİP")</th>
+                                <th>@language.Getkey("AD")</th>
+                                <th>@language.Getkey("FAKULTƏ")</th>
+                                <th>@language.Getkey("MÜDDƏT")</th>
+                                <th>@language.Getkey("ÖLKƏ")</th>
                             </tr>
-                          @foreach (var dr in Model.Educations.OrderBy(d=>d.StartUniver))
-                          {
-                        <tr>
+                            @foreach (var dr in Model.Educations.OrderBy(d => d.StartUniver))
+                            {
+                                <tr>
 
-                            <td>@dr.TypeOfUniver</td>
-                            <td>@dr.NameOfUniver</td>
-                            <td>@dr.Specialty</td>
-                            <td>
-                                @dr.StartUniver.ToString("yyyy")-@dr.EndUniver.ToString("yyyy")
-                            </td>
-                            <td>@dr.Country</td>
-                        </tr>
-                          }
-                            
+                                    <td>@language.Getkey(dr.TypeOfUniver)</td>
+                                    <td>@language.Getkey(dr.NameOfUniver)</td>
+                                    <td>@language.Getkey(dr.Specialty)</td>
+                                    <td>
+                                        @dr.StartUniver.ToString("yyyy")-@dr.EndUniver.ToString("yyyy")
+                                    </td>
+                                    <td>@language.Getkey(dr.Country)</td>
+                                </tr>
+                            }
+
                         </table>
-                        <h6 class="title">İş təcrübəsi</h6>
+                        <h6 class="title">@language.Getkey("İş təcrübəsi")</h6>
                         <table>
                             <tr>
-                                <th>İŞ YERİ</th>
-                                <th>BÖLÜM</th>
-                                <th>İXTİSAS</th>
-                                <th>MÜDDƏT</th>
-                                <th>ÖLKƏ</th>
+                                <th>@language.Getkey("İŞ YERİ")</th>
+                                <th>@language.Getkey("BÖLÜM")</th>
+                                <th>@language.Getkey("İXTİSAS")</th>
+                                <th>@language.Getkey("MÜDDƏT")</th>
+                                <th>@language.Getkey("ÖLKƏ")</th>
                             </tr>
-                           @foreach (var dr in Model.Experiences.OrderBy(d => d.StartWork))
-                           {
-                        <tr>
-                            <td>@dr.Company</td>
-                            <td>@dr.Section</td>
-                            <td>@dr.Position</td>
-                            <td>@dr.StartWork.ToString("yyyy")-@dr.EndWork.ToString("yyyy")</td>
-                            <td>@dr.Country</td>
-                        </tr>
-                           }
-                            
-                          
+                            @foreach (var dr in Model.Experiences.OrderBy(d => d.StartWork))
+                            {
+                                <tr>
+                                    <td>@language.Getkey(dr.Company)</td>
+                                    <td>@language.Getkey(dr.Section)</td>
+                                    <td>@language.Getkey(dr.Position)</td>
+                                    <td>@dr.StartWork.ToString("yyyy")-@dr.EndWork.ToString("yyyy")</td>
+                                    <td>@language.Getkey(dr.Country)</td>
+                                </tr>
+                            }
+
+
                         </table>
                     </div>
                 </div>

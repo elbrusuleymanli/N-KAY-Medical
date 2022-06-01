@@ -1,4 +1,5 @@
 ﻿@model List<Service>
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="~/assets/images/banners/service.jpg" alt="">
             <div class="container">
-                <h3>XİDMƏTİ SAHƏLƏR</h3>
+                <h3>@language.Getkey("XİDMƏTİ SAHƏLƏR")</h3>
             </div>
 
         </div>
@@ -24,9 +25,9 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="service-item">
                         <a asp-controller="Service" asp-action="Details" asp-route-id="@service.Id">
-                           @Html.Raw(service.Icon)
+                            @Html.Raw(service.Icon)
                             <div class="service-image">
-                                <span>@service.Title</span>
+                                <span>@language.Getkey(service.Title)</span>
                             </div>
                         </a>
 

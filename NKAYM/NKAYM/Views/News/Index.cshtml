@@ -1,4 +1,5 @@
 ﻿@model List<NewsWall>
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="~/assets/images/banners/news-banner.jpg" alt="">
             <div class="container">
-                <h3>XƏBƏRLƏR</h3>
+                <h3>@language.Getkey("XƏBƏRLƏR")</h3>
             </div>
 
         </div>
@@ -24,28 +25,28 @@
 
             @foreach (var news in Model)
             {
-            <div class="col-lg-3 col-md-6">
-                <div class="card">
-                   
-                        <img src="~/assets/images/@news.Image" class="img-fluid"  alt="şəkil" style="width:100%;height:200px;">
-                
-    <div class="card-body" >
-      
-            <span class="news-date" >@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</span>
-            <h5 class="card-title" style="width:240px" >@news.Title</h5>
-            <p class="card-text">
-                @Html.Raw(news.Descr1.Substring(0,30))
-            </p>
-      
-        <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id" class="button">ƏTRAFLI</a>
-    </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card">
 
+                        <img src="~/assets/images/@news.Image" class="img-fluid" alt="şəkil" style="width:100%;height:200px;">
+
+                        <div class="card-body">
+
+                            <span class="news-date">@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</span>
+                            <h5 class="card-title" style="width:240px">@language.Getkey(news.Title)</h5>
+                            <p class="card-text">
+                                @Html.Raw(language.Getkey(news.Descr1.Substring(0, 30)))
+                            </p>
+
+                            <a asp-controller="News" asp-action="Details" asp-route-id="@news.Id" class="button">@language.Getkey("ƏTRAFLI")</a>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
             }
 
-            
-           
+
+
         </div>
     </div>
 </div>

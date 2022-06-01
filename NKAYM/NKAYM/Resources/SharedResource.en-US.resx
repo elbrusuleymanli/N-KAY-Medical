@@ -1,0 +1,678 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&quot;İnsanların çoxunun təqdir etmədiyi iki şey var: sağlamlıq və boş vaxt.&quot;" xml:space="preserve">
+    <value>"There are two things that most people don't appreciate: health and free time."</value>
+  </data>
+  <data name="49A,N.Nərimanov,Xaçmaz,2700" xml:space="preserve">
+    <value>2700, 49A, N.Narimanov Khachmaz</value>
+  </data>
+  <data name="AD" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="AMBULANCE" xml:space="preserve">
+    <value>AMBULANCE</value>
+  </data>
+  <data name="ANA SƏHİFƏ" xml:space="preserve">
+    <value>HOME</value>
+  </data>
+  <data name="ATU" xml:space="preserve">
+    <value>AMU</value>
+  </data>
+  <data name="Azərbaycan" xml:space="preserve">
+    <value>Azerbaijan</value>
+  </data>
+  <data name="Azərbaycan Tibb İnstitutu" xml:space="preserve">
+    <value>Azerb.Medical Univ</value>
+  </data>
+  <data name="Baş həkim" xml:space="preserve">
+    <value>Chief doctor</value>
+  </data>
+  <data name="Baş həkimin müavini" xml:space="preserve">
+    <value>Deputy Chief doctor</value>
+  </data>
+  <data name="Biokimya" xml:space="preserve">
+    <value>Biochemistry</value>
+  </data>
+  <data name="Bitki tərkibli müalicə" xml:space="preserve">
+    <value>Herbal treatment</value>
+  </data>
+  <data name="Boğaz boşluğunun müayinəsi" xml:space="preserve">
+    <value>Examination of the throat</value>
+  </data>
+  <data name="BÖLÜM" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="Bütün növ yoxlanışlar" xml:space="preserve">
+    <value>All kinds of inspections</value>
+  </data>
+  <data name="Bədənin rahatlanması" xml:space="preserve">
+    <value>Relaxation of the body</value>
+  </data>
+  <data name="Cərrah" xml:space="preserve">
+    <value>Surgeon</value>
+  </data>
+  <data name="Cərrahiyyə" xml:space="preserve">
+    <value>Surgery</value>
+  </data>
+  <data name="CƏRRAHİYƏ" xml:space="preserve">
+    <value>SURGERY</value>
+  </data>
+  <data name="DAHA ƏTRAFLI" xml:space="preserve">
+    <value>LEARN MORE</value>
+  </data>
+  <data name="Daxil ol" xml:space="preserve">
+    <value>Log In</value>
+  </data>
+  <data name="Diaqnozun təyin olunması" xml:space="preserve">
+    <value>Diagnosis</value>
+  </data>
+  <data name="Diş əkim" xml:space="preserve">
+    <value>Teeth planting</value>
+  </data>
+  <data name="Dişin müalicəsi" xml:space="preserve">
+    <value>Dental treatment</value>
+  </data>
+  <data name="Dişin çıxarılması" xml:space="preserve">
+    <value>Tooth extraction</value>
+  </data>
+  <data name="Dr. Coşqun Məmmədov" xml:space="preserve">
+    <value>Dr.Joshgun Mammadov</value>
+  </data>
+  <data name="Dr. Eldar Əzizov" xml:space="preserve">
+    <value>Dr.Eldar Azizov</value>
+  </data>
+  <data name="Dr. Elmir Cəlilov" xml:space="preserve">
+    <value>Dr.Elmir Jalilov</value>
+  </data>
+  <data name="Dr. Elnur Babayev" xml:space="preserve">
+    <value>Dr.Elnur Babayev</value>
+  </data>
+  <data name="Dr. Hikmət Orucov" xml:space="preserve">
+    <value>Dr.Hikmat Orujov</value>
+  </data>
+  <data name="Dr. Natiq Mütəllimov" xml:space="preserve">
+    <value>Dr.Natiq Mutallimov</value>
+  </data>
+  <data name="Dr. Rafiq Məlikov" xml:space="preserve">
+    <value>Dr.Rafiq Malikov</value>
+  </data>
+  <data name="Dr. Renat Xankişiyev" xml:space="preserve">
+    <value>Dr.Renat Khankishiyev</value>
+  </data>
+  <data name="Dr. İlham Mirzəyev" xml:space="preserve">
+    <value>Dr.Ilham Mirzayev</value>
+  </data>
+  <data name="Dr. Əli Həsənov" xml:space="preserve">
+    <value>Dr.Ali Hasanov</value>
+  </data>
+  <data name="Dəri və yumşaq toxumaların cərrahi xəstəlikləri" xml:space="preserve">
+    <value>Surgical diseases of the skin and soft tissues</value>
+  </data>
+  <data name="E-poçt:" xml:space="preserve">
+    <value>Email:</value>
+  </data>
+  <data name="EKG" xml:space="preserve">
+    <value>EKG</value>
+  </data>
+  <data name="EKQ, holter monitorinqi, stress test, exokardioqrafiya, transezofagial exoqrafiya, stress exokardioqrafiya, koronar angioqrafiya, müvəqqəti süni ritm aparıcısının (pacemaker) tətbiqi, intaortik balon pompasının tətbiqi, koronar angioqrafiya, PTKA (perkutan trans luminal angioplastika), stent tətbiqi, ürək boşluqlarının kateterizasiyası, döş qəfəsi və qarın aortaqrafiyası, periferik angioqrafiya, renal angioqrafiya, aortaqrafiya kimi müasir müayinə və müalicə üsulları şöbəmizdə icra olunur." xml:space="preserve">
+    <value>ECG, holter monitoring, stress test, echocardiography, transesophageal exography, stress echocardiography, coronary angiography, application of temporary artificial pacemaker, application of intraortic balloon pump, coronary angiography, application of PTKA, stenting, percutaneous luminal , modern examination and treatment methods such as thoracic and abdominal aortography, peripheral angiography, renal angiography, aortography are performed in our department.</value>
+  </data>
+  <data name="ENDOKRİNOLOGİYA" xml:space="preserve">
+    <value>ENDOCRINOLOGY</value>
+  </data>
+  <data name="EXO" xml:space="preserve">
+    <value>EXO</value>
+  </data>
+  <data name="FAKULTƏ" xml:space="preserve">
+    <value>Faculty</value>
+  </data>
+  <data name="Fasiləsiz nəzarət" xml:space="preserve">
+    <value>Continuous monitoring</value>
+  </data>
+  <data name="Fizioterapeft" xml:space="preserve">
+    <value>Physioterapepht</value>
+  </data>
+  <data name="Fizioterapiya" xml:space="preserve">
+    <value>Physiotherapy</value>
+  </data>
+  <data name="FİZİOTERAPİYA" xml:space="preserve">
+    <value>PHYSIOTHERAPY</value>
+  </data>
+  <data name="Genetika" xml:space="preserve">
+    <value>Genetics</value>
+  </data>
+  <data name="Ginekoloq" xml:space="preserve">
+    <value>Gynecologist</value>
+  </data>
+  <data name="GÖSTƏRİLƏN XİDMƏTLƏR" xml:space="preserve">
+    <value>SERVICES PROVIDED</value>
+  </data>
+  <data name="Gözün cərrahiyyəsi" xml:space="preserve">
+    <value>Eye surgery</value>
+  </data>
+  <data name="Gülərüz, qayğıkeş personalımız tərəfindən Hospitalda sığortalı pasiyentlərə davamlı olaraq 24 saat ərzində yüksək səviyyəli ixtisaslaşmış, müasir tələblərə cavab verən tibbi xidmət göstərilir. Bundan əlavə Hospitalda sığorta xətti ilə müxtəlif idarə, təşkilat və şirkət işçilərinin dövri tibbi müayinələrdən keçmələri təşkil edilir və müxtəlif endirimli check-up paketləri təklif olunur. 10 il ərzində Hospitala 27 mindən artıq sığortalı xəstə müraciət etmiş və onlara 416 mindən artıq tibbi xidmət göstərilmişdir." xml:space="preserve">
+    <value>Our friendly, caring staff provides the hospital's insured patients with highly specialized, modern medical services 24 hours a day. In addition, the hospital organizes periodic medical examinations of employees of various departments, organizations and companies through the insurance line and offers various discounted check-up packages. Over 10 years, more than 27,000 insured patients applied to the hospital and more than 416,000 medical services were provided to them.</value>
+  </data>
+  <data name="GİNEKOLOGİYA" xml:space="preserve">
+    <value>GYNECOLOGY</value>
+  </data>
+  <data name="HAMISI" xml:space="preserve">
+    <value>ALL</value>
+  </data>
+  <data name="HAQQIMIZDA" xml:space="preserve">
+    <value>ABOUT US</value>
+  </data>
+  <data name="Hospitalda ambulator və stasionar şəraitdə balaca pasiyentlərimizə göstərilən tibbi xidmətlə yanaşı, analara uşağın sağlamlığı və inkişafı haqqında vacib məlumatlar verilir ki, bu da kompleks şəkildə tez biz zamanda uşağın sağalması və gələcək inkişafında mühüm rol oynayır" xml:space="preserve">
+    <value>In addition to the outpatient and inpatient care provided to our young patients at the hospital, mothers are provided with important information about the child's health and development, which in a comprehensive manner plays an important role in the child's recovery and future development.</value>
+  </data>
+  <data name="Hospitalımızda beyin, onurğa və periferik sinir sisteminin müxtəlif xəstəliklərinin diaqnostikası və müalicəsi peşəkar mütəxəssislər tərəfindən həyata keçirilir. Xəstəxananın ambulator və stasionar şəraitində mərkəzi və periferik sinir sisteminin kəskin və xroniki xəstəliklərinin müayinəsi, müalicəsi və reabilitasiyası, sinir sisteminin iltihablı xəstəliklərinin müalicəsi, osteoxondroz və onun ağırlaşmaları, kəskin və xroniki ağrı sindromu halları daxil olmaqla degenerativ-distrofik xəstəliklərinin müalicəsi, həmçinin beyin və onurğa beyininin zədələnmələri, əməliyyat sonrası bərpaedici müalicə icra olunur." xml:space="preserve">
+    <value>Diagnosis and treatment of various diseases of the brain, spinal cord and peripheral nervous system are carried out by professionals in our hospital. Examination, treatment and rehabilitation of acute and chronic diseases of the central and peripheral nervous system in the outpatient and inpatient settings, treatment of inflammatory diseases of the nervous system, treatment of degenerative-dystrophic diseases, including osteochondrosis and its complications, acute and chronic pain syndrome, as well as brain and spinal cord Injuries, postoperative restorative treatment is performed.</value>
+  </data>
+  <data name="Hospitalımızda qulaq, burun, boğaz xəstəliklərinin müayinə və müalicəsi beynəlxalq standartlara uyğun olaraq uğurla həyata keçirilir. Xaricdə tibbi təhsil almış mütəxəssislərimiz burun çəpəri əyriliyi, burun balıqqulaqlarında aparılan əməliyyatlar, tonzillektomiya, adenoidektomiya, xoruldama cərrahiyyəsi, endoskopik sinus cərrahiyyəsi, qulaq pərdəsi təmiri, eşitmə azlığı, qulaq iltihablarının mualicəsinə dair əməliyyatlar, qırtlaq xəstəliklərində cərrahi müdaxilə (endoskopik mikrolarinqoloji əməliyyatlar), səsin korreksiyası, funksional və estetik burun əməliyyatları, tənəffüs yollarının və qida borusunun yad cisimlərinin çıxarılması, anadangəlmə üz və damaq qüsurlarının aradan qaldırılması, xoana atreziyalarının aradan qaldırılması kimi əməliyyatları icra edirlər." xml:space="preserve">
+    <value>Examination and treatment of ear, nose and throat diseases are successfully carried out in our hospital in accordance with international standards. Our specialists trained abroad have a curvature of the nasal wall, operations on the nasal shells, tonsillectomy, adenoidectomy, snoring surgery, endoscopic sinus surgery, repair of the eardrum, hearing loss, operations to treat otitis media, surgery for laryngeal microsurgery, laryngoscopic surgery (surgery) , perform operations such as functional and aesthetic nasal operations, removal of foreign bodies from the respiratory tract and esophagus, removal of congenital facial and palate defects, removal of atherosclerosis.</value>
+  </data>
+  <data name="Hospitalımızda ultrasəs, kombinə elektroterapiyası, endopress, elektrostimulyasiya, qısa dalğa, lazer, traksiya, hot pack, cold pack, maqnitoterapiya, balneoterapiya, tibbi masaj, manual terapiya, detoksikasiya, biopunktura, biorezonans, zərbə dalğa terapiyası kimi müalicə üsulları təqdim olunur." xml:space="preserve">
+    <value>Our hospital offers treatment methods such as ultrasound, combined electrotherapy, endopress, electrostimulation, short wave, laser, traction, hot pack, cold pack, magnetotherapy, balneotherapy, medical massage, manual therapy, detoxification, biopuncture, bioresonance, shock therapy.</value>
+  </data>
+  <data name="Hospitalımızda ən müasir diaqnostik avadanlıqlardan istifadə edilməklə, ultrasəs müayinələri, periferik limfa düyünlərinin ultrasəs müayinəsi, bazu oynağının ultrasəs müayinəsi, rəngli doppler kimi müayinələr peşəkar həkimlərimiz tərəfindən həyata keçirilir." xml:space="preserve">
+    <value>Ultrasound examinations, ultrasound examination of peripheral lymph nodes, ultrasound examination of the base joint, color Doppler examinations are performed by our professional doctors in our hospital using the most modern diagnostic equipment.</value>
+  </data>
+  <data name="Hospitalımızın Urolonefrolojı şöbəsində böyrək və sidik-cinsiyyət orqanları xəstəliklərinin diaqnostikası və müalicəsi həyata keçirilir. Müasir tibbi avadanlıqlarla təmin olunmuş şöbədə yüksəkixtisaslı həkimlərimiz tərəfindən bütün növ uroloji müayinə və müalicə metodları, prosedurları, açıq və qapalı cərrahi əməliyyatları həyat keçirilir. Şöbədə tətbiq olunan innovativ müalicə metodları böyrək xəstəliklərinin müalicəsində öz yüksək effektivliyini göstərir.&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Hospitalımızda zərbə-dalğa litotripsiyası, sidik yolları və böyrək daşlarının müalicəsi, lazer və pnevmatik&#xD;&#xA;ureterolitotripsiyası, böyrək daşlarının qapalı ureterolitotripsiyası, litoekstraksiyası, böyrək daşlarının ultrasəs litolapaksiyası, açıq sidik axarı və böyrək daşları əməliyyatları, laparoskopik böyrək daşları əməliyyatları, fibroureterorenoskopiya, perkutan nefrolitotomiya kimi əməliyyatlar həyata keçirilir." xml:space="preserve">
+    <value>Diagnosis and treatment of kidney and urogenital diseases are carried out in the urolonefrology department of our hospital. Equipped with modern medical equipment, the department performs all types of urological examination and treatment methods, procedures, open and closed surgeries by our highly qualified doctors. Innovative treatment methods applied in the department are highly effective in the treatment of kidney disease.
+
+
+Pulse wave lithotripsy, treatment of urinary tract and kidney stones, laser and pneumatic in our hospital
+Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stones, lithoextraction, ultrasonic litholapsy of kidney stones, open urinary flow and kidney stones, laparoscopic kidney stones, fibroureterorenoscopy, percutaneous nephrolithotomy.</value>
+  </data>
+  <data name="Həkim-Laborant" xml:space="preserve">
+    <value>Laboratory-assistant</value>
+  </data>
+  <data name="Həkim-stomatoloq" xml:space="preserve">
+    <value>DENTIST</value>
+  </data>
+  <data name="Həkimlər" xml:space="preserve">
+    <value>Doctors</value>
+  </data>
+  <data name="HƏKİM MUAYİNƏSİNDƏ ENDİRİM ELAN EDİRİK!" xml:space="preserve">
+    <value>WE ANNOUNCE DISCOUNT ON DOCTOR'S EXAMINATION!</value>
+  </data>
+  <data name="HƏKİM QƏBULU" xml:space="preserve">
+    <value>APPOİNTMENT</value>
+  </data>
+  <data name="HƏKİMLƏR" xml:space="preserve">
+    <value>DOCTORS</value>
+  </data>
+  <data name="HƏKİMLƏRİMİZ" xml:space="preserve">
+    <value>OUR DOCTORS</value>
+  </data>
+  <data name="Hər növ tibbi sığorta" xml:space="preserve">
+    <value>All types of health insurance</value>
+  </data>
+  <data name="Kardiologiya" xml:space="preserve">
+    <value>Cardiology</value>
+  </data>
+  <data name="Kardioloq" xml:space="preserve">
+    <value>Cardiologist</value>
+  </data>
+  <data name="Kardioqramma" xml:space="preserve">
+    <value>Cardiogram</value>
+  </data>
+  <data name="KARDİOLOGİYA" xml:space="preserve">
+    <value>CARDIOLOGY</value>
+  </data>
+  <data name="Karlıq" xml:space="preserve">
+    <value>Deafness</value>
+  </data>
+  <data name="Katarakta" xml:space="preserve">
+    <value>Cataracts</value>
+  </data>
+  <data name="KATEQORİYA" xml:space="preserve">
+    <value>CATEGORY</value>
+  </data>
+  <data name="Keyfiyyətli çarpayı" xml:space="preserve">
+    <value>Quality beds</value>
+  </data>
+  <data name="Keysəriyyə əməliyyatı" xml:space="preserve">
+    <value>Caesarean section</value>
+  </data>
+  <data name="Klinikanın təməli təsisçiləri həkim - stomatoloqlar Natiq Mütəllimov və Kəbutər Mütəllimova tərəfindən 1996-cı &#xD;&#xA;             ildə qoyulmuşdur və 2005-ci il iyulun 26-da istifadəyə verilmişdir.Klinikamız ən müasir tələblərə cavab verən səviyyədə inşa olunmuş, avropa öləkələrindən gətirilmiş ən müasir avadanlıq və ləvazimatlarla təchiz edilmişdir. Klinikamızda professional şəkildə işini bilən, xaricdə və ölkəmizdə təkminləşmə kursları keçmiş, 30-a yaxın həkim çalışır. Orta və kiçik tibb persinalın sayı isə 45 nəfərdir. Klinikamızda demək olar ki, hər növ tibbi xidmət xalqımızın xidmətindədir. Dövlətimizin bizə göstərdiyi etimad və qayğının nəticəsidir ki, klinikamız, axırıncı 5 il ərzində ruhlanaraq daha da inkişaf etmiş və müasir tibbin tələblərinə cavab verən 3 yeni korpus inşa etmişdir. Bunlardan biri beşmərtəbəli müalicə və cərrahiyyə korpusu, digər korpuslar isə tibbin ayrı-ayrı sahələri üçün nəzərdə tutulmuşdur.&#xD;&#xA;             &quot;N-KAY M Klinik&quot;-ası şimal bölgəsində müasir və ən iri öz xarakteri ilə seçilən ilk özəl tibb müəssisəsidir. &quot;N-KAY M Klinik&quot;-ası ən müasir texnologiya və peşəkar həkimləri ilə şimal bölgəsində əhaliyə yüksək keyfiyyətli tibbi diaqnostika, &#xD;&#xA;             müalicə, profilaktika xidmətləri göstərir." xml:space="preserve">
+    <value>The foundation of the clinic was laid by dentists Natig Mutallimov and Kabutar Mutallimova in 1996 and put into operation on July 26, 2005. Our clinic was built to meet the latest requirements and is equipped with the latest equipment and supplies imported from European countries. Our clinic employs about 30 doctors who know their job professionally, have passed refresher courses abroad and in our country. The number of secondary and junior medical staff is 45 people. In our clinic, almost all types of medical services are at the service of our people. As a result of the trust and care shown to us by our state, our clinic, inspired by the last 5 years, has further developed and built 3 new buildings that meet the requirements of modern medicine. One of them is a five-storey treatment and surgery building, and the other buildings are designed for different areas of medicine.
+             N-KAY M Clinic is the first modern and largest private medical institution in the northern region. "N-KAY M Clinic" with the most modern technology and professional doctors provides high quality medical diagnostics to the population in the northern region,
+             provides treatment and prevention services.</value>
+  </data>
+  <data name="Klinikanın təməli təsisçiləri həkim-stomatoloqlar Natiq Mütəllimov və Kəbutər Mütəllimova tərəfindən 1996 - cı ildə qoyulmuşdur və 2005 - ci il iyulun 26 - da istifadəyə verilmişdir." xml:space="preserve">
+    <value>The foundation of the clinic was laid by dentists Natig Mutallimov and Kabutar Mutallimova in 1996 and put into operation on July 26, 2005.</value>
+  </data>
+  <data name="KLİNİKAMIZA YENİ AVADANLİQLAR GƏLDİ!" xml:space="preserve">
+    <value>NEW EQUIPMENT HAS ARRIVED IN OUR CLINIC!</value>
+  </data>
+  <data name="KLİNİKAMIZIN ÜNVANI" xml:space="preserve">
+    <value>OUR ADRESS</value>
+  </data>
+  <data name="KİLİNİKAMIZIN İŞ VAXTI : I-VI GÜNLƏR, SAAT 08 : 30 - 18 : 00" xml:space="preserve">
+    <value>WORKING HOURS OF OUR CLINIC : I-VI DAYS, 08:30 - 18:00</value>
+  </data>
+  <data name="KƏBUTƏR MÜTƏLLİMOVA" xml:space="preserve">
+    <value>KABUTAR MUTALLIMOVA</value>
+  </data>
+  <data name="Laboratoriya" xml:space="preserve">
+    <value>Laboratory</value>
+  </data>
+  <data name="Laboratoriyanın ISO 15189:2012 üzrə akkreditasiyası tibb sahəsində yüksək səviyyəli xidmətə, analiz nəticələrinin dəqiqliyinə, sənədləşmə prosedurlarına nəzarətə, risklərin minimuma endirilməsinə və hər şeydən əvvəl, pasiyentlərin məmnunluğuna zəmanət verir." xml:space="preserve">
+    <value>Accreditation of the laboratory according to ISO 15189: 2012 guarantees a high level of service in the field of medicine, accuracy of test results, control of documentation procedures, minimization of risks and, above all, patient satisfaction.</value>
+  </data>
+  <data name="LABORATORİYA" xml:space="preserve">
+    <value>LABORATORY</value>
+  </data>
+  <data name="Laparoskopik cərrahiyyə" xml:space="preserve">
+    <value>Laparoscopic surgery</value>
+  </data>
+  <data name="LOR" xml:space="preserve">
+    <value>LOR</value>
+  </data>
+  <data name="Mama-ginekologiya şöbəsində peşəkar mütəxəssislərimiz tərəfindən ginekoloji xəstəliklərin müalicəsi ilə yanaşı, hamiləlik önü və hamiləlik vaxtı müayinə və müşahidələr, doğuşun həyata keçirilməsi və doğuş sonrası təqiblər həyata keçirilməkdədir. Xaricdə təhsil almış təcrübəli həkimlərimiz yüksək texnoloji tibbi avadanlıqlarla təchiz olunmuş şöbədə açıq və endoskopik cərrahiyyə, miomaların cərrahi və konservativ müalicə metodları, yumurtalıq şişlərinin endoskopik cərrahiyyəsi, polikistoz yumurtalıq sindromlarında müalicə, uşaqlıq və sidik kisəsi sallanmalarının müalicəsi, sidik qaçırma problemlərinin konservativ və cərrahi müalicəsi, uşaqlıq boyunu xərçəngi və neoplazmaların profilaktikasında xüsusi tədbirlər və peyvənd tətbiqi və s. kimi tibbi xidmətləri uğurla həyata keçirir." xml:space="preserve">
+    <value>In addition to the treatment of gynecological diseases, our specialists in the Department of Obstetrics and Gynecology carry out examinations and observations before and during pregnancy, delivery and postpartum follow-up. Our experienced doctors trained abroad in the department equipped with high-tech medical equipment. Successfully implements special measures in the prevention of cervical cancer and neoplasms, as well as medical services such as vaccination and so on.</value>
+  </data>
+  <data name="Mikrobiologiya" xml:space="preserve">
+    <value>Microbiology</value>
+  </data>
+  <data name="Müalicə işi" xml:space="preserve">
+    <value>Treatment</value>
+  </data>
+  <data name="MÜDDƏT" xml:space="preserve">
+    <value>During</value>
+  </data>
+  <data name="Məhəmməd Peyğəmbər (s.a.s)" xml:space="preserve">
+    <value>Prophet Muhammad (s.a.s)</value>
+  </data>
+  <data name="MƏLUMAT" xml:space="preserve">
+    <value>INFORMATION</value>
+  </data>
+  <data name="N-KAY MEDICAL © 2022 Bütün hüquqlar qorunur." xml:space="preserve">
+    <value>N-KAY MEDICAL © 2022 All rights reserved</value>
+  </data>
+  <data name="NATİQ MÜTƏLLİMOV" xml:space="preserve">
+    <value>NATIG MUTALLIMOV</value>
+  </data>
+  <data name="NEVROLOGİYA" xml:space="preserve">
+    <value>NEUROLOGY</value>
+  </data>
+  <data name="OFTALMOLOGİYA" xml:space="preserve">
+    <value>OPHTALMOLOGY</value>
+  </data>
+  <data name="Ottolarinqologiya" xml:space="preserve">
+    <value>Otolaryngology</value>
+  </data>
+  <data name="Patohistologiya" xml:space="preserve">
+    <value>Pathohistology</value>
+  </data>
+  <data name="Patomorfoloji diaqnostik müayinələr həm şiş/neoplastik proseslərdə, həm də qeyri şiş patologiyaları zamanı aparılır. Müayinələr incə iynə biopsiya üsulu ilə ğötürülən toxumalarda işlənilir. İncə iynə tikələri Leica Frozen cihazı ilə kəsilib hazırlanır. İmmunofluoresent və immunohistokimiya müayinələri Leica DM 2500 mikroskop vasitəsi ilə aparılaraq yüksək dəqiqliyə malik olan nəticələri əldə etməyə imkan verir." xml:space="preserve">
+    <value>Pathomorphological diagnostic examinations are performed both in tumor / neoplastic processes and in non-tumor pathologies. Examinations are performed on tissues removed by fine needle biopsy. Fine needle pieces are cut with the Leica Frozen device. Immunofluorescence and immunohistochemistry tests are performed under the Leica DM 2500 microscope to obtain high-precision results.</value>
+  </data>
+  <data name="Pediatr" xml:space="preserve">
+    <value>Pediatric</value>
+  </data>
+  <data name="Pediatriya" xml:space="preserve">
+    <value>Pediatrics</value>
+  </data>
+  <data name="PEDİATRİYA" xml:space="preserve">
+    <value>PEDIATRY</value>
+  </data>
+  <data name="Plomb" xml:space="preserve">
+    <value>Plomb</value>
+  </data>
+  <data name="Qadın xəstəlikləri müalicəsi" xml:space="preserve">
+    <value>Treatment of gynecological diseases</value>
+  </data>
+  <data name="QALEREYA" xml:space="preserve">
+    <value>GALLERY</value>
+  </data>
+  <data name="Qastrointestinal sistem cərrahiyyə" xml:space="preserve">
+    <value>Gastrointestinal system surgery</value>
+  </data>
+  <data name="Qulağın yuyulması" xml:space="preserve">
+    <value>Ear wash</value>
+  </data>
+  <data name="Qusar r-n Mərkəzi Xəstəxanası" xml:space="preserve">
+    <value>Gusar district Central Hospital</value>
+  </data>
+  <data name="Qutqaşen rayonu Nic kəndi" xml:space="preserve">
+    <value>Nic village of Gutgashen district</value>
+  </data>
+  <data name="Qəbələ r-nu Mərkəzi Xəstəxanası" xml:space="preserve">
+    <value>Gabala Central Hospital</value>
+  </data>
+  <data name="Rusiya" xml:space="preserve">
+    <value>Russia</value>
+  </data>
+  <data name="Rusiya Tibb Universiteti" xml:space="preserve">
+    <value>Russian Med.Univ</value>
+  </data>
+  <data name="RƏHBƏRLİK" xml:space="preserve">
+    <value>MANAGMENT</value>
+  </data>
+  <data name="STASİONAR XİDMƏT" xml:space="preserve">
+    <value>STATIONARY SERVICE</value>
+  </data>
+  <data name="Stomatologiya" xml:space="preserve">
+    <value>Dentistry</value>
+  </data>
+  <data name="STOMATOLOGİYA" xml:space="preserve">
+    <value>STOMATOLOGY</value>
+  </data>
+  <data name="Stomatoloq" xml:space="preserve">
+    <value>Dentist</value>
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String42" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String43" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String44" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String45" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String46" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String47" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String48" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String49" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String50" xml:space="preserve">
+    <value />
+  </data>
+  <data name="TARİXİMİZ" xml:space="preserve">
+    <value>OUR STORY</value>
+  </data>
+  <data name="Telefon" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Telefon:" xml:space="preserve">
+    <value>Phone:</value>
+  </data>
+  <data name="TERAPİYA" xml:space="preserve">
+    <value>THERAPY</value>
+  </data>
+  <data name="TİBBİ SIĞORTA" xml:space="preserve">
+    <value>MEDICAL INSURANCE</value>
+  </data>
+  <data name="TİP" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Təbii doğuş" xml:space="preserve">
+    <value>Natural childbirth</value>
+  </data>
+  <data name="Təcili yardım xidməti" xml:space="preserve">
+    <value>Ambulance service</value>
+  </data>
+  <data name="Təcili yardım şöbəsi Almaniyanın “Drager” şirkətinin tibbi avdanlıqları ilə təchiz olunmuş “Mercedes-Benz” markalı 3 ambulans və 2 reanimobil ilə xidmət göstərir. Avtomobillərin tibbi təchizatı göstəriləcək ilkin yardımın dünya standartlarına uyğundur. Təcili tibbi yardım xidməti istədiyiniz təqdirdə ev və ya ofisinizdə portativ aparatlarla instrumental (Rentqen, USM, EKQ) və laborator müayinələri həyata keçirə bilər. Peşəkar tibbi personalımız ağırlıq dərəcəsindən asılı olmayaraq xəstələri Respublikamızın istənilən yerindən xəstəxanamıza və ehtiyac olarsa ölkə xaricinə daşınmasını təmin edir." xml:space="preserve">
+    <value>The ambulance department is served by 3 Mercedes-Benz ambulances and 2 ambulances equipped with medical equipment of the German company Drager. The medical equipment of the cars meets the world standards of first aid. The emergency medical service can perform instrumental (X-ray, USM, ECG) and laboratory examinations with portable devices in your home or office if you wish. Our professional medical staff, regardless of the severity, ensures the transportation of patients from anywhere in the country to our hospital and, if necessary, abroad.</value>
+  </data>
+  <data name="Təhsil" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="TƏRƏFDAŞLAR" xml:space="preserve">
+    <value>PARTNERS</value>
+  </data>
+  <data name="Ultra Səs Müayinəsi" xml:space="preserve">
+    <value>Ultrasound</value>
+  </data>
+  <data name="Umümi müalicə" xml:space="preserve">
+    <value>General treatment</value>
+  </data>
+  <data name="Universitet" xml:space="preserve">
+    <value>University</value>
+  </data>
+  <data name="UROLOGİYA" xml:space="preserve">
+    <value>UROLOGY</value>
+  </data>
+  <data name="USM" xml:space="preserve">
+    <value>USM</value>
+  </data>
+  <data name="Uşaq muayinəsi" xml:space="preserve">
+    <value>Pediatric examination</value>
+  </data>
+  <data name="VAKANSİYA" xml:space="preserve">
+    <value>VACANCIES</value>
+  </data>
+  <data name="VİDEOLAR" xml:space="preserve">
+    <value>VIDEO</value>
+  </data>
+  <data name="Xidmətlər" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="XİDMƏTLƏR" xml:space="preserve">
+    <value>SERVICES</value>
+  </data>
+  <data name="XİDMƏTİ SAHƏLƏR" xml:space="preserve">
+    <value>SERVICES</value>
+  </data>
+  <data name="XƏBƏRLƏR" xml:space="preserve">
+    <value>NEWS</value>
+  </data>
+  <data name="XƏBƏRİM OLSUN" xml:space="preserve">
+    <value>LET ME KNOW</value>
+  </data>
+  <data name="Xəstəlik sonrası bədən möhkəmlənməsi" xml:space="preserve">
+    <value>Strengthening the body after illness</value>
+  </data>
+  <data name="XƏSTƏLƏRİMİZİ BAYRAM GÜNLƏRİDƏ QƏBUL EDİRİK" xml:space="preserve">
+    <value>WE RECEIVE OUR PATIENTS ON HOLIDAYS</value>
+  </data>
+  <data name="Xəstəxanamızda həkim-terapevtlərimiz ümumi diaqnostik müayinələrin təyini, diferensial diaqnostikanın aparılması, erkən mərhələdə xəstəliyin diaqnostikası və xəstələrin müvafiq mütəxəssislərə yönləndirilməsi, xroniki patologiyalarda xəstələrə dinamik-dispanser nəzarəti, vaksinasiyaları, cərrahi əməliyyata hazırlanan xəstələrdə “operativ risk” və onun dərəcəsinin təyin edilməsini gündəlik olaraq uğurla həyata keçirir." xml:space="preserve">
+    <value>At our hospital, our therapists perform general diagnostic examinations, differential diagnosis, early diagnosis and referral of patients to appropriate specialists, dynamic dispensary control of patients with chronic pathologies, vaccinations, "operational risk" and its degree of "operational risk" in patients preparing for surgery. holds.</value>
+  </data>
+  <data name="Xəstəxanamızda iridosiklit və uveitlər, qlaukoma, katarakta, retinapatiyalar, refraksiya pozğunluğu, göz dibi xəstəlikləri, konyuktivanın infeksion xəstəlikləri, buynuz qışa xoraları, konyuktiva və buynuz qışanın yad cismi, quru göz sindromu və s. kimi xəstəliklərin müayinə və müalicəsi həyata keçirilir." xml:space="preserve">
+    <value>Our hospital examines and treats diseases such as iridocyclitis and uveitis, glaucoma, cataracts, retinapathy, refractive disorders, conjunctival diseases, conjunctival ulcers, corneal ulcers, conjunctival and corneal foreign body, dry eye syndrome and others.</value>
+  </data>
+  <data name="Xəstəxanamızda təcrübəli həkim-endokrinoloqlarımız tərəfindən endokrin sistemi xəstəliklərinin diaqnostikası, ambulator və stasionar müalicəsi həyata keçirilir." xml:space="preserve">
+    <value>Diagnosis, outpatient and inpatient treatment of endocrine system diseases are carried out in our hospital by our experienced endocrinologists.</value>
+  </data>
+  <data name="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın" xml:space="preserve">
+    <value>Enter your email address to receive news notifications</value>
+  </data>
+  <data name="YENİLİKLƏRDƏN XƏBƏRDAR OL" xml:space="preserve">
+    <value>BE AWARE OF NEWS</value>
+  </data>
+  <data name="Yırtıq cərrahiyyəsi" xml:space="preserve">
+    <value>Hernia surgery</value>
+  </data>
+  <data name="Zobun mualicəsi" xml:space="preserve">
+    <value>Thyroid treatment</value>
+  </data>
+  <data name="Çıxış et" xml:space="preserve">
+    <value>Log out</value>
+  </data>
+  <data name="Çəpgözlük" xml:space="preserve">
+    <value>Strabismus</value>
+  </data>
+  <data name="Çəpər əyriliklərin mualicəsi" xml:space="preserve">
+    <value>Treatment of nasal curves</value>
+  </data>
+  <data name="ÖLKƏ" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Ümumi Cərrahiyyə Mərkəzi xərçəng və xərçəng olmayan bütün xəstəliklərin diaqnoz və müalicəsini təmin edəcək bilik və təcrübəyə malik tibb heyəti, klassik müalicə metodlarını müasir texnologiya ilə birləşdirən avadanlıq və infrastrukturu, hər xəstəyə fərdi şəkildə yanaşaraq innovativ üsulların tətbiq edildiyi cərrahi müalicə metodları ilə dünya standartlarında xidmət imkanlarına malikdir." xml:space="preserve">
+    <value>The General Surgery Center has a knowledgeable and experienced medical staff that will diagnose and treat all cancers and non-cancers, equipment and infrastructure that combine classical treatment methods with modern technology, and world-class surgical treatment methods that apply innovative methods to each patient individually. .</value>
+  </data>
+  <data name="Ümumi müayinə" xml:space="preserve">
+    <value>General examination</value>
+  </data>
+  <data name="Ümümu müayinə" xml:space="preserve">
+    <value>General examination</value>
+  </data>
+  <data name="Ünvan:" xml:space="preserve">
+    <value>Adress:</value>
+  </data>
+  <data name="Ürək-damar daralması" xml:space="preserve">
+    <value>Cardiovascular narrowing</value>
+  </data>
+  <data name="İmmuno-serologiya" xml:space="preserve">
+    <value>Immuno-serology</value>
+  </data>
+  <data name="İmplant" xml:space="preserve">
+    <value>Implant</value>
+  </data>
+  <data name="İmplantasiya nədir İmplantlar, əskik olan dişlərin funksiyasını və estetikasını bərpa etmək məqsədi ilə çənə sümüyünə yerləşdirilən süni diş köküdür. İmplantlardan bir və ya daha çox dişləri əvəz etmək üçün istifadə olunur. Hərhansı səbəbdən itirilmiş dişlərin yerinə implantasiya etmək olar. Əsas məhdudiyyət mövcud sümük miqdarıdır ki, bu zaman əlavə sümük köçürülmə əməliyyatı edilir. Bunu həkim-implantoloq özü müəyyən edir. İmplantların üstünlükləri çoxdur. Çəkilmiş dişlərin yerinə də implantasiya edilərək qonşu dişlər yonulmaqdan qurtulur. Artıq bir dişə görə iki diş qurban verilmir. Digər bir problem çıxan protezlərin ağızda kip durmamağıdır. Bu problem də implant vasitəsilə aradan götürülür. Sadaladığımız bu və başqa ağız boşluğu problemlərinin həllində implantların böyük rolu var. Bütün implantasiya əməliyyatları tam ağrısız şəraitdə həyata keçirilir." xml:space="preserve">
+    <value>What is implantation? Implants are artificial tooth roots placed in the jawbone to restore the function and aesthetics of missing teeth. Implants are used to replace one or more teeth. Lost teeth can be implanted for any reason. The main limitation is the amount of bone available, in which case additional bone grafting is performed. This is determined by the implantologist himself. The advantages of implants are many. By replacing the extracted teeth, the neighboring teeth are saved from shaving. No more two teeth are sacrificed for one tooth. Another problem is that the prostheses do not fit in the mouth. This problem is also eliminated through implants. Implants play an important role in solving these and other oral problems. All implantation operations are performed in a completely painless manner.</value>
+  </data>
+  <data name="İnstitut" xml:space="preserve">
+    <value>Institute</value>
+  </data>
+  <data name="İXTİSAS" xml:space="preserve">
+    <value>Specialty</value>
+  </data>
+  <data name="İş günləri" xml:space="preserve">
+    <value>Working days</value>
+  </data>
+  <data name="İş təcrübəsi" xml:space="preserve">
+    <value>Work experience</value>
+  </data>
+  <data name="İŞ YERİ" xml:space="preserve">
+    <value>Workplace</value>
+  </data>
+  <data name="ŞƏKİLLƏR" xml:space="preserve">
+    <value>PHOTO</value>
+  </data>
+  <data name="ƏLAQƏ" xml:space="preserve">
+    <value>CONTACT</value>
+  </data>
+  <data name="ƏLAQƏ VASİTƏLƏRİ" xml:space="preserve">
+    <value>CONTACTS</value>
+  </data>
+  <data name="ərtaflı" xml:space="preserve">
+    <value>more</value>
+  </data>
+  <data name="ƏTRAFLI" xml:space="preserve">
+    <value>MORE</value>
+  </data>
+</root>

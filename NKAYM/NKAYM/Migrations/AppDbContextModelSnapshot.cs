@@ -442,6 +442,9 @@ namespace NKAYM.Migrations
                     b.Property<string>("LangRus")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("LangUsa")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Logo")
                         .HasColumnType("nvarchar(max)");
 
