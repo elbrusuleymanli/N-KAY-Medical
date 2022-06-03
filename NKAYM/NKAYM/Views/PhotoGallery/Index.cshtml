@@ -1,4 +1,5 @@
 ﻿@model List<PhotoGallery>
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,23 +10,23 @@
         <div class="banner-image">
             <img src="/assets/images/banners/gallery.jpg" alt="">
             <div class="container">
-                <h3>ŞƏKİLLƏR</h3>
+                <h3>@language.Getkey("ŞƏKİLLƏR")</h3>
             </div>
 
         </div>
     </div>
 </div>
 <!-- banner end -->
-<div class="container gallery-container">
+<div class="container  gallery-container">
     <div class="title">
-        <h2>ŞƏKİLLƏR QALEREYASI</h2>
+        <h2>@language.Getkey("ŞƏKİLLƏR QALEREYASI")</h2>
     </div>
     <div class="tz-gallery">
 
         <div class="row " data-aos="fade-up">
             @foreach (var photo in Model)
             {
-                <div class="col-lg-3 col-md-4 ">
+                <div class="col-lg-3">
                     <a class="lightbox" href="/assets/images/@photo.Image">
                         <img src="/assets/images/@photo.Image" alt="şəkil">
                     </a>
@@ -35,18 +36,6 @@
         </div>
 
     </div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1">Previous</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#">Next</a>
-            </li>
-        </ul>
-    </nav>
+
 </div>
 

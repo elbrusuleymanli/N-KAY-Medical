@@ -1,36 +1,37 @@
-﻿
+﻿@inject LanguageService language
 @model VacancyRequest
 @{
     ViewData["Title"] = "Create";
 }
 
-<div class="content">
-    <div class="login-wrap"style="width:600px">
-        <h2>Vakant yer üçün müraciət</h2>
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <form method="post" asp-controller="VacancyRequest" asp-action="Create" enctype="multipart/form-data">
-            <div class="form">
+<div class="container d-flex justify-content-center">
+    <div class="row">
+        <div class="login-wrap">
+            <h2>@language.Getkey("Vakant yer üçün müraciət")</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <form method="post" asp-controller="VacancyRequest" asp-action="Create" enctype="multipart/form-data">
+                <div class="form">
 
-              
-                <span asp-validation-for="Fullname" class="text-danger"></span>
-                <input class="vacan" asp-for="Fullname" type="text" placeholder="Ad Soyad Ata adı" />
 
-                <span asp-validation-for="Education" class="text-danger"></span>
-                <input class="vacan" asp-for="Education" type="text" placeholder="Təhsil" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-                <input class="vacan" asp-for="Phone" type="text" placeholder="Əlaqə nömrəsi" />
-                <span asp-validation-for="RequestPosition" class="text-danger"></span>
-                <input class="vacan" asp-for="RequestPosition" type="text" placeholder="Vakant olan vəzifə" />
-                <span asp-validation-for="PdfFile" class="text-danger"></span>
-                <input class="vacan" accept="pdf/*" asp-for="PdfFile" style="margin-left:58px;margin-bottom:35px;" placeholder="CV" />
+                    <span asp-validation-for="Fullname" class="text-danger"></span>
+                    <input  asp-for="Fullname" type="text" placeholder="Ad Soyad Ata adı" />
 
-                <button type="submit" class="acc" style="background-color: #108d01;margin-bottom:0" onclick="return alert('Sizin müraciətiniz göndərildi');"> TƏSDİQLƏ </button>
-                <button class="btn btn-light mt-4" asp-controller="Vacancy" asp-action="Index">Bağla</button>
-            </div>
-        </form>
+                    <span asp-validation-for="Education" class="text-danger"></span>
+                    <input  asp-for="Education" type="text" placeholder="Təhsil" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                    <input  asp-for="Phone" type="text" placeholder="Əlaqə nömrəsi" />
+                    <span asp-validation-for="RequestPosition" class="text-danger"></span>
+                    <input  asp-for="RequestPosition" type="text" placeholder="Vakant olan vəzifə" />
+                    <span asp-validation-for="PdfFile" class="text-danger"></span>
+                    <input class="vacan" accept="pdf/*" asp-for="PdfFile" style="margin-bottom:35px;" placeholder="CV" />
+
+                    <button type="submit" class="acc" style="background-color: #108d01;" onclick="return alert('Sizin müraciətiniz göndərildi');">@language.Getkey("TƏSDİQLƏ")  </button>
+                    <button class="btn btn-light mt-4" asp-controller="Vacancy" asp-action="Index">@language.Getkey("Bağla")</button>
+                </div>
+            </form>
+        </div>
     </div>
 </div>
-
 
 
 

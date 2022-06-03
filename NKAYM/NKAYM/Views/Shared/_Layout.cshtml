@@ -19,16 +19,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
     <link rel="stylesheet" href="https://rawgit.com/LeshikJanz/libraries/master/Bootstrap/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-   
+
 
     <link rel="stylesheet" href="~/assets/css/style.css">
     <title>NKayM</title>
-
+    @inject LanguageService language
 </head>
 
 <body>
     <header>
-       @await Component.InvokeAsync("NavMenu")
+        @await Component.InvokeAsync("NavMenu")
 
 
 
@@ -44,13 +44,52 @@
         <div id="gloval-nav">
             <nav>
                 <ul id="navigation">
-                    <li><a asp-controller="Home" asp-action="Index">Ana Səhifə</a></li>
-                    <li><a asp-controller="About" asp-action="Index">Haqqımızda</a> </li>
-                    <li><a asp-controller="Service" asp-action="Index">Xidmətlər</a></li>
-                    <li><a asp-controller="Doctor" asp-action="Index">Həkimlər</a></li>
-                    <li><a asp-controller="News" asp-action="Index">Xəbərlər</a></li>
-                    <li><a asp-controller="PhotoGallery" asp-action="Index">Qalereya</a></li>
-                    <li><a asp-controller="Contact" asp-action="Index">Əlaqə</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">@language.Getkey("ANA SƏHİFƏ")</a></li>
+                    <li><a asp-controller="About" asp-action="Index">@language.Getkey("HAQQIMIZDA")</a> </li>
+                    <li><a asp-controller="Service" asp-action="Index">@language.Getkey("XİDMƏTLƏR")</a></li>
+                    <li><a asp-controller="Doctor" asp-action="Index">@language.Getkey("HƏKİMLƏR")</a></li>
+                    <li><a asp-controller="News" asp-action="Index">@language.Getkey("XƏBƏRLƏR")</a></li>
+                    <li><a asp-controller="PhotoGallery" asp-action="Index">@language.Getkey("QALEREYA")</a></li>
+                    <li><a asp-controller="Contact" asp-action="Index">@language.Getkey("ƏLAQƏ")</a></li>
+                    <li>
+                        <div class="profile" style="text-align:center;">
+                            @if (!User.Identity.IsAuthenticated)
+                            {
+                                <a asp-controller="Account" asp-action="Login" id="myBtn" type="submit">
+
+                                    <i class="fas fa-user-md"></i>
+                                </a>
+                                <span class="sign-in">@language.Getkey("Daxil ol")</span>
+                            }
+                            else
+                            {
+                                <a asp-controller="Account" asp-action="Logout" id="myBtn" type="submit" style="color:green" onclick="return confirm('Çıxış etməyə əminsiniz?')  ;">
+
+                                    <i class="fas fa-user-md"></i>
+                                </a>
+                                <span class="sign-in">@language.Getkey("Çıxış et")</span>
+                            }
+                        </div>
+                    </li>
+                </ul>
+                <ul style="display:flex;justify-content:center">
+                    <li>
+                        <a style="background-image: linear-gradient(to top, #07a300, #689500, #948400, #b46e00, #ca5500, #d5421f, #de2b34, #e2004a, #db0065, #c40088, #9600ae, #0f06d3);"
+                           asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="az-Latn">
+                            AZ
+                        </a>
+                    </li>
+
+                    <li style="margin-left:15px;margin-right:15px">
+                        <a style="background-image: linear-gradient(to bottom, #0009c9, #5440d6, #7e6ae0, #a393e9, #c6bdf0, #d5c2f2, #e2c7f3, #efccf4, #fda5dc, #ff78b0, #ff4471, #ff0022); " asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="ru-RU">
+                            RU
+                        </a>
+                    </li>
+                    <li>
+                        <a style="background-image: linear-gradient(to right bottom, #0009c9, #8c00b1, #bf0096, #df007c, #f10066, #f6015c, #fa0951, #fd1646, #fc1846, #fa1a45, #f91c45, #f81e45);" asp-controller="Home" asp-action="ChangeLanguage" asp-route-culture="en-US">
+                            EN
+                        </a>
+                    </li>
                 </ul>
             </nav>
 
@@ -64,7 +103,9 @@
                 <div class="nav-bg contact"></div>
             </div>
         </div>
-
+       
+            
+       
 
         <!-- mobile menu end-->
     </header>

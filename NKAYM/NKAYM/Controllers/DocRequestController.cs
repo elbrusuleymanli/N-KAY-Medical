@@ -34,11 +34,11 @@ namespace NKAYM.Controllers
             DocRequest reply = new DocRequest
             {
                 Fullname = model.Fullname,
-                Gender = model.Gender,
+               
                 Birhtday = model.Birhtday,
                 Address = model.Address,
                 Phone=model.Phone,
-                AboutSick=model.AboutSick,
+               
                 Unit=model.Unit,
                 DoctorsFullname=model.DoctorsFullname,
                 RequestDay=model.RequestDay,

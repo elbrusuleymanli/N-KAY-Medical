@@ -1,4 +1,5 @@
 ﻿@model List<Vacancy>
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="/assets/images/banners/vacancy.jpg" alt="">
             <div class="container">
-                <h3>VAKANSİYALAR</h3>
+                <h3>@language.Getkey("VAKANSİYALAR")</h3>
             </div>
 
         </div>
@@ -18,53 +19,53 @@
 <!-- banner end -->
 <div class="container">
     <div class="row">
-        <div class="col-lg-12 col-md-6">
+        <div class="col-lg-12">
             <div class="vacancy">
                 <table>
                     <tr>
                         <th>
-                            VƏZİFƏ
+                            @language.Getkey("VƏZİFƏ") 
                         </th>
                         <th>
-                            CİNS
+                            @language.Getkey("CİNS") 
                         </th>
                         <th>
-                            TƏHSİL
+                            @language.Getkey("TƏHSİL")  
                         </th>
                         <th>
-                            TƏCRÜBƏ
+                            @language.Getkey("TƏCRÜBƏ")  
                         </th>
                         <th>
-                            SAAT
+                            @language.Getkey("SAAT") 
                         </th>
                         <th>
-                             GÜN
+                            @language.Getkey("GÜN") 
                         </th>
                     </tr>
                     @foreach (var vacancy in Model)
                     {
                         <tr>
                             <td>
-                                @vacancy.Position
+                                @language.Getkey(vacancy.Position)
                             </td>
                             <td>
-                               @vacancy.Gender
+                                @language.Getkey(vacancy.Gender)
                             </td>
                             <td>
-                               @vacancy.Education
+                                @language.Getkey(vacancy.Education)
                             </td>
                             <td>
-                                @vacancy.Experience
+                                @language.Getkey(vacancy.Experience)
                             </td>
                             <td>
-                                @vacancy.WorkTime
-                            </td>
+                                @language.Getkey(vacancy.WorkTime)
+                            </td >
                             <td>
-                                @vacancy.WorkDays
+                                @language.Getkey(vacancy.WorkDays)
                             </td>
-                           
-                                
-                           
+
+
+
                         </tr>
                     }
 
@@ -72,7 +73,7 @@
                 </table>
             </div>
             <div class="vac-req">
-                <a class="request" asp-controller="VacancyRequest" asp-action="Create" >MÜRACİƏT ET</a>
+                <a class="request" asp-controller="VacancyRequest" asp-action="Create">@language.Getkey("MÜRACİƏT ET")</a>
             </div>
         </div>
     </div>

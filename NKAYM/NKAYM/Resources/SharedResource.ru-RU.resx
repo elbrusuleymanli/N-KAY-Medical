@@ -120,11 +120,20 @@
   <data name="&quot;İnsanların çoxunun təqdir etmədiyi iki şey var: sağlamlıq və boş vaxt.&quot;" xml:space="preserve">
     <value>"Есть две вещи, которые большинство людей не ценят: здоровье и время".</value>
   </data>
+  <data name="12 ay" xml:space="preserve">
+    <value>12 мес</value>
+  </data>
   <data name="49A,N.Nərimanov,Xaçmaz,2700" xml:space="preserve">
     <value>Хачмаз ул.Н.Нариманова 49А 2700</value>
   </data>
   <data name="AD" xml:space="preserve">
     <value>Название</value>
+  </data>
+  <data name="Ad Soyad,Ata adı:" xml:space="preserve">
+    <value>И.Ф.О:</value>
+  </data>
+  <data name="ALİ TİBBİ" xml:space="preserve">
+    <value>ВЫСШЕЕ МЕД</value>
   </data>
   <data name="AMBULANCE" xml:space="preserve">
     <value>СКОРАЯ МАШИНА</value>
@@ -141,6 +150,9 @@
   <data name="Azərbaycan Tibb İnstitutu" xml:space="preserve">
     <value>Аз.Мед.Институт</value>
   </data>
+  <data name="Bağla" xml:space="preserve">
+    <value>ОТМЕНИТЬ</value>
+  </data>
   <data name="Baş həkim" xml:space="preserve">
     <value>Главврач</value>
   </data>
@@ -156,6 +168,9 @@
   <data name="Boğaz boşluğunun müayinəsi" xml:space="preserve">
     <value>Осмотр горловой полости</value>
   </data>
+  <data name="Bölmə:" xml:space="preserve">
+    <value>Отдел:</value>
+  </data>
   <data name="BÖLÜM" xml:space="preserve">
     <value>Отдел</value>
   </data>
@@ -164,6 +179,9 @@
   </data>
   <data name="Bədənin rahatlanması" xml:space="preserve">
     <value>Расслабление тела</value>
+  </data>
+  <data name="CİNS" xml:space="preserve">
+    <value>Пол</value>
   </data>
   <data name="Cərrah" xml:space="preserve">
     <value>Хирург</value>
@@ -180,6 +198,9 @@
   <data name="Daxil ol" xml:space="preserve">
     <value>Войти</value>
   </data>
+  <data name="DAXİL OL" xml:space="preserve">
+    <value>ВОЙТИ</value>
+  </data>
   <data name="Diaqnozun təyin olunması" xml:space="preserve">
     <value>Диагноз</value>
   </data>
@@ -192,6 +213,9 @@
   </data>
   <data name="Dişin çıxarılması" xml:space="preserve">
     <value>Удаление зуба</value>
+  </data>
+  <data name="Doğum günü:" xml:space="preserve">
+    <value>Дата рождения:</value>
   </data>
   <data name="Dr. Coşqun Məmmədov" xml:space="preserve">
     <value>Др.Джошгун Маммадов</value>
@@ -271,6 +295,9 @@
   <data name="Gülərüz, qayğıkeş personalımız tərəfindən Hospitalda sığortalı pasiyentlərə davamlı olaraq 24 saat ərzində yüksək səviyyəli ixtisaslaşmış, müasir tələblərə cavab verən tibbi xidmət göstərilir. Bundan əlavə Hospitalda sığorta xətti ilə müxtəlif idarə, təşkilat və şirkət işçilərinin dövri tibbi müayinələrdən keçmələri təşkil edilir və müxtəlif endirimli check-up paketləri təklif olunur. 10 il ərzində Hospitala 27 mindən artıq sığortalı xəstə müraciət etmiş və onlara 416 mindən artıq tibbi xidmət göstərilmişdir." xml:space="preserve">
     <value>Наш дружелюбный, заботливый персонал круглосуточно предоставляет застрахованным пациентам больницы высокоспециализированные современные медицинские услуги. Кроме того, больница организует периодические медицинские осмотры сотрудников различных ведомств, организаций и компаний по страховой линии и предлагает различные льготные пакеты медосмотров. За 10 лет в больницу обратилось более 27 000 застрахованных пациентов и им было оказано более 416 000 медицинских услуг.</value>
   </data>
+  <data name="GÜN" xml:space="preserve">
+    <value>День</value>
+  </data>
   <data name="GİNEKOLOGİYA" xml:space="preserve">
     <value>ГИНЕКОЛОГИЯ</value>
   </data>
@@ -304,11 +331,17 @@
   <data name="Həkim-stomatoloq" xml:space="preserve">
     <value>Стоматолог</value>
   </data>
+  <data name="Həkim:" xml:space="preserve">
+    <value>Доктор:</value>
+  </data>
   <data name="HƏKİM MUAYİNƏSİNDƏ ENDİRİM ELAN EDİRİK!" xml:space="preserve">
     <value>ПРЕДОСТАВЛЯЕМ СКИДКУ НА ОБСЛЕДОВАНИЯ</value>
   </data>
   <data name="HƏKİM QƏBULU" xml:space="preserve">
     <value>ПРИЕМ ВРАЧА</value>
+  </data>
+  <data name="HƏKİM-LABORANT" xml:space="preserve">
+    <value>ДОКТОК-ЛАБОРАНТ</value>
   </data>
   <data name="HƏKİMLƏR" xml:space="preserve">
     <value>ВРАЧИ</value>
@@ -390,14 +423,29 @@
   <data name="Müalicə işi" xml:space="preserve">
     <value>Лечебное дело</value>
   </data>
+  <data name="Müayinə günü:" xml:space="preserve">
+    <value>Дата обследования:</value>
+  </data>
+  <data name="Müayinə saatı:" xml:space="preserve">
+    <value>Время обследования:</value>
+  </data>
   <data name="MÜDDƏT" xml:space="preserve">
     <value>Срок</value>
+  </data>
+  <data name="Müraciət et" xml:space="preserve">
+    <value>ЗАПИСАТЬСЯ</value>
+  </data>
+  <data name="MÜRACİƏT ET" xml:space="preserve">
+    <value>ПОПРОБУЙ</value>
   </data>
   <data name="Məhəmməd Peyğəmbər (s.a.s)" xml:space="preserve">
     <value>Пророк Мухаммад (с.а.с)</value>
   </data>
   <data name="MƏLUMAT" xml:space="preserve">
     <value>ИНФОРМАЦИЯ</value>
+  </data>
+  <data name="N-KAY M Klinikanın açılışı" xml:space="preserve">
+    <value>ОТКРЫТИЕ N-KAY M </value>
   </data>
   <data name="N-KAY Medical" xml:space="preserve">
     <value>N-KAY Medical</value>
@@ -413,6 +461,12 @@
   </data>
   <data name="OFTALMOLOGİYA" xml:space="preserve">
     <value>ОФТАЛЬМОЛОГИЯ</value>
+  </data>
+  <data name="ONLİNE QEYDİYYAT" xml:space="preserve">
+    <value>ОНЛАЙН РЕГИСТРАЦИЯ</value>
+  </data>
+  <data name="ORTA TİBBİ" xml:space="preserve">
+    <value>СРЕДНЕЕ МЕД</value>
   </data>
   <data name="Ottolarinqologiya" xml:space="preserve">
     <value>Оттологингология</value>
@@ -435,6 +489,9 @@
   <data name="Plomb" xml:space="preserve">
     <value>Пломба</value>
   </data>
+  <data name="QADİN" xml:space="preserve">
+    <value>ЖЕНСКИЙ</value>
+  </data>
   <data name="Qadın xəstəlikləri müalicəsi" xml:space="preserve">
     <value>
 Лечение гинекологических заболеваний</value>
@@ -444,6 +501,9 @@
   </data>
   <data name="Qastrointestinal sistem cərrahiyyə" xml:space="preserve">
     <value>Хирургия желудочно-кишечной системы</value>
+  </data>
+  <data name="Qeydiyyat" xml:space="preserve">
+    <value>Регистрация</value>
   </data>
   <data name="Qulağın yuyulması" xml:space="preserve">
     <value>Промывание ушей</value>
@@ -466,6 +526,9 @@
   <data name="RƏHBƏRLİK" xml:space="preserve">
     <value>РУКОВОДСТВО</value>
   </data>
+  <data name="SAAT" xml:space="preserve">
+    <value>Время</value>
+  </data>
   <data name="STASİONAR XİDMƏT" xml:space="preserve">
     <value>МЕД-ПАЛАТА</value>
   </data>
@@ -477,6 +540,30 @@
   </data>
   <data name="Stomatoloq" xml:space="preserve">
     <value>Стоматолог</value>
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String41" xml:space="preserve">
+    <value />
   </data>
   <data name="String42" xml:space="preserve">
     <value />
@@ -502,6 +589,81 @@
   <data name="String49" xml:space="preserve">
     <value />
   </data>
+  <data name="String50" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String72" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String9" xml:space="preserve">
+    <value />
+  </data>
   <data name="TARİXİMİZ" xml:space="preserve">
     <value>НАША ИСТОРИЯ</value>
   </data>
@@ -513,6 +675,9 @@
   </data>
   <data name="TERAPİYA" xml:space="preserve">
     <value>ТЕРАПИЯ</value>
+  </data>
+  <data name="TİBB BACISI" xml:space="preserve">
+    <value>МЕДСЕСТРА</value>
   </data>
   <data name="TİBBİ SIĞORTA" xml:space="preserve">
     <value>МЕД-СТРАХОВКА</value>
@@ -529,11 +694,20 @@
   <data name="Təcili yardım şöbəsi Almaniyanın “Drager” şirkətinin tibbi avdanlıqları ilə təchiz olunmuş “Mercedes-Benz” markalı 3 ambulans və 2 reanimobil ilə xidmət göstərir. Avtomobillərin tibbi təchizatı göstəriləcək ilkin yardımın dünya standartlarına uyğundur. Təcili tibbi yardım xidməti istədiyiniz təqdirdə ev və ya ofisinizdə portativ aparatlarla instrumental (Rentqen, USM, EKQ) və laborator müayinələri həyata keçirə bilər. Peşəkar tibbi personalımız ağırlıq dərəcəsindən asılı olmayaraq xəstələri Respublikamızın istənilən yerindən xəstəxanamıza və ehtiyac olarsa ölkə xaricinə daşınmasını təmin edir." xml:space="preserve">
     <value>Отделение скорой помощи обслуживают 3 машины скорой помощи Mercedes-Benz и 2 машины скорой помощи, оснащенные медицинским оборудованием немецкой фирмы Drager. Медицинское оснащение вагонов соответствует мировым стандартам оказания первой помощи. При желании служба скорой медицинской помощи может провести инструментальные (рентген, УЗИ, ЭКГ) и лабораторные исследования на портативных устройствах у вас дома или в офисе. Наш профессиональный медицинский персонал, независимо от степени тяжести, обеспечивает транспортировку пациентов из любой точки страны в нашу больницу и, при необходимости, за границу.</value>
   </data>
+  <data name="TƏCRÜBƏ" xml:space="preserve">
+    <value>Опыт</value>
+  </data>
   <data name="Təhsil" xml:space="preserve">
+    <value>Образование</value>
+  </data>
+  <data name="TƏHSİL" xml:space="preserve">
     <value>Образование</value>
   </data>
   <data name="TƏRƏFDAŞLAR" xml:space="preserve">
     <value>ПАРТНЕРЫ</value>
+  </data>
+  <data name="TƏSDİQLƏ" xml:space="preserve">
+    <value>ПОДТВЕРДИТЬ</value>
   </data>
   <data name="Ultra Səs Müayinəsi" xml:space="preserve">
     <value>УЗИ</value>
@@ -556,8 +730,17 @@
   <data name="VAKANSİYA" xml:space="preserve">
     <value>ВАКАНСИИ</value>
   </data>
+  <data name="VAKANSİYALAR" xml:space="preserve">
+    <value>ВАКАНСИЯ</value>
+  </data>
+  <data name="Vakant yer üçün müraciət" xml:space="preserve">
+    <value>Форма заполения для вакансии</value>
+  </data>
   <data name="VİDEOLAR" xml:space="preserve">
     <value>ВИДЕО</value>
+  </data>
+  <data name="VƏZİFƏ" xml:space="preserve">
+    <value>Позиция</value>
   </data>
   <data name="XİDMƏTLƏR" xml:space="preserve">
     <value>УСЛУГИ</value>
@@ -586,6 +769,9 @@
   </data>
   <data name="Xəstəxanamızda təcrübəli həkim-endokrinoloqlarımız tərəfindən endokrin sistemi xəstəliklərinin diaqnostikası, ambulator və stasionar müalicəsi həyata keçirilir." xml:space="preserve">
     <value>Диагностику, амбулаторное и стационарное лечение заболеваний эндокринной системы проводят в нашей больнице наши опытные врачи-эндокринологи.</value>
+  </data>
+  <data name="Yeni istifadəçisiz?   Qeydiyyat" xml:space="preserve">
+    <value>У вас нет профиля?    Регистрация</value>
   </data>
   <data name="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın" xml:space="preserve">
     <value>Введите свой адрес электронной почты , чтобы получать уведомления о новостях</value>
@@ -650,11 +836,20 @@
   <data name="İŞ YERİ" xml:space="preserve">
     <value>Место работы</value>
   </data>
+  <data name="Şikayət(qısa izah):" xml:space="preserve">
+    <value>О проблеме(коротко)</value>
+  </data>
   <data name="ŞƏKİLLƏR" xml:space="preserve">
     <value>ФОТО</value>
   </data>
+  <data name="ŞƏKİLLƏR QALEREYASI" xml:space="preserve">
+    <value>ГАЛЕРЕЯ ФОТОГРАФИЙ</value>
+  </data>
   <data name="ƏLAQƏ" xml:space="preserve">
     <value>КОНТАКТ</value>
+  </data>
+  <data name="Əlaqə nömrəsi:" xml:space="preserve">
+    <value>Контакт</value>
   </data>
   <data name="ƏLAQƏ VASİTƏLƏRİ" xml:space="preserve">
     <value>КОНТАКТЫ</value>

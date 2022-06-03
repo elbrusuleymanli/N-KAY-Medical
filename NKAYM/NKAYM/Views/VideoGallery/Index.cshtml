@@ -1,4 +1,5 @@
 ﻿@model List<VideoGallery>
+@inject LanguageService language
 @{
     ViewData["Title"] = "Index";
 }
@@ -9,7 +10,7 @@
         <div class="banner-image">
             <img src="/assets/images/banners/gallery.jpg" alt="">
             <div class="container">
-                <h3>VİDEOLAR</h3>
+                <h3>@language.Getkey("VİDEOLAR")</h3>
             </div>
 
         </div>
@@ -20,21 +21,21 @@
     <div class="row">
         @foreach (var video in Model)
         {
-        <div class="col-lg-4">
-            <div class="title">
-                <h5>@video.Title</h5>
-            </div>
-            <div class="video">
-                <video controls>
-                    <source src="~/assets/images/gallery-video/@video.Video" type="video/mp4">
-                </video>
-            </div>
+            <div class="col-lg-4">
+                <div class="title">
+                    <h5>@language.Getkey(video.Title)</h5>
+                </div>
+                <div class="video">
+                    <video controls>
+                        <source src="~/assets/images/gallery-video/@video.Video" type="video/mp4">
+                    </video>
+                </div>
 
 
-        </div>
+            </div>
         }
-        
-        
+
+
     </div>
 </div>
 

@@ -34,6 +34,14 @@
                             <span>@Model.WorkDay</span>
                             <strong>@language.Getkey("Telefon")</strong>
                             <span>@Model.Phone</span>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="appoint d-flex justify-content-center" asp-controller="DocRequest" asp-action="Index">@language.Getkey("HƏKİM QƏBULU")</a>
+                            }
+            else
+            {
+                        <a class="appoint d-flex justify-content-center" onclick="return alert('Müracət üçün qeydiyyatdan keçin')  ;">@language.Getkey("HƏKİM QƏBULU")</a>
+            }
                         </div>
                     </div>
                 </div>
@@ -42,7 +50,7 @@
                         <span class="name">@language.Getkey(Model.Fullname)</span>
                         <span>@language.Getkey(Model.Position)</span>
                         <span class="line"></span>
-                        <h6 class="title">Təhsil</h6>
+                        <h6 class="title">@language.Getkey("Təhsil")</h6>
                         <table>
                             <tr>
                                 <th>@language.Getkey("TİP")</th>

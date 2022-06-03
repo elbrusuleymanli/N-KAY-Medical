@@ -120,14 +120,26 @@
   <data name="&quot;İnsanların çoxunun təqdir etmədiyi iki şey var: sağlamlıq və boş vaxt.&quot;" xml:space="preserve">
     <value>"There are two things that most people don't appreciate: health and free time."</value>
   </data>
+  <data name="12 ay" xml:space="preserve">
+    <value>12 mon</value>
+  </data>
   <data name="49A,N.Nərimanov,Xaçmaz,2700" xml:space="preserve">
     <value>2700, 49A, N.Narimanov Khachmaz</value>
   </data>
   <data name="AD" xml:space="preserve">
     <value>Name</value>
   </data>
+  <data name="Ad Soyad,Ata adı:" xml:space="preserve">
+    <value>Name Surname Patronomic name:</value>
+  </data>
+  <data name="ALİ TİBBİ" xml:space="preserve">
+    <value>HIGH MED</value>
+  </data>
   <data name="AMBULANCE" xml:space="preserve">
     <value>AMBULANCE</value>
+  </data>
+  <data name="ANA SƏHİF" xml:space="preserve">
+    <value />
   </data>
   <data name="ANA SƏHİFƏ" xml:space="preserve">
     <value>HOME</value>
@@ -140,6 +152,9 @@
   </data>
   <data name="Azərbaycan Tibb İnstitutu" xml:space="preserve">
     <value>Azerb.Medical Univ</value>
+  </data>
+  <data name="Bağla" xml:space="preserve">
+    <value>CLOSE</value>
   </data>
   <data name="Baş həkim" xml:space="preserve">
     <value>Chief doctor</value>
@@ -156,6 +171,9 @@
   <data name="Boğaz boşluğunun müayinəsi" xml:space="preserve">
     <value>Examination of the throat</value>
   </data>
+  <data name="Bölmə:" xml:space="preserve">
+    <value>Section:</value>
+  </data>
   <data name="BÖLÜM" xml:space="preserve">
     <value>Section</value>
   </data>
@@ -164,6 +182,9 @@
   </data>
   <data name="Bədənin rahatlanması" xml:space="preserve">
     <value>Relaxation of the body</value>
+  </data>
+  <data name="CİNS" xml:space="preserve">
+    <value>Gender</value>
   </data>
   <data name="Cərrah" xml:space="preserve">
     <value>Surgeon</value>
@@ -180,6 +201,9 @@
   <data name="Daxil ol" xml:space="preserve">
     <value>Log In</value>
   </data>
+  <data name="DAXİL OL" xml:space="preserve">
+    <value>LOGIN</value>
+  </data>
   <data name="Diaqnozun təyin olunması" xml:space="preserve">
     <value>Diagnosis</value>
   </data>
@@ -191,6 +215,9 @@
   </data>
   <data name="Dişin çıxarılması" xml:space="preserve">
     <value>Tooth extraction</value>
+  </data>
+  <data name="Doğum günü:" xml:space="preserve">
+    <value>Birthday:</value>
   </data>
   <data name="Dr. Coşqun Məmmədov" xml:space="preserve">
     <value>Dr.Joshgun Mammadov</value>
@@ -270,6 +297,9 @@
   <data name="Gülərüz, qayğıkeş personalımız tərəfindən Hospitalda sığortalı pasiyentlərə davamlı olaraq 24 saat ərzində yüksək səviyyəli ixtisaslaşmış, müasir tələblərə cavab verən tibbi xidmət göstərilir. Bundan əlavə Hospitalda sığorta xətti ilə müxtəlif idarə, təşkilat və şirkət işçilərinin dövri tibbi müayinələrdən keçmələri təşkil edilir və müxtəlif endirimli check-up paketləri təklif olunur. 10 il ərzində Hospitala 27 mindən artıq sığortalı xəstə müraciət etmiş və onlara 416 mindən artıq tibbi xidmət göstərilmişdir." xml:space="preserve">
     <value>Our friendly, caring staff provides the hospital's insured patients with highly specialized, modern medical services 24 hours a day. In addition, the hospital organizes periodic medical examinations of employees of various departments, organizations and companies through the insurance line and offers various discounted check-up packages. Over 10 years, more than 27,000 insured patients applied to the hospital and more than 416,000 medical services were provided to them.</value>
   </data>
+  <data name="GÜN" xml:space="preserve">
+    <value>Day</value>
+  </data>
   <data name="GİNEKOLOGİYA" xml:space="preserve">
     <value>GYNECOLOGY</value>
   </data>
@@ -307,6 +337,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="Həkim-stomatoloq" xml:space="preserve">
     <value>DENTIST</value>
   </data>
+  <data name="Həkim:" xml:space="preserve">
+    <value>Doctor:</value>
+  </data>
   <data name="Həkimlər" xml:space="preserve">
     <value>Doctors</value>
   </data>
@@ -315,6 +348,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   </data>
   <data name="HƏKİM QƏBULU" xml:space="preserve">
     <value>APPOİNTMENT</value>
+  </data>
+  <data name="HƏKİM-LABORANT" xml:space="preserve">
+    <value>LABORATORY-ASISSTANT</value>
   </data>
   <data name="HƏKİMLƏR" xml:space="preserve">
     <value>DOCTORS</value>
@@ -396,14 +432,29 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="Müalicə işi" xml:space="preserve">
     <value>Treatment</value>
   </data>
+  <data name="Müayinə günü:" xml:space="preserve">
+    <value>Day of examination:</value>
+  </data>
+  <data name="Müayinə saatı:" xml:space="preserve">
+    <value>Time of examination:</value>
+  </data>
   <data name="MÜDDƏT" xml:space="preserve">
     <value>During</value>
+  </data>
+  <data name="Müraciət et" xml:space="preserve">
+    <value>APPOINT</value>
+  </data>
+  <data name="MÜRACİƏT ET" xml:space="preserve">
+    <value>REQUEST</value>
   </data>
   <data name="Məhəmməd Peyğəmbər (s.a.s)" xml:space="preserve">
     <value>Prophet Muhammad (s.a.s)</value>
   </data>
   <data name="MƏLUMAT" xml:space="preserve">
     <value>INFORMATION</value>
+  </data>
+  <data name="N-KAY M Klinikanın açılışı" xml:space="preserve">
+    <value>N-KAY M IS OPENED</value>
   </data>
   <data name="N-KAY MEDICAL © 2022 Bütün hüquqlar qorunur." xml:space="preserve">
     <value>N-KAY MEDICAL © 2022 All rights reserved</value>
@@ -416,6 +467,12 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   </data>
   <data name="OFTALMOLOGİYA" xml:space="preserve">
     <value>OPHTALMOLOGY</value>
+  </data>
+  <data name="ONLİNE QEYDİYYAT" xml:space="preserve">
+    <value>ONLINE REGISTRATION</value>
+  </data>
+  <data name="ORTA TİBBİ" xml:space="preserve">
+    <value>СOLLEAGE MED</value>
   </data>
   <data name="Ottolarinqologiya" xml:space="preserve">
     <value>Otolaryngology</value>
@@ -438,6 +495,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="Plomb" xml:space="preserve">
     <value>Plomb</value>
   </data>
+  <data name="QADİN" xml:space="preserve">
+    <value>FEMALE</value>
+  </data>
   <data name="Qadın xəstəlikləri müalicəsi" xml:space="preserve">
     <value>Treatment of gynecological diseases</value>
   </data>
@@ -446,6 +506,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   </data>
   <data name="Qastrointestinal sistem cərrahiyyə" xml:space="preserve">
     <value>Gastrointestinal system surgery</value>
+  </data>
+  <data name="Qeydiyyat" xml:space="preserve">
+    <value>Registration</value>
   </data>
   <data name="Qulağın yuyulması" xml:space="preserve">
     <value>Ear wash</value>
@@ -468,6 +531,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="RƏHBƏRLİK" xml:space="preserve">
     <value>MANAGMENT</value>
   </data>
+  <data name="SAAT" xml:space="preserve">
+    <value>Time</value>
+  </data>
   <data name="STASİONAR XİDMƏT" xml:space="preserve">
     <value>STATIONARY SERVICE</value>
   </data>
@@ -479,6 +545,36 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   </data>
   <data name="Stomatoloq" xml:space="preserve">
     <value>Dentist</value>
+  </data>
+  <data name="String32" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String33" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String34" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String35" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String36" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String37" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String38" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String39" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String4" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String40" xml:space="preserve">
+    <value />
   </data>
   <data name="String41" xml:space="preserve">
     <value />
@@ -507,7 +603,85 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="String49" xml:space="preserve">
     <value />
   </data>
+  <data name="String5" xml:space="preserve">
+    <value />
+  </data>
   <data name="String50" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String51" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String52" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String53" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String54" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String55" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String56" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String57" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String58" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String59" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String60" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String61" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String62" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String63" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String64" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String65" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String66" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String67" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String68" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String69" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String7" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String70" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String71" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="String9" xml:space="preserve">
     <value />
   </data>
   <data name="TARİXİMİZ" xml:space="preserve">
@@ -521,6 +695,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   </data>
   <data name="TERAPİYA" xml:space="preserve">
     <value>THERAPY</value>
+  </data>
+  <data name="TİBB BACISI" xml:space="preserve">
+    <value>NURSE</value>
   </data>
   <data name="TİBBİ SIĞORTA" xml:space="preserve">
     <value>MEDICAL INSURANCE</value>
@@ -537,11 +714,20 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="Təcili yardım şöbəsi Almaniyanın “Drager” şirkətinin tibbi avdanlıqları ilə təchiz olunmuş “Mercedes-Benz” markalı 3 ambulans və 2 reanimobil ilə xidmət göstərir. Avtomobillərin tibbi təchizatı göstəriləcək ilkin yardımın dünya standartlarına uyğundur. Təcili tibbi yardım xidməti istədiyiniz təqdirdə ev və ya ofisinizdə portativ aparatlarla instrumental (Rentqen, USM, EKQ) və laborator müayinələri həyata keçirə bilər. Peşəkar tibbi personalımız ağırlıq dərəcəsindən asılı olmayaraq xəstələri Respublikamızın istənilən yerindən xəstəxanamıza və ehtiyac olarsa ölkə xaricinə daşınmasını təmin edir." xml:space="preserve">
     <value>The ambulance department is served by 3 Mercedes-Benz ambulances and 2 ambulances equipped with medical equipment of the German company Drager. The medical equipment of the cars meets the world standards of first aid. The emergency medical service can perform instrumental (X-ray, USM, ECG) and laboratory examinations with portable devices in your home or office if you wish. Our professional medical staff, regardless of the severity, ensures the transportation of patients from anywhere in the country to our hospital and, if necessary, abroad.</value>
   </data>
+  <data name="TƏCRÜBƏ" xml:space="preserve">
+    <value>Experience</value>
+  </data>
   <data name="Təhsil" xml:space="preserve">
+    <value>Education</value>
+  </data>
+  <data name="TƏHSİL" xml:space="preserve">
     <value>Education</value>
   </data>
   <data name="TƏRƏFDAŞLAR" xml:space="preserve">
     <value>PARTNERS</value>
+  </data>
+  <data name="TƏSDİQLƏ" xml:space="preserve">
+    <value>CONFIRM</value>
   </data>
   <data name="Ultra Səs Müayinəsi" xml:space="preserve">
     <value>Ultrasound</value>
@@ -564,8 +750,17 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="VAKANSİYA" xml:space="preserve">
     <value>VACANCIES</value>
   </data>
+  <data name="VAKANSİYALAR" xml:space="preserve">
+    <value>VACANCY</value>
+  </data>
+  <data name="Vakant yer üçün müraciət" xml:space="preserve">
+    <value>Request for vacancy</value>
+  </data>
   <data name="VİDEOLAR" xml:space="preserve">
     <value>VIDEO</value>
+  </data>
+  <data name="VƏZİFƏ" xml:space="preserve">
+    <value>Position</value>
   </data>
   <data name="Xidmətlər" xml:space="preserve">
     <value>Services</value>
@@ -596,6 +791,9 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   </data>
   <data name="Xəstəxanamızda təcrübəli həkim-endokrinoloqlarımız tərəfindən endokrin sistemi xəstəliklərinin diaqnostikası, ambulator və stasionar müalicəsi həyata keçirilir." xml:space="preserve">
     <value>Diagnosis, outpatient and inpatient treatment of endocrine system diseases are carried out in our hospital by our experienced endocrinologists.</value>
+  </data>
+  <data name="Yeni istifadəçisiz?   Qeydiyyat" xml:space="preserve">
+    <value>Don't have an account?    Registration</value>
   </data>
   <data name="Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın" xml:space="preserve">
     <value>Enter your email address to receive news notifications</value>
@@ -660,11 +858,20 @@ Operations such as ureterolithotripsy, closed ureterolithotripsy of kidney stone
   <data name="İŞ YERİ" xml:space="preserve">
     <value>Workplace</value>
   </data>
+  <data name="Şikayət(qısa izah):" xml:space="preserve">
+    <value>Complane(short explane):</value>
+  </data>
   <data name="ŞƏKİLLƏR" xml:space="preserve">
     <value>PHOTO</value>
   </data>
+  <data name="ŞƏKİLLƏR QALEREYASI" xml:space="preserve">
+    <value>PHOTOES OF GALLERY</value>
+  </data>
   <data name="ƏLAQƏ" xml:space="preserve">
     <value>CONTACT</value>
+  </data>
+  <data name="Əlaqə nömrəsi:" xml:space="preserve">
+    <value>Contact:</value>
   </data>
   <data name="ƏLAQƏ VASİTƏLƏRİ" xml:space="preserve">
     <value>CONTACTS</value>

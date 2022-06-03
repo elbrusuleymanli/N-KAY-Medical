@@ -93,7 +93,7 @@
 <!-- doctors end-->
 <!-- news start-->
 <section>
-    <div class="news" data-aos="fade-up">
+    <div class="news" data-aos="fade-up" >
 
         <div class="container">
             <div class="min-logo">
@@ -115,13 +115,13 @@
 </section>
 
 <section>
-    <div class="news-wall" data-aos="fade-up">
-        <div class="container">
+    <div class="news-wall"  data-aos="fade-up">
+        <div class="container"style="background: url(/assets/images/news/news-wall.png);">
             <div class="row">
 
                 @foreach (var news in Model.NewsWalls)
                 {
-                    <div class="col-lg-4 " data-aos="fade-up">
+                    <div class="col-lg-4 "  data-aos="fade-up">
                         <div class="card item mb-3">
                             <div class="row ">
                                 <div class="col-md-4">
@@ -201,7 +201,8 @@
         <div class="subscribe">
             <form method="post">
                 <div class="subscribe-email">
-                    <input type="email" value="" name="EMAIL" class="email" placeholder= @language.Getkey("Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın")>
+                    <input type="email" class="email" placeholder="Email"/>
+                  
                     <button id="subsc" type="submit" name="subscribe">@language.Getkey("XƏBƏRİM OLSUN") <i class="bell fas fa-bell"></i></button>
                 </div>
             </form>

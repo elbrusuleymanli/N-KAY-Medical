@@ -12,14 +12,14 @@ namespace NKAYM.Models
         [Required]
         public string Fullname { get; set; }
        
-        public string Gender { get; set; }
+       
         [Required]
         public DateTime Birhtday { get; set; }
         [Required]
         public string Address { get; set; }
         [Required]
         public string Phone { get; set; }
-        public string AboutSick { get; set; }
+      
         [Required]
         public string Unit { get; set; }
         

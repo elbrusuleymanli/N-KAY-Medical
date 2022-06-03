@@ -1,19 +1,20 @@
-﻿@model LoginVM 
+﻿@model LoginVM
+@inject LanguageService language
 @{
     ViewData["Title"] = "Login";
 }
-<div class="content">
+<div class="content d-flex justify-content-center">
     <div class="login-wrap">
-        <h2>DAXİL OL</h2>
+        <h2>@language.Getkey("DAXİL OL")</h2>
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <form method="post" asp-action="Login">
             <div class="form">
-                <input asp-for="Username" type="text" placeholder="İstifadəçi adı və ya E-poçt" />
+                <input asp-for="Username" type="text" placeholder="Username or Email" />
                 <span asp-validation-for="Username"></span>
-                <input asp-for="Password" type="password" placeholder="Şifrə" />
+                <input asp-for="Password" type="password" placeholder="Password" />
                 <span asp-validation-for="Password"></span>
-                <button type="submit"> TƏSDİQLƏ </button>
-                <a asp-action="Register"> <p> Yeni istifadəçisiz?   Qeydiyyat </p></a>
+                <button type="submit">@language.Getkey("TƏSDİQLƏ")  </button>
+                <a asp-action="Register"> <p>@language.Getkey("Yeni istifadəçisiz?   Qeydiyyat")  </p></a>
             </div>
         </form>
     </div>

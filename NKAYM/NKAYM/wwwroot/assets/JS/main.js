@@ -64,7 +64,7 @@ $('.acc').on('click', function (e) {
 
 $('#subsc').on('click', function (e) {
     e.preventDefault();
-    console.log("ok")
+   
     let email = $(".email").val();
 
 
@@ -100,18 +100,12 @@ $('#subsc').on('click', function (e) {
 
 $('#reply').on('click', function (e) {
     e.preventDefault();
-    console.log("click")
+  
    
-    let fullname = $(".fullname").val();
-    if (fullname == null) {
-alert("Xanaları doldurun")
-    }
-        
-    let gender = { "select": $(".gender").val() };
+    let fullname = $(".fullname").val(); 
     let birhtday = $(".birhtday").val();
     let address = $(".address").val();
     let phone = $(".phone").val();
-    let aboutSick = $(".aboutSick").val();
     let unit = $(".unit").val();
     let doctorsFullname = $(".doctorsFullname").val();
     let requestTime = $(".requestTime").val();
@@ -125,7 +119,7 @@ alert("Xanaları doldurun")
 
         data: {
             fullname: fullname, gender: gender, birhtday: birhtday, address: address,
-            phone: phone, aboutSick: aboutSick, unit: unit, doctorsFullname: doctorsFullname, requestTime: requestTime, requestDay: requestDay
+            phone: phone, unit: unit, doctorsFullname: doctorsFullname, requestTime: requestTime, requestDay: requestDay
         },
 
         success: function (response) {
@@ -137,7 +131,6 @@ alert("Xanaları doldurun")
                     $(".birhtday").val(""),
                     $(".address").val(""),
                     $(".phone").val(""),
-                    $(".aboutSick").val(""),
                     $(".unit").val(""),
                     $(".doctorsFullname").val(""),
                     $(".requestTime").val(""),
@@ -238,16 +231,7 @@ $(function() {
 
 //partner slider end
 
-//subscribe start
 
-if ($(window).width() > 618 ) {
-  $("input[type='email']").attr("placeholder","Yeniliklər barədə xəbərdar olmaq üçün E-poçt ünvanınızı bura yazın");
-}
-else { $("input[type='email']").attr("placeholder","E-poçt");}
-
-
-
-//subscribe end
 
 //back to top start
 

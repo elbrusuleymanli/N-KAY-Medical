@@ -36,16 +36,31 @@
                     </div>
                 </div>
                 <div class="col-md-2">
+               @if(!User.Identity.IsAuthenticated){
+                   
                     <div class="randevu">
-
                         <div class="main-side">
-                            <a asp-controller="DocRequest">@language.Getkey("HƏKİM QƏBULU")</a>
+                           
+                            <a onclick="return alert('Müracət üçün qeydiyyatdan keçin')  ;">@language.Getkey("HƏKİM QƏBULU")</a>
                         </div>
                         <div class="letter">
-                            <a asp-controller="DocRequest"> <i class="far fa-envelope"></i></a>
+                            <a onclick="return alert('Müracət üçün qeydiyyatdan keçin')  ;"> <i class="far fa-envelope"></i></a>
 
                         </div>
+                    </div> 
+                    }
+            else
+            {
+                <div class="randevu">
+                    <div class="main-side">
+                        <a asp-controller="DocRequest">@language.Getkey("HƏKİM QƏBULU")</a>
                     </div>
+                    <div class="letter">
+                        <a asp-controller="DocRequest"> <i class="far fa-envelope"></i></a>
+
+                    </div>
+                </div>
+            }
                 </div>
                 <div class="col-md-1">
                     <div class="language">

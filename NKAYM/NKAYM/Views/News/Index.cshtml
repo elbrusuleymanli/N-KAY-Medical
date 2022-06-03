@@ -33,7 +33,7 @@
                         <div class="card-body">
 
                             <span class="news-date">@news.ReleaseDate.ToString("dd") @news.ReleaseDate.ToString("MMMM") @news.ReleaseDate.ToString("yyyy")</span>
-                            <h5 class="card-title" style="width:240px">@language.Getkey(news.Title)</h5>
+                            <h5 class="card-title" >@language.Getkey(news.Title)</h5>
                             <p class="card-text">
                                 @Html.Raw(language.Getkey(news.Descr1.Substring(0, 30)))
                             </p>

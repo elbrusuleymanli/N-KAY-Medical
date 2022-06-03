@@ -36,7 +36,14 @@
                         <li><a asp-controller="Doctor" asp-action="Index">@language.Getkey("HƏKİMLƏR")</a></li>
                         <li><a asp-controller="News" asp-action="Index">@language.Getkey("XƏBƏRLƏR")</a></li>
                         <li><a asp-controller="PhotoGallery" asp-action="Index">@language.Getkey("QALEREYA")</a></li>
-                        <li><a asp-controller="Vacancy" asp-action="Index">@language.Getkey("VAKANSİYA")</a></li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li><a asp-controller="Vacancy" asp-action="Index">@language.Getkey("VAKANSİYA")</a></li>
+                        }
+                        else
+                        {
+                            <li ><a onclick="return alert('Müracət üçün qeydiyyatdan keçin')  ;" >@language.Getkey("VAKANSİYA") </a></li>
+                        }
                     </ul>
                 </div>
                 <div class="col-lg-3">
