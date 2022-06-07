@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
+using NKAYM.Areas.Admin.ViewModel;
 using NKAYM.Constants;
 using NKAYM.DAL;
 using NKAYM.Models;
@@ -35,6 +35,43 @@ namespace NKAYM.Areas.Admin.Controllers
            
                 return View(services);
         }
+        //add service options
+        public async Task<IActionResult> AddService()
+        {
+
+            //var serviceOpt = await _context.ServiceOptions.Select(s => s.Name).ToListAsync();
+
+            //AddServiceVM model = new AddServiceVM()
+            //{
+            //    ServiceOptions = serviceOpt,
+            //    ServiceId = id
+            //};
+
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> AddService(string id, AddServiceVM model)
+        {
+            var service = await _context.Services.FindAsync(id);
+            if (service == null) return NotFound();
+
+            if (!ModelState.IsValid) return View(model);
+
+
+            await _context.Services.AddAsync(service);
+
+           
+
+            return RedirectToAction(nameof(Index), new { id });
+
+        }
+
+
+
+
+
 
         //create service
         public IActionResult Create()

@@ -100,7 +100,7 @@ $('#subsc').on('click', function (e) {
 
 $('#reply').on('click', function (e) {
     e.preventDefault();
-  
+    console.log("ok")
    
     let fullname = $(".fullname").val(); 
     let birhtday = $(".birhtday").val();
@@ -118,8 +118,8 @@ $('#reply').on('click', function (e) {
         dataType: "Json",
 
         data: {
-            fullname: fullname, gender: gender, birhtday: birhtday, address: address,
-            phone: phone, unit: unit, doctorsFullname: doctorsFullname, requestTime: requestTime, requestDay: requestDay
+            fullname: fullname, birhtday: birhtday, address: address, phone: phone, unit: unit, doctorsFullname: doctorsFullname, requestTime: requestTime, requestDay: requestDay
+           
         },
 
         success: function (response) {
@@ -127,7 +127,7 @@ $('#reply').on('click', function (e) {
             if (response == 200) {
               
                 $(".fullname").val(""),
-                    $(".gender").val(""),
+                    
                     $(".birhtday").val(""),
                     $(".address").val(""),
                     $(".phone").val(""),

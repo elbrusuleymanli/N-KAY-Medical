@@ -42,7 +42,7 @@ namespace NKAYM.Controllers
 
             }
 
-            if (vacancy.PdfFile.Length > 5124 * 5124)
+            if (vacancy.PdfFile.Length > 5 * 1024*1024)
             {
                 ModelState.AddModelError("PdfFile", "Şəkilin ölçüsü 5MB artıqdır");
                 return View();

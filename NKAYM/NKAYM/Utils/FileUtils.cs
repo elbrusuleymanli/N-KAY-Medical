@@ -16,7 +16,7 @@ namespace NKAYM.Utils
             var fullPath = Path.Combine(folderPath,FileName);
 
             FileStream stream = new FileStream(fullPath, FileMode.Create);
-            file.CopyToAsync(stream);
+            file.CopyTo(stream);
             stream.Close();
 
             return FileName;
