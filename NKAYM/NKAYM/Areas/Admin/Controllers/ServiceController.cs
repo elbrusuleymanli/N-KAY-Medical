@@ -36,37 +36,37 @@ namespace NKAYM.Areas.Admin.Controllers
                 return View(services);
         }
         //add service options
-        public async Task<IActionResult> AddService()
-        {
+        //public async Task<IActionResult> AddService()
+        //{
 
-            //var serviceOpt = await _context.ServiceOptions.Select(s => s.Name).ToListAsync();
+        //    //var serviceOpt = await _context.ServiceOptions.Select(s => s.Name).ToListAsync();
 
-            //AddServiceVM model = new AddServiceVM()
-            //{
-            //    ServiceOptions = serviceOpt,
-            //    ServiceId = id
-            //};
+        //    //AddServiceVM model = new AddServiceVM()
+        //    //{
+        //    //    ServiceOptions = serviceOpt,
+        //    //    ServiceId = id
+        //    //};
 
-            return View();
-        }
-        [HttpPost]
-        [ValidateAntiForgeryToken]
+        //    return View();
+        //}
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
 
-        public async Task<IActionResult> AddService(string id, AddServiceVM model)
-        {
-            var service = await _context.Services.FindAsync(id);
-            if (service == null) return NotFound();
+        //public async Task<IActionResult> AddService(string id, AddServiceVM model)
+        //{
+        //    var service = await _context.Services.FindAsync(id);
+        //    if (service == null) return NotFound();
 
-            if (!ModelState.IsValid) return View(model);
+        //    if (!ModelState.IsValid) return View(model);
 
 
-            await _context.Services.AddAsync(service);
+        //    await _context.Services.AddAsync(service);
 
            
 
-            return RedirectToAction(nameof(Index), new { id });
+        //    return RedirectToAction(nameof(Index), new { id });
 
-        }
+        //}
 
 
 
@@ -160,6 +160,8 @@ namespace NKAYM.Areas.Admin.Controllers
             upService.Image = FileUtils.Create(FileConstants.ServiceImagePath, service.ServiceImageFile);
 
             upService.Title = service.Title;
+            //upService.Title_RU = service.Title_RU;
+            //upService.Title_EN = service.Title_EN;
             upService.Text = service.Text;
             upService.Icon = service.Icon;
             foreach (var item in upService.ServiceOptions)

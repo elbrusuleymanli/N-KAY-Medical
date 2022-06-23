@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using NKAYM.Areas.Admin.ViewModel;
 using NKAYM.Constants;
 using NKAYM.DAL;
 using NKAYM.Models;
 using NKAYM.Utils;
+using NKAYM.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -145,5 +147,28 @@ namespace NKAYM.Areas.Admin.Controllers
             return View(doctor);
         }
 
+       // add detail
+
+        public async Task<IActionResult> AddDetails()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public async Task<IActionResult> AddDetails(int id, ExperienceAndEducationVM model)
+        {
+            var doctor = await _context.Doctors.FirstOrDefaultAsync(d => d.Id == id);
+            if (doctor == null) return NotFound();
+
+            if (!ModelState.IsValid) return View(model);
+            doctor.Educations.Add(model.Education);
+            doctor.Experiences.Add(model.Experience);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+           
+        }
     }
 }

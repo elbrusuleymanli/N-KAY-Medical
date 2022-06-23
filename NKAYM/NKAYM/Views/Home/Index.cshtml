@@ -48,7 +48,7 @@
                     @foreach (var service in Model.Services)
                     {
                         <a class="item" asp-controller="Service" asp-action="Details" asp-route-id="@service.Id">
-                            <div class="service-item">
+                            <div class="service-item" style="margin:0">
                                 @Html.Raw(service.Icon)
                                 <h6>@language.Getkey(service.Title)</h6>
                             </div>

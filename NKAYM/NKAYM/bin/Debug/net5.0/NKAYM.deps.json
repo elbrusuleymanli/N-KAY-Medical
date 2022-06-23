@@ -325,6 +325,12 @@
         "resources": {
           "az-Latn/NKAYM.resources.dll": {
             "locale": "az-Latn"
+          },
+          "en-US/NKAYM.resources.dll": {
+            "locale": "en-US"
+          },
+          "ru-RU/NKAYM.resources.dll": {
+            "locale": "ru-RU"
           }
         },
         "compile": {

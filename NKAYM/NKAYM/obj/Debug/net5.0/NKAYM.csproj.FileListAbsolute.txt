@@ -221,3 +221,4 @@ C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\bin\Debug\net5.0\ru-RU\NKAYM.resources.dll
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\NKAYM.Resources.SharedResource.ru-RU.resources
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\ru-RU\NKAYM.resources.dll
 C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Service\AddService.cshtml.g.cs
+C:\Users\HP\Desktop\NKAYM\NKAYM\NKAYM\obj\Debug\net5.0\Razor\Areas\Admin\Views\Doctor\AddDetails.cshtml.g.cs

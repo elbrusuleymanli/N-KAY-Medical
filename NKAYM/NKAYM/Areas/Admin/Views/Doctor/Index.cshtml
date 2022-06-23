@@ -84,11 +84,13 @@
 
                         </td>
                         <td>
-                            <a class="btn btn-warning mt-2" style="width:90px" asp-controller="Doctor" asp-action="Update" asp-route-id="@doctor.Id">Redaktə</a>
+                            <a class="btn btn-success mt-2" style="width:160px" asp-controller="Doctor" asp-action="AddDetails" asp-route-id="@doctor.Id">Məlumat əlavə et</a>
 
-                            <a class="btn btn-primary mt-2" style="width:90px" asp-controller="Doctor" asp-action="Detail" asp-route-id="@doctor.Id">Məlumat</a>
+                            <a class="btn btn-warning mt-2" style="width:160px" asp-controller="Doctor" asp-action="Update" asp-route-id="@doctor.Id">Redaktə</a>
 
-                            <a class="btn btn-danger mt-2" style="width:90px" asp-controller="Doctor" asp-action="Delete" asp-route-id="@doctor.Id">Ləğv et</a>
+                            <a class="btn btn-primary mt-2" style="width:160px" asp-controller="Doctor" asp-action="Detail" asp-route-id="@doctor.Id">Məlumat</a>
+
+                            <a class="btn btn-danger mt-2" style="width:160px" asp-controller="Doctor" asp-action="Delete" asp-route-id="@doctor.Id">Ləğv et</a>
                         </td>
 
                     </tr>

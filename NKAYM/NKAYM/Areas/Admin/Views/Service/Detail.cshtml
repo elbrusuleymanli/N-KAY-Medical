@@ -18,17 +18,20 @@
 
                         <ul class="list-star" style="list-style:none;line-height:2;">
                             <li><span style="color: red;font-weight:600">Xidmətin adı:</span>  @item.Title</li>
+                            @*<li><span style="color: red;font-weight:600">Xidmətin adı:</span>  @item.Title_RU</li>
+                            <li><span style="color: red;font-weight:600">Xidmətin adı:</span>  @item.Title_EN</li>*@
                             <li><span style="color: red;font-weight:600">İşarə: </span>@Html.Raw(item.Icon)</li>
                             <li><span style="color: red;font-weight:600">Mətn:</span>  @item.Text</li>
-                            <li><span style="color: red;font-weight:600">Xidmətlər:</span> 
-                            
-                            @foreach (var service in item.ServiceOptions)
-                            {
-                                @foreach (var serv in service.Services.ServiceOptions)
+                            <li>
+                                <span style="color: red;font-weight:600">Xidmətlər:</span>
+
+                                @foreach (var service in item.ServiceOptions)
                                 {
-                                    @serv.Name
+                                    @foreach (var serv in service.Services.ServiceOptions)
+                                    {
+                                        @serv.Name
+                                    }
                                 }
-                            }
 
                             </li>
 

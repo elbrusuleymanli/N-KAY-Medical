@@ -23,7 +23,7 @@
                     <span asp-validation-for="RequestPosition" class="text-danger"></span>
                     <input  asp-for="RequestPosition" type="text" placeholder="Vakant olan vəzifə" />
                     <span asp-validation-for="PdfFile" class="text-danger"></span>
-                    <input asp-for="PdfFile" style="margin-bottom:35px;" />
+                    <input class="vacancy-pdf" asp-for="PdfFile" style="margin-bottom:35px;" />
 
                     <button type="submit" class="acc" style="background-color: #108d01;">@language.Getkey("TƏSDİQLƏ")  </button>
                     <button class="btn btn-light mt-4" asp-controller="Vacancy" asp-action="Index">@language.Getkey("Bağla")</button>
