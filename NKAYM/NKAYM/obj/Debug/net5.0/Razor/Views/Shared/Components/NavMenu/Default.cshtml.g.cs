@@ -34,7 +34,7 @@ using NKAYM.ViewModel;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2194ae8c9e33a61ff62d9fd13b80d6d0f952d8d7", @"/Views/Shared/Components/NavMenu/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"05ec6516eb074539d527d6879b9cfbcef6154042", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"80541f3555d90d4b6b271307a3813cd53b96070a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_NavMenu_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<NavMenu>
     #nullable disable

@@ -34,7 +34,7 @@ using NKAYM.ViewModel;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0b3b8e37c3642cc1d73c3114ae21f5c303e4c9c0", @"/Views/VideoGallery/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"05ec6516eb074539d527d6879b9cfbcef6154042", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"80541f3555d90d4b6b271307a3813cd53b96070a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_VideoGallery_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<VideoGallery>>
     #nullable disable

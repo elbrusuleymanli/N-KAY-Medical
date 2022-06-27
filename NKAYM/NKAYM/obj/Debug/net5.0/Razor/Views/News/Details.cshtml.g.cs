@@ -34,7 +34,7 @@ using NKAYM.ViewModel;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1c05474f0f5d979e5fd6ac42c2b33ef149a491eb", @"/Views/News/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"05ec6516eb074539d527d6879b9cfbcef6154042", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"80541f3555d90d4b6b271307a3813cd53b96070a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_News_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<NewsWall>
     #nullable disable

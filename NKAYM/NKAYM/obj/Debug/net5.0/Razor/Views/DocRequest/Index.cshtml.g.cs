@@ -34,7 +34,7 @@ using NKAYM.ViewModel;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"57b27e76bdea10d5404298aa6655a89706a5f41f", @"/Views/DocRequest/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"05ec6516eb074539d527d6879b9cfbcef6154042", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"80541f3555d90d4b6b271307a3813cd53b96070a", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_DocRequest_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<DocRequest>>
     #nullable disable

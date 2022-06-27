@@ -1,4 +1,4 @@
-﻿
+﻿@model ExperienceAndEducationVM
 @{
     ViewData["Title"] = "AddDetails";
 }
@@ -10,15 +10,15 @@
             <form method="post"  style="text-align:center">
               
                 <label>TIP</label><br>
-                <input type="text"><br>
+                <input type="text" asp-for="Education.TypeOfUniver"><br>
                 <label>AD</label><br>
-                <input type="text"><br>
+                <input type="text" asp-for="Education.NameOfUniver"><br>
                 <label>FAKULTƏ</label><br>
-                <input type="text"><br>
+                <input type="text" asp-for="Education.Specialty"><br>
                 <label>MÜDDƏT</label><br>
-                <input type="text"><br>
+                <input type="text" asp-for="Education.StartUniver" ><br>
                 <label>ÖLKƏ</label><br>
-                <input type="text"><br>
+                <input type="text" asp-for="Education.Country"><br>
 
 
 
